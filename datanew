@@ -1,0 +1,239 @@
+{
+  "format_version" : "1.0",
+  "generated_by" : "cytoscape-3.5.1",
+  "target_cytoscapejs_version" : "~2.1",
+  "data" : {
+    "shared_name" : "WineCheeseNetwork(1)",
+    "name" : "WineCheeseNetwork(1)",
+    "SUID" : 3468,
+    "selected" : true
+  },
+  "elements" : {
+    "nodes" : [ {
+      "data" : {
+        "id" : "344",
+        "shared_name" : "Grana Padano",
+        "shared_name" : "Grana Padano",
+        "cytoscape_alias_list" : [ "Grana Padano" ],
+        "NodeType" : "Cheese",
+        "name" : "Grana Padano",
+        "SUID" : 344,
+        "id_original" : "148",
+        "selected" : false,
+        "canonicalName" : "Grana Padano"
+      },
+      "position" : {
+        "x" : 2978.6845703125,
+        "y" : 4244.615234375
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "328",
+        "shared_name" : "Parmigiano-Reggiano",
+        "shared_name" : "Parmigiano-Reggiano",
+        "cytoscape_alias_list" : [ "Parmigiano-Reggiano" ],
+        "Type" : "Hard",
+        "Quality" : 97.0,
+        "NodeType" : "Cheese",
+        "name" : "Parmigiano-Reggiano",
+        "Country" : "Italy",
+        "SUID" : 328,
+        "Synonym" : "Parmesan",
+        "id_original" : "164",
+        "Strength" : 6.0,
+        "selected" : false,
+        "Milk" : "Raw cow's milk",
+        "canonicalName" : "Parmigiano-Reggiano"
+      },
+      "position" : {
+        "x" : 3049.514892578125,
+        "y" : 4169.198230801283
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "327",
+        "shared_name" : "Monterey Dry Jack",
+        "shared_name" : "Monterey Dry Jack",
+        "cytoscape_alias_list" : [ "Monterey Dry Jack" ],
+        "Type" : "Hard",
+        "Quality" : 78.0,
+        "NodeType" : "Cheese",
+        "name" : "Monterey Dry Jack",
+        "Country" : "US",
+        "SUID" : 327,
+        "id_original" : "165",
+        "Strength" : 3.0,
+        "selected" : false,
+        "Milk" : "Cow's milk",
+        "canonicalName" : "Monterey Dry Jack"
+      },
+      "position" : {
+        "x" : 3004.119140625,
+        "y" : 4326.6796875
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "389",
+        "shared_name" : "Sbrinz",
+        "shared_name" : "Sbrinz",
+        "cytoscape_alias_list" : [ "Sbrinz" ],
+        "Type" : "Hard",
+        "Quality" : 99.0,
+        "NodeType" : "Cheese",
+        "name" : "Sbrinz",
+        "Country" : "Switzerland",
+        "SUID" : 389,
+        "id_original" : "103",
+        "Strength" : 6.0,
+        "selected" : false,
+        "Milk" : "Raw cow's milk",
+        "canonicalName" : "Sbrinz"
+      },
+      "position" : {
+        "x" : 3089.265380859375,
+        "y" : 4283.94775390625
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "277",
+        "shared_name" : "Roomano",
+        "shared_name" : "Roomano",
+        "cytoscape_alias_list" : [ "Roomano" ],
+        "Type" : "Hard",
+        "Quality" : 96.0,
+        "NodeType" : "Cheese",
+        "name" : "Roomano",
+        "Country" : "Holland",
+        "SUID" : 277,
+        "id_original" : "215",
+        "Strength" : 5.0,
+        "selected" : false,
+        "Milk" : "Cow's milk",
+        "canonicalName" : "Roomano"
+      },
+      "position" : {
+        "x" : 3035.599609375,
+        "y" : 4037.507801113783
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "147",
+        "shared_name" : "California Syrah-Mourvedre-Grenache Blend",
+        "shared_name" : "California Syrah-Mourvedre-Grenache Blend",
+        "cytoscape_alias_list" : [ "California Syrah-Mourvedre-Grenache Blend" ],
+        "NodeType" : "RedWine",
+        "name" : "California Syrah-Mourvedre-Grenache Blend",
+        "SUID" : 147,
+        "id_original" : "345",
+        "selected" : false,
+        "canonicalName" : "California Syrah-Mourvedre-Grenache Blend"
+      },
+      "position" : {
+        "x" : 1391.108154296875,
+        "y" : 3889.028064785658
+      },
+      "selected" : false
+    } ],
+    "edges" : [ {
+      "data" : {
+        "id" : "1424",
+        "source" : "328",
+        "target" : "344",
+        "shared_interaction" : "cc",
+        "source_original" : "164",
+        "shared_name" : "Parmigiano-Reggiano (cc) Grana Padano",
+        "target_original" : "148",
+        "shared_name" : "Parmigiano-Reggiano (cc) Grana Padano",
+        "shared_interaction" : "cc",
+        "name" : "Parmigiano-Reggiano (cc) Grana Padano",
+        "interaction" : "cc",
+        "SUID" : 1424,
+        "id_original" : "770",
+        "selected" : false,
+        "canonicalName" : "Parmigiano-Reggiano (cc) Grana Padano"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "1415",
+        "source" : "327",
+        "target" : "328",
+        "shared_interaction" : "cc",
+        "source_original" : "165",
+        "shared_name" : "Monterey Dry Jack (cc) Parmigiano-Reggiano",
+        "target_original" : "164",
+        "shared_name" : "Monterey Dry Jack (cc) Parmigiano-Reggiano",
+        "shared_interaction" : "cc",
+        "name" : "Monterey Dry Jack (cc) Parmigiano-Reggiano",
+        "interaction" : "cc",
+        "SUID" : 1415,
+        "id_original" : "779",
+        "selected" : false,
+        "canonicalName" : "Monterey Dry Jack (cc) Parmigiano-Reggiano"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "1604",
+        "source" : "389",
+        "target" : "328",
+        "shared_interaction" : "cc",
+        "source_original" : "103",
+        "shared_name" : "Sbrinz (cc) Parmigiano-Reggiano",
+        "target_original" : "164",
+        "shared_name" : "Sbrinz (cc) Parmigiano-Reggiano",
+        "shared_interaction" : "cc",
+        "name" : "Sbrinz (cc) Parmigiano-Reggiano",
+        "interaction" : "cc",
+        "SUID" : 1604,
+        "id_original" : "590",
+        "selected" : false,
+        "canonicalName" : "Sbrinz (cc) Parmigiano-Reggiano"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "1603",
+        "source" : "389",
+        "target" : "344",
+        "shared_interaction" : "cc",
+        "source_original" : "103",
+        "shared_name" : "Sbrinz (cc) Grana Padano",
+        "target_original" : "148",
+        "shared_name" : "Sbrinz (cc) Grana Padano",
+        "shared_interaction" : "cc",
+        "name" : "Sbrinz (cc) Grana Padano",
+        "interaction" : "cc",
+        "SUID" : 1603,
+        "id_original" : "591",
+        "selected" : false,
+        "canonicalName" : "Sbrinz (cc) Grana Padano"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "1213",
+        "source" : "277",
+        "target" : "328",
+        "shared_interaction" : "cc",
+        "source_original" : "215",
+        "shared_name" : "Roomano (cc) Parmigiano-Reggiano",
+        "target_original" : "164",
+        "shared_name" : "Roomano (cc) Parmigiano-Reggiano",
+        "shared_interaction" : "cc",
+        "name" : "Roomano (cc) Parmigiano-Reggiano",
+        "interaction" : "cc",
+        "SUID" : 1213,
+        "id_original" : "981",
+        "selected" : false,
+        "canonicalName" : "Roomano (cc) Parmigiano-Reggiano"
+      },
+      "selected" : false
+    } ]
+  }
+}
