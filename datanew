@@ -3,235 +3,147 @@
   "generated_by" : "cytoscape-3.5.1",
   "target_cytoscapejs_version" : "~2.1",
   "data" : {
-    "shared_name" : "WineCheeseNetwork(1)",
-    "name" : "WineCheeseNetwork(1)",
-    "SUID" : 3468,
+    "shared_name" : "DPCC",
+    "name" : "DPCC",
+    "SUID" : 52,
+    "shared_name" : "DPCC",
+    "__Annotations" : [ ],
     "selected" : true
   },
   "elements" : {
     "nodes" : [ {
       "data" : {
-        "id" : "344",
-        "shared_name" : "Grana Padano",
-        "shared_name" : "Grana Padano",
-        "cytoscape_alias_list" : [ "Grana Padano" ],
-        "NodeType" : "Cheese",
-        "name" : "Grana Padano",
-        "SUID" : 344,
-        "id_original" : "148",
+        "id" : "65",
+        "shared_name" : "Fiumorbu",
+        "shared_name" : "Fiumorbu",
+        "cytoscape_alias_list" : [ "Fiumorbu" ],
+        "NodeType" : "CheesetoColumn",
+        "name" : "Fiumorbu",
+        "SUID" : 65,
+        "id_original" : "427",
         "selected" : false,
-        "canonicalName" : "Grana Padano"
+        "canonicalName" : "Fiumorbu"
       },
       "position" : {
-        "x" : 2978.6845703125,
-        "y" : 4244.615234375
+        "x" : 4576.6962890625,
+        "y" : 4617.2265625
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "328",
-        "shared_name" : "Parmigiano-Reggiano",
-        "shared_name" : "Parmigiano-Reggiano",
-        "cytoscape_alias_list" : [ "Parmigiano-Reggiano" ],
-        "Type" : "Hard",
-        "Quality" : 97.0,
-        "NodeType" : "Cheese",
-        "name" : "Parmigiano-Reggiano",
-        "Country" : "Italy",
-        "SUID" : 328,
-        "Synonym" : "Parmesan",
-        "id_original" : "164",
-        "Strength" : 6.0,
+        "id" : "64",
+        "shared_name" : "Project_Identifier",
+        "shared_name" : "Project_Identifier",
+        "cytoscape_alias_list" : [ "Project_Identifier\n" ],
+        "NodeType" : "CheesetoColumn",
+        "name" : "Project_Identifier",
+        "SUID" : 64,
+        "id_original" : "428",
         "selected" : false,
-        "Milk" : "Raw cow's milk",
-        "canonicalName" : "Parmigiano-Reggiano"
+        "canonicalName" : "Project_Identifier"
       },
       "position" : {
-        "x" : 3049.514892578125,
-        "y" : 4169.198230801283
+        "x" : 4444.060546875,
+        "y" : 4343.568359375
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "327",
-        "shared_name" : "Monterey Dry Jack",
-        "shared_name" : "Monterey Dry Jack",
-        "cytoscape_alias_list" : [ "Monterey Dry Jack" ],
-        "Type" : "Hard",
-        "Quality" : 78.0,
+        "id" : "63",
+        "shared_name" : "Bergues",
+        "shared_name" : "Bergues",
+        "cytoscape_alias_list" : [ "Bergues" ],
         "NodeType" : "Cheese",
-        "name" : "Monterey Dry Jack",
-        "Country" : "US",
-        "SUID" : 327,
-        "id_original" : "165",
-        "Strength" : 3.0,
+        "name" : "Bergues",
+        "SUID" : 63,
+        "id_original" : "429",
         "selected" : false,
-        "Milk" : "Cow's milk",
-        "canonicalName" : "Monterey Dry Jack"
+        "canonicalName" : "Bergues"
       },
       "position" : {
-        "x" : 3004.119140625,
-        "y" : 4326.6796875
+        "x" : 4490.787907269527,
+        "y" : 4647.23974609375
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "389",
-        "shared_name" : "Sbrinz",
-        "shared_name" : "Sbrinz",
-        "cytoscape_alias_list" : [ "Sbrinz" ],
-        "Type" : "Hard",
-        "Quality" : 99.0,
-        "NodeType" : "Cheese",
-        "name" : "Sbrinz",
-        "Country" : "Switzerland",
-        "SUID" : 389,
-        "id_original" : "103",
-        "Strength" : 6.0,
-        "selected" : false,
-        "Milk" : "Raw cow's milk",
-        "canonicalName" : "Sbrinz"
-      },
-      "position" : {
-        "x" : 3089.265380859375,
-        "y" : 4283.94775390625
-      },
-      "selected" : false
-    }, {
-      "data" : {
-        "id" : "277",
-        "shared_name" : "Roomano",
-        "shared_name" : "Roomano",
-        "cytoscape_alias_list" : [ "Roomano" ],
-        "Type" : "Hard",
-        "Quality" : 96.0,
-        "NodeType" : "Cheese",
-        "name" : "Roomano",
-        "Country" : "Holland",
-        "SUID" : 277,
-        "id_original" : "215",
+        "id" : "62",
+        "shared_name" : "Viral Isolate",
+        "shared_name" : "Viral Isolate",
+        "cytoscape_alias_list" : [ "Viral Isolate" ],
+        "Type" : "Text Field",
+        "Quality" : 2.1,
+        "NodeType" : "CheesetoTeamplte",
+        "name" : "Viral Isolate",
+        "Country" : "Virus Isolate",
+        "SUID" : 62,
+        "id_original" : "430",
         "Strength" : 5.0,
         "selected" : false,
-        "Milk" : "Cow's milk",
-        "canonicalName" : "Roomano"
+        "Milk" : "Raw cow's milk",
+        "canonicalName" : "Viral Isolate"
       },
       "position" : {
-        "x" : 3035.599609375,
-        "y" : 4037.507801113783
-      },
-      "selected" : false
-    }, {
-      "data" : {
-        "id" : "147",
-        "shared_name" : "California Syrah-Mourvedre-Grenache Blend",
-        "shared_name" : "California Syrah-Mourvedre-Grenache Blend",
-        "cytoscape_alias_list" : [ "California Syrah-Mourvedre-Grenache Blend" ],
-        "NodeType" : "RedWine",
-        "name" : "California Syrah-Mourvedre-Grenache Blend",
-        "SUID" : 147,
-        "id_original" : "345",
-        "selected" : false,
-        "canonicalName" : "California Syrah-Mourvedre-Grenache Blend"
-      },
-      "position" : {
-        "x" : 2637.103681732476,
-        "y" : 4116.324785064398
+        "x" : 4491.9853515625,
+        "y" : 4520.1904296875
       },
       "selected" : false
     } ],
     "edges" : [ {
       "data" : {
-        "id" : "1424",
-        "source" : "328",
-        "target" : "344",
+        "id" : "433",
+        "source" : "62",
+        "target" : "65",
         "shared_interaction" : "cc",
-        "source_original" : "164",
-        "shared_name" : "Parmigiano-Reggiano (cc) Grana Padano",
-        "target_original" : "148",
-        "shared_name" : "Parmigiano-Reggiano (cc) Grana Padano",
+        "source_original" : "430",
+        "shared_name" : "Project Identifier (cc) Fiumorbu",
+        "target_original" : "427",
+        "shared_name" : "Viral Isolate (cc) Fiumorbu",
         "shared_interaction" : "cc",
-        "name" : "Parmigiano-Reggiano (cc) Grana Padano",
+        "name" : "Viral Isolate (cc) Fiumorbu",
         "interaction" : "cc",
-        "SUID" : 1424,
-        "id_original" : "770",
+        "SUID" : 433,
+        "id_original" : "1761",
         "selected" : false,
-        "canonicalName" : "Parmigiano-Reggiano (cc) Grana Padano"
+        "canonicalName" : "Viral Isolate (cc) Fiumorbu"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "1415",
-        "source" : "327",
-        "target" : "328",
+        "id" : "432",
+        "source" : "62",
+        "target" : "64",
         "shared_interaction" : "cc",
-        "source_original" : "165",
-        "shared_name" : "Monterey Dry Jack (cc) Parmigiano-Reggiano",
-        "target_original" : "164",
-        "shared_name" : "Monterey Dry Jack (cc) Parmigiano-Reggiano",
+        "source_original" : "430",
+        "shared_name" : "Project Identifier (cc) Chimay",
+        "target_original" : "428",
+        "shared_name" : "Viral Isolate (cc) Project_Identifier",
         "shared_interaction" : "cc",
-        "name" : "Monterey Dry Jack (cc) Parmigiano-Reggiano",
+        "name" : "Viral Isolate (cc) Project_Identifier",
         "interaction" : "cc",
-        "SUID" : 1415,
-        "id_original" : "779",
+        "SUID" : 432,
+        "id_original" : "1762",
         "selected" : false,
-        "canonicalName" : "Monterey Dry Jack (cc) Parmigiano-Reggiano"
+        "canonicalName" : "Viral Isolate (cc) Project_Identifier"
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "1604",
-        "source" : "389",
-        "target" : "328",
+        "id" : "431",
+        "source" : "62",
+        "target" : "63",
         "shared_interaction" : "cc",
-        "source_original" : "103",
-        "shared_name" : "Sbrinz (cc) Parmigiano-Reggiano",
-        "target_original" : "164",
-        "shared_name" : "Sbrinz (cc) Parmigiano-Reggiano",
+        "source_original" : "430",
+        "shared_name" : "Project Identifier (cc) Bergues",
+        "target_original" : "429",
+        "shared_name" : "Viral Isolate (cc) Bergues",
         "shared_interaction" : "cc",
-        "name" : "Sbrinz (cc) Parmigiano-Reggiano",
+        "name" : "Viral Isolate (cc) Bergues",
         "interaction" : "cc",
-        "SUID" : 1604,
-        "id_original" : "590",
+        "SUID" : 431,
+        "id_original" : "1763",
         "selected" : false,
-        "canonicalName" : "Sbrinz (cc) Parmigiano-Reggiano"
-      },
-      "selected" : false
-    }, {
-      "data" : {
-        "id" : "1603",
-        "source" : "389",
-        "target" : "344",
-        "shared_interaction" : "cc",
-        "source_original" : "103",
-        "shared_name" : "Sbrinz (cc) Grana Padano",
-        "target_original" : "148",
-        "shared_name" : "Sbrinz (cc) Grana Padano",
-        "shared_interaction" : "cc",
-        "name" : "Sbrinz (cc) Grana Padano",
-        "interaction" : "cc",
-        "SUID" : 1603,
-        "id_original" : "591",
-        "selected" : false,
-        "canonicalName" : "Sbrinz (cc) Grana Padano"
-      },
-      "selected" : false
-    }, {
-      "data" : {
-        "id" : "1213",
-        "source" : "277",
-        "target" : "328",
-        "shared_interaction" : "cc",
-        "source_original" : "215",
-        "shared_name" : "Roomano (cc) Parmigiano-Reggiano",
-        "target_original" : "164",
-        "shared_name" : "Roomano (cc) Parmigiano-Reggiano",
-        "shared_interaction" : "cc",
-        "name" : "Roomano (cc) Parmigiano-Reggiano",
-        "interaction" : "cc",
-        "SUID" : 1213,
-        "id_original" : "981",
-        "selected" : false,
-        "canonicalName" : "Roomano (cc) Parmigiano-Reggiano"
+        "canonicalName" : "Viral Isolate (cc) Bergues"
       },
       "selected" : false
     } ]
