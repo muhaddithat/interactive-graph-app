@@ -7,67 +7,13 @@
     "name" : "DPCC",
     "SUID" : 52,
     "shared_name" : "DPCC",
-    "__Annotations" : [ ],
+    "__Annotations" : [ "" ],
     "selected" : true
   },
   "elements" : {
     "nodes" : [ {
       "data" : {
         "id" : "65",
-        "shared_name" : "Fiumorbu",
-        "shared_name" : "Fiumorbu",
-        "cytoscape_alias_list" : [ "Fiumorbu" ],
-        "NodeType" : "CheesetoColumn",
-        "name" : "Fiumorbu",
-        "SUID" : 65,
-        "id_original" : "427",
-        "selected" : false,
-        "canonicalName" : "Fiumorbu"
-      },
-      "position" : {
-        "x" : 4576.6962890625,
-        "y" : 4617.2265625
-      },
-      "selected" : false
-    }, {
-      "data" : {
-        "id" : "64",
-        "shared_name" : "Project_Identifier",
-        "shared_name" : "Project_Identifier",
-        "cytoscape_alias_list" : [ "Project_Identifier\n" ],
-        "NodeType" : "CheesetoColumn",
-        "name" : "Project_Identifier",
-        "SUID" : 64,
-        "id_original" : "428",
-        "selected" : false,
-        "canonicalName" : "Project_Identifier"
-      },
-      "position" : {
-        "x" : 4444.060546875,
-        "y" : 4343.568359375
-      },
-      "selected" : false
-    }, {
-      "data" : {
-        "id" : "63",
-        "shared_name" : "Bergues",
-        "shared_name" : "Bergues",
-        "cytoscape_alias_list" : [ "Bergues" ],
-        "NodeType" : "Cheese",
-        "name" : "Bergues",
-        "SUID" : 63,
-        "id_original" : "429",
-        "selected" : false,
-        "canonicalName" : "Bergues"
-      },
-      "position" : {
-        "x" : 4490.787907269527,
-        "y" : 4647.23974609375
-      },
-      "selected" : false
-    }, {
-      "data" : {
-        "id" : "62",
         "shared_name" : "Viral Isolate",
         "shared_name" : "Viral Isolate",
         "cytoscape_alias_list" : [ "Viral Isolate" ],
@@ -75,8 +21,8 @@
         "Quality" : 2.1,
         "NodeType" : "CheesetoTeamplte",
         "name" : "Viral Isolate",
-        "Country" : "Virus Isolate",
-        "SUID" : 62,
+        "SUID" : 65,
+        "Synonym" : "",
         "id_original" : "430",
         "Strength" : 5.0,
         "selected" : false,
@@ -88,40 +34,108 @@
         "y" : 4520.1904296875
       },
       "selected" : false
-    } ],
-    "edges" : [ {
+    }, {
       "data" : {
-        "id" : "433",
-        "source" : "62",
-        "target" : "65",
-        "shared_interaction" : "cc",
-        "source_original" : "430",
-        "shared_name" : "Project Identifier (cc) Fiumorbu",
-        "target_original" : "427",
-        "shared_name" : "Viral Isolate (cc) Fiumorbu",
-        "shared_interaction" : "cc",
-        "name" : "Viral Isolate (cc) Fiumorbu",
-        "interaction" : "cc",
-        "SUID" : 433,
-        "id_original" : "1761",
+        "id" : "64",
+        "shared_name" : "Bergues",
+        "shared_name" : "Bergues",
+        "cytoscape_alias_list" : [ "Bergues" ],
+        "Type" : "",
+        "NodeType" : "Cheese",
+        "name" : "Bergues",
+        "Country" : "",
+        "SUID" : 64,
+        "Synonym" : "",
+        "id_original" : "429",
         "selected" : false,
-        "canonicalName" : "Viral Isolate (cc) Fiumorbu"
+        "Milk" : "",
+        "canonicalName" : "Bergues"
+      },
+      "position" : {
+        "x" : 4490.787907269527,
+        "y" : 4647.23974609375
       },
       "selected" : false
     }, {
       "data" : {
-        "id" : "432",
-        "source" : "62",
+        "id" : "63",
+        "shared_name" : "Project_Identifier",
+        "shared_name" : "Project_Identifier",
+        "cytoscape_alias_list" : [ "Project_Identifier" ],
+        "Type" : "",
+        "NodeType" : "CheesetoColumn",
+        "name" : "Project_Identifier",
+        "Country" : "",
+        "SUID" : 63,
+        "Synonym" : "",
+        "id_original" : "428",
+        "selected" : false,
+        "Milk" : "",
+        "canonicalName" : "Project_Identifier"
+      },
+      "position" : {
+        "x" : 4444.060546875,
+        "y" : 4343.568359375
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "62",
+        "shared_name" : "Fiumorbu",
+        "shared_name" : "Fiumorbu",
+        "cytoscape_alias_list" : [ "Fiumorbu" ],
+        "Type" : "",
+        "NodeType" : "CheesetoColumn",
+        "name" : "Fiumorbu",
+        "Country" : "",
+        "SUID" : 62,
+        "Synonym" : "",
+        "id_original" : "427",
+        "selected" : false,
+        "Milk" : "",
+        "canonicalName" : "Fiumorbu"
+      },
+      "position" : {
+        "x" : 4576.6962890625,
+        "y" : 4617.2265625
+      },
+      "selected" : false
+    } ],
+    "edges" : [ {
+      "data" : {
+        "id" : "68",
+        "source" : "65",
         "target" : "64",
         "shared_interaction" : "cc",
         "source_original" : "430",
-        "shared_name" : "Project Identifier (cc) Chimay",
+        "shared_name" : "Viral Isolate (cc) Bergues",
+        "target_original" : "429",
+        "shared_name" : "Viral Isolate (cc) Bergues",
+        "shared_interaction" : "cc",
+        "Special_Pairing" : "",
+        "name" : "Viral Isolate (cc) Bergues",
+        "interaction" : "cc",
+        "SUID" : 68,
+        "id_original" : "1763",
+        "selected" : false,
+        "canonicalName" : "Viral Isolate (cc) Bergues"
+      },
+      "selected" : false
+    }, {
+      "data" : {
+        "id" : "67",
+        "source" : "65",
+        "target" : "63",
+        "shared_interaction" : "cc",
+        "source_original" : "430",
+        "shared_name" : "Viral Isolate (cc) Project_Identifier",
         "target_original" : "428",
         "shared_name" : "Viral Isolate (cc) Project_Identifier",
         "shared_interaction" : "cc",
+        "Special_Pairing" : "",
         "name" : "Viral Isolate (cc) Project_Identifier",
         "interaction" : "cc",
-        "SUID" : 432,
+        "SUID" : 67,
         "id_original" : "1762",
         "selected" : false,
         "canonicalName" : "Viral Isolate (cc) Project_Identifier"
@@ -129,21 +143,22 @@
       "selected" : false
     }, {
       "data" : {
-        "id" : "431",
-        "source" : "62",
-        "target" : "63",
+        "id" : "66",
+        "source" : "65",
+        "target" : "62",
         "shared_interaction" : "cc",
         "source_original" : "430",
-        "shared_name" : "Project Identifier (cc) Bergues",
-        "target_original" : "429",
-        "shared_name" : "Viral Isolate (cc) Bergues",
+        "shared_name" : "Project Identifier (cc) Fiumorbu",
+        "target_original" : "427",
+        "shared_name" : "Viral Isolate (cc) Fiumorbu",
         "shared_interaction" : "cc",
-        "name" : "Viral Isolate (cc) Bergues",
+        "Special_Pairing" : "",
+        "name" : "Viral Isolate (cc) Fiumorbu",
         "interaction" : "cc",
-        "SUID" : 431,
-        "id_original" : "1763",
+        "SUID" : 66,
+        "id_original" : "1761",
         "selected" : false,
-        "canonicalName" : "Viral Isolate (cc) Bergues"
+        "canonicalName" : "Viral Isolate (cc) Fiumorbu"
       },
       "selected" : false
     } ]
