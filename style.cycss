@@ -22,7 +22,7 @@ node {
 	font-size: 10;
 	font-weight: bold;
 	min-zoomed-font-size: 4;
-	label: data(displayname);
+	label: data(label);
 	text-valign: center;
 	text-halign: center;
 	color: #000;
