@@ -309,7 +309,8 @@ $(function(){
         return str.match( q );
       }
 
-      var fields = ['name', 'NodeType', 'Country', 'Type', 'Milk'];
+      //var fields = ['name', 'NodeType', 'Country', 'Type', 'Milk'];
+      var fields = ['fullname', 'displayname', 'searchname']; //aea
 
       function anyFieldMatches( n ){
         for( var i = 0; i < fields.length; i++ ){
