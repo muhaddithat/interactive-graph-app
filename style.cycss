@@ -23,10 +23,12 @@ node {
 	font-weight: bold;
 	min-zoomed-font-size: 4;
 	label: data(label);
+	text-wrap: wrap;
+	text-max-width: 10;
 	text-valign: center;
 	text-halign: center;
 	color: #000;
-	text-outline-width: 2;
+	text-outline-width: 1;
 	text-outline-color: #fff;
 	text-outline-opacity: 1;
 	overlay-color: #fff;
