@@ -12,7 +12,7 @@ html, body {
   position: absolute;
   left: 0;
   top: 0;
-  background: #000;
+  background: rgb(255, 255, 255);
 }
 
 #loading {
@@ -23,7 +23,7 @@ html, body {
   text-align: center;
   margin-top: -0.5em;
   font-size: 2em;
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 
 #loading.loaded {
