@@ -1,4 +1,4 @@
-/*
+/* 
 This demo visualises wine and cheese pairings.
 */
 
@@ -390,7 +390,7 @@ $(function(){
 
   $('#filters').on('click', 'input', function(){
 
-    var soft = $('#soft').is(':checked');
+  /* ayah commented var soft = $('#soft').is(':checked');
     var semiSoft = $('#semi-soft').is(':checked');
     var na = $('#na').is(':checked');
     var semiHard = $('#semi-hard').is(':checked');
@@ -409,18 +409,34 @@ $(function(){
     var euro = $('#chs-euro').is(':checked');
     var newWorld = $('#chs-nworld').is(':checked');
     var naCountry = $('#chs-na').is(':checked');
-
+*/
+    var male = $('#male').is(':checked');
+    var female = $('#female').is(':checked');
+    
     cy.batch(function(){
 
       allNodes.forEach(function( n ){
-        var type = n.data('NodeType');
 
+//        var type = n.data('NodeType'); ayah
+
+        
+        //ayah:
+        var gender = n.data('gender');
+
+        // not ayah:
         n.removeClass('filtered');
 
         var filter = function(){
           n.addClass('filtered');
         };
 
+        // ayah:
+        if( gender === 'male' ){
+          if( !male ){ filter(); }
+        } else if( gender === 'female'){
+          if( !female ){ filter(); }
+        }
+/*
         if( type === 'Cheese' || type === 'CheeseType' ){
 
           var cType = n.data('Type');
@@ -461,7 +477,8 @@ $(function(){
           if( !cider ){ filter(); }
 
         }
-
+*/
+// not ayah:
       });
 
     });
