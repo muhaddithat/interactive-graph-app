@@ -531,7 +531,7 @@ $(function(){
       dataurl = 'data/aishah_53.json';
     }
     
-    graphP = $.ajax({
+    var graphP = $.ajax({
       url: dataurl,
      type: 'GET',
      dataType: 'json'
