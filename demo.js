@@ -34,8 +34,10 @@ $(function(){
     dataType: 'text'
   });
 
- var testing = graphP.responseJSON(); 
+ //var testing = graphP.responseJSON(); error: responseJSON not a function
  
+ var testing = graphP['responseJSON'];
+
   var infoTemplate = Handlebars.compile([
     '<p class="ac-name">{{name}}</p>',
     '<p class="ac-node-type"><i class="fa fa-info-circle"></i> {{NodeTypeFormatted}} {{#if Type}}({{Type}}){{/if}}</p>',
