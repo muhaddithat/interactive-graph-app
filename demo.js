@@ -1,6 +1,7 @@
 /* 
 This demo visualises wine and cheese pairings.
 */
+var testing;
 
 $(function(){
 
@@ -36,7 +37,8 @@ $(function(){
 
  //var testing = graphP.responseJSON(); error: responseJSON not a function
  
- var testing = graphP['responseJSON'];
+// const testing = graphP['responseJSON'];
+ console.log(graphP['responseJSON']);
 
   var infoTemplate = Handlebars.compile([
     '<p class="ac-name">{{name}}</p>',
@@ -243,8 +245,11 @@ $(function(){
     console.log("initcy - graphP");
     console.log(graphP);
     console.log("graphP.responseJSON");
-    console.log(graphP['responseJSON']);
-/*    console.log("initcy - variousgraph");
+    console.log(graphP['responseJSON']); // this works and it looks like then[0]. but the testing variable if defined above  doesn't
+    testing = graphP['responseJSON'];
+    console.log("testing");
+    console.log(testing);
+    /*    console.log("initcy - variousgraph");
     console.log(variousgraph);
     console.log("initcy - currentgraph");
     console.log(currentgraph);
@@ -547,6 +552,10 @@ $(function(){
   // ayah
   $('#dropdown-content').on('click', 'input', function() {
     console.log('graph dropdown on click');
+    console.log('graphP');
+    console.log(graphP); //graphP['responseJSON'] is undefined here
+    console.log("testing");
+    console.log(testing);
   /*  console.log('graphP');
     console.log(graphP); this is not the graph object it was originally defined as. */
     var various = $('#various').is(':selected');
