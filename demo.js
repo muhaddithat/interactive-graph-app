@@ -18,13 +18,13 @@ $(function(){
     dataType: 'json'
   });
 
-  graphP = $.ajax({
+  var variousgraph = $.ajax({
     // url: 'https://cdn.rawgit.com/maxkfranz/3d4d3c8eb808bd95bae7/raw', // wine-and-cheese.json
       url: 'data/various.json',
      type: 'GET',
      dataType: 'json'
    });
-
+ 
   // also get style via ajax
   var styleP = $.ajax({
     url: './style.cycss', // wine-and-cheese-style.cycss
@@ -231,8 +231,12 @@ $(function(){
 
   function initCy( then ){
     var loading = document.getElementById('loading');
-    console.log("initcy");
+    console.log("initcy - then[0]");
     console.log(then[0]);
+    console.log("initcy - graphP");
+    console.log(graphP);
+    console.log("initcy - variousgraph");
+    console.log(variousgraph);
    var expJson = then[0];
    var styleJson = then[1];
  //ayah   var expJson = graphP;
@@ -545,7 +549,7 @@ $(function(){
    });
    
    console.log("graphP1 in dropdown function:");
-   console.log(graphP1); // this is not the graph object for some reason. 
+   console.log(graphP); // this is not the graph object for some reason. 
    infoTemplate = Handlebars.compile([
     '<p class="ac-name">{{name}}</p>',
     '<p class="ac-node-type"><i class="fa fa-info-circle"></i> {{NodeTypeFormatted}} {{#if Type}}({{Type}}){{/if}}</p>',
@@ -553,8 +557,8 @@ $(function(){
     '{{#if Country}}<p class="ac-country"><i class="fa fa-map-marker"></i> {{Country}}</p>{{/if}}',
     '<p class="ac-more"><i class="fa fa-external-link"></i> <a target="_blank" href="https://duckduckgo.com/?q={{name}}">More information</a></p>'
   ].join(''));
-   initCy([ graphP1, styleP ]);
-  // Promise.all([ graphP, styleP ]).then( initCy );
+  // initCy([ graphP1, styleP ]);
+   Promise.all([ graphP, styleP ]).then( initCy );
    // problem is that Problem.all call at the top correctly passes the json object into initcy.
    // here, something else gets passed.
    // then try: Promise.resolve().then( reset )
