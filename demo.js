@@ -224,8 +224,10 @@ $(function(){
 
   function initCy( then ){
     var loading = document.getElementById('loading');
-    var expJson = then[0];
-    var styleJson = then[1];
+  //  var expJson = then[0];
+   // var styleJson = then[1];
+   var expJson = graphP;
+   var styleJson = styleP;
     var elements = expJson.elements;
 
     elements.nodes.forEach(function(n){
@@ -532,8 +534,9 @@ $(function(){
      type: 'GET',
      dataType: 'json'
    });
-   
-   Promise.resolve([ graphP, styleP ]).then( initCy );
+
+   initCy([ graphP, styleP ]);
+   //Promise.resolve([ graphP, styleP ]).then( initCy );
   });
   // ayah
   $('#graph-dropdown').qtip({
