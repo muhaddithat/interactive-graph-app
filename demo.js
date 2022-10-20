@@ -35,7 +35,7 @@ $(function(){
   });
 
   var currentgraph = graphP; //ayah testing
-  const currentgraphcopy = currentgraph;
+  const currentgraphelements = currentgraph.elements;
 
   var infoTemplate = Handlebars.compile([
     '<p class="ac-name">{{name}}</p>',
@@ -245,15 +245,13 @@ $(function(){
     console.log(variousgraph);
     console.log("initcy - currentgraph");
     console.log(currentgraph);
+    console.log("initcy - currentgraphelements");
+    console.log(currentgraphelements);
    var expJson = then[0];
    var styleJson = then[1];
  //ayah   var expJson = graphP;
    // ayahvar styleJson = styleP;
-   console.log("expjson elements 1");
-   console.log(expJson.elements);
    var elements = expJson.elements;
-   console.log("expjson elements 2");
-   console.log(expJson.elements);
 
 
     elements.nodes.forEach(function(n){
@@ -273,8 +271,6 @@ $(function(){
       };
     });
 
-    console.log("expjson elements 3");
-    console.log(expJson.elements);
 
     loading.classList.add('loaded');
 
@@ -569,8 +565,11 @@ $(function(){
    console.log("graphP in dropdown function:");
    console.log(graphP); // this is not the graph object for some reason. */
 
-   console.log("currentgraphcopy in dropdown function");
-   console.log(currentgraphcopy); // this changes from the initial object it was above. by the time it reaches this line it's no longer the json graph object
+   console.log("currentgraph in dropdown function");
+   console.log(currentgraph); // this changes from the initial object it was above. by the time it reaches this line it's no longer the json graph object
+   console.log("currentgraphelements in dropdown function");
+   console.log(currentgraphelements);
+
    infoTemplate = Handlebars.compile([
     '<p class="ac-name">{{name}}</p>',
     '<p class="ac-node-type"><i class="fa fa-info-circle"></i> {{NodeTypeFormatted}} {{#if Type}}({{Type}}){{/if}}</p>',
