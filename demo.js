@@ -34,7 +34,7 @@ $(function(){
     dataType: 'text'
   });
 
- var testing = graphP.responseJSON; 
+ var testing = graphP.responseJSON(); 
  
   var infoTemplate = Handlebars.compile([
     '<p class="ac-name">{{name}}</p>',
