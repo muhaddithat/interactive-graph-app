@@ -35,7 +35,9 @@ $(function(){
   });
 
   var currentgraph = graphP; //ayah testing
-  const currentgraphelements = currentgraph.elements;
+  var currentgraphelements = currentgraph.elements;
+  console.log("first currentgraphelements");
+  console.log(currentgraphelements);
 
   var infoTemplate = Handlebars.compile([
     '<p class="ac-name">{{name}}</p>',
@@ -246,12 +248,14 @@ $(function(){
     console.log("initcy - currentgraph");
     console.log(currentgraph);
     console.log("initcy - currentgraphelements");
-    console.log(currentgraphelements);
+    console.log(currentgraphelements); // undefined? why?
    var expJson = then[0];
    var styleJson = then[1];
  //ayah   var expJson = graphP;
    // ayahvar styleJson = styleP;
    var elements = expJson.elements;
+   console.log("initcy expjson elements");
+   console.log(elements);
 
 
     elements.nodes.forEach(function(n){
