@@ -546,6 +546,8 @@ $(function(){
   ].join(''));
    //initCy([ graphP, styleP ]);
    Promise.resolve([ graphP, styleP ]).then( initCy );
+   // then try: Promise.resolve().then( reset )
+   // also try RETURNING the promise?
    
   });
   // ayah
