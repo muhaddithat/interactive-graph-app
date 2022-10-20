@@ -560,14 +560,16 @@ $(function(){
     var various = $('#various').is(':selected');
     var aishah = $('#aishah').is(':selected');
     //var hafsah = $('#hafsah').is(':selected');
-    var dataurl = 'data/aishah_53.json';
+   // var dataurl = 'data/aishah_53.json';
     if( various ){
-      dataurl = 'data/various.json';
+      Promise.all([ testing, styleP ]).then(initCy);
+    }
+     // dataurl = 'data/various.json';
      // currentgraph = variousgraph; // variousgraph and graphP 
-    }else if( aishah ){
+    /*}else if( aishah ){
       dataurl = 'data/aishah_53.json';
       //currentgraph = graphP;
-    }
+    }*/
     
  /*   var graphP1 = $.ajax({
       url: 'data/various.json', //dataurl
