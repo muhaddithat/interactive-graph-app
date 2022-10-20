@@ -148,7 +148,8 @@ body.calc #loading {
 
 #reset,
 #filter,
-#about {
+#about,
+#graph-dropdown {
   width: 3em;
   margin: 0.5em;
   position: absolute;
@@ -163,6 +164,11 @@ body.calc #loading {
 #filter {
   top: 0;
   right: 4em;
+}
+
+#graph-dropdown {
+  top: 0;
+  right: 8em;
 }
 
 #about {

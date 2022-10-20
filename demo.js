@@ -13,7 +13,7 @@ $(function(){
   // get exported json from cytoscape desktop via ajax
   var graphP = $.ajax({
    // url: 'https://cdn.rawgit.com/maxkfranz/3d4d3c8eb808bd95bae7/raw', // wine-and-cheese.json
-     url: './data.json',
+     url: 'data/aishah_53.json',
     type: 'GET',
     dataType: 'json'
   });
@@ -512,6 +512,56 @@ $(function(){
     },
 
     content: $('#filters')
+  });
+
+  // ayah
+  $('#graph-dropdown').on('click', 'input', function() {
+    var various = $('#various').is(':selected');
+    var aishah = $('#aishah').is(':selected');
+    //var hafsah = $('#hafsah').is(':selected');
+    var dataurl = "";
+    if( various ){
+      dataurl = 'data/various.json';
+    }else if( aishah ){
+      dataurl = 'data/aishah_53.json';
+    }
+    
+    graphP = $.ajax({
+      url: dataurl,
+     type: 'GET',
+     dataType: 'json'
+   });
+ 
+   Promise.all([ graphP, styleP ]).then(initCy);
+  });
+  // ayah
+  $('#graph-dropdown').qtip({
+    position: {
+      my: 'top center',
+      at: 'bottom center',
+      adjust: {
+        method: 'shift'
+      },
+      viewport: true
+    },
+
+    show: {
+      event: 'click'
+    },
+
+    hide: {
+      event: 'unfocus'
+    },
+
+    style: {
+      classes: 'qtip-bootstrap qtip-filters',
+      tip: {
+        width: 16,
+        height: 8
+      }
+    },
+
+    content: $('#dropdown-content')
   });
 
   $('#about').qtip({

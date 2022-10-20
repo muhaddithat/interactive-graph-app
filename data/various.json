@@ -1,0 +1,1006 @@
+{
+  "format_version": "1.0",
+  "generated_by": "graphspace-2.0.0",
+  "target_cytoscapejs_version": "~2.7",
+  "elements": {
+      "nodes": [
+          {
+              "data": {
+                  "info": "",
+                  "name": 1,
+                  "searchname": "Prophet Muhammad",
+                  "generation": "",
+                  "gender": "male",
+                  "label": "Prophet Muḥammad",
+                  "fullname": "Prophet Muḥammad, peace and blessings be upon him",
+                  "id": "1"
+              },
+              "position": {
+                  "x": -259.3241842105131,
+                  "y": 265.6488289924336
+              }
+          },
+          {
+              "data": {
+                  "info": "Father of ʿAʾishah bint Abi Bakr and the first caliph in Islam",
+                  "name": 2,
+                  "searchname": "Abu Bakr as-Siddiq",
+                  "generation": "",
+                  "gender": "male",
+                  "label": "TESTING",
+                  "fullname": "Abu Bakr as-Ṣiddīq",
+                  "id": "2"
+              },
+              "position": {
+                  "x": -57.01544804432638,
+                  "y": 357.0581899333109
+              }
+          },
+          {
+              "data": {
+                  "info": "The second caliph in Islam",
+                  "name": 3,
+                  "searchname": "Umar ibn al-Khattab",
+                  "generation": "",
+                  "gender": "male",
+                  "label": "ʿUmar ibn al-Khaṭṭāb",
+                  "fullname": "ʿUmar ibn al-Khaṭṭāb",
+                  "id": "3"
+              },
+              "position": {
+                  "x": -152.69548017301753,
+                  "y": 145.04024990987617
+              }
+          },
+          {
+              "data": {
+                  "info": "",
+                  "name": 11013,
+                  "searchname": "Muhammad ibn Muslim ibn Ubaydullah ibn Abdullah ibn Shihab al-Zuhri",
+                  "generation": "",
+                  "gender": "male",
+                  "label": "Ibn Shihāb az-Zuhri",
+                  "fullname": "Muḥammad ibn Muslim ibn ʿUbaydullāh ibn ʿAbdullāh ibn Shihāb al-Zuhri",
+                  "id": "11013"
+              },
+              "position": {
+                  "x": 498.3176294160029,
+                  "y": 29.24851482517486
+              }
+          },
+          {
+              "data": {
+                  "info": "",
+                  "name": 6,
+                  "searchname": "Talhah ibn Ubaydillah",
+                  "generation": "",
+                  "gender": "male",
+                  "label": "Ṭalḥah ibn ʿUbaydillāh",
+                  "fullname": "Ṭalḥah ibn ʿUbaydillāh",
+                  "id": "6"
+              },
+              "position": {
+                  "x": -109.42043912219678,
+                  "y": 244.2953195295613
+              }
+          },
+          {
+              "data": {
+                  "info": "",
+                  "name": 10504,
+                  "searchname": "Aishah bint Talhah ibn Ubaydillah",
+                  "generation": "",
+                  "gender": "female",
+                  "label": "ʿAiʾshah bint Ṭalḥah",
+                  "fullname": "ʿAiʾshah bint Ṭalḥah ibn ʿUbaydillāh",
+                  "id": "10504"
+              },
+              "position": {
+                  "x": 595.30436630318,
+                  "y": 399.4787825793102
+              }
+          },
+          {
+              "data": {
+                  "info": "",
+                  "name": 9,
+                  "searchname": "Sad ibn Abi Waqqas",
+                  "generation": "",
+                  "gender": "male",
+                  "label": "Saʿd ibn Abi Waqqāṣ",
+                  "fullname": "Saʿd ibn Abi Waqqāṣ",
+                  "id": "9"
+              },
+              "position": {
+                  "x": -135.24134593545475,
+                  "y": 194.38252766762648
+              }
+          },
+          {
+              "data": {
+                  "info": "",
+                  "name": 13,
+                  "searchname": "Abu Hurayrah Abdur-Rahman ibn Sakhr",
+                  "generation": "",
+                  "gender": "male",
+                  "label": "TESTING2",
+                  "fullname": "Abu Hurayrah Abdur-Rahman ibn Sakhr",
+                  "id": "13"
+              },
+              "position": {
+                  "x": 553.3310460526282,
+                  "y": 428.48096751081357
+              }
+          },
+          {
+              "data": {
+                  "info": "Nephew of ʿAʾishah bint Abi Bakr",
+                  "name": 10511,
+                  "searchname": "Urwah ibn al-Zubayr ibn al-Awwam",
+                  "generation": "",
+                  "gender": "male",
+                  "label": "ʿUrwah ibn al-Zubayr",
+                  "fullname": "ʿUrwah ibn al-Zubayr ibn al-ʿAwwām",
+                  "id": "10511"
+              },
+              "position": {
+                  "x": 411.4475794430526,
+                  "y": 105.26396286950124
+              }
+          },
+          {
+              "data": {
+                  "info": "",
+                  "name": 17,
+                  "searchname": "Abdullah ibn Abbas",
+                  "generation": "",
+                  "gender": "male",
+                  "label": "ʿAbdullāh ibn ʿAbbās",
+                  "fullname": "ʿAbdullāh ibn ʿAbbās",
+                  "id": "17"
+              },
+              "position": {
+                  "x": 324.0716065699363,
+                  "y": 78.6332274243048
+              }
+          },
+          {
+              "data": {
+                  "info": "",
+                  "name": 18,
+                  "searchname": "Abdullah ibn Umar ibn al-Khattab",
+                  "generation": "",
+                  "gender": "male",
+                  "label": "ʿAbdullāh ibn ʿUmar",
+                  "fullname": "ʿAbdullāh ibn ʿUmar ibn al-Khaṭṭāb",
+                  "id": "18"
+              },
+              "position": {
+                  "x": 574.7135737202549,
+                  "y": 253.32886112112487
+              }
+          },
+          {
+              "data": {
+                  "info": "Nephew of ʿAʾishah bint Abi Bakr",
+                  "name": 10520,
+                  "searchname": "Abdullah ibn Abdur-Rahman ibn Abi Bakr",
+                  "generation": "",
+                  "gender": "male",
+                  "label": "ʿAbdullāh ibn ʿAbdur-Raḥmān",
+                  "fullname": "ʿAbdullāh ibn ʿAbdur-Raḥmān ibn Abi Bakr",
+                  "id": "10520"
+              },
+              "position": {
+                  "x": 491.15662977649805,
+                  "y": 458.0648982516237
+              }
+          },
+          {
+              "data": {
+                  "info": "Niece of ʿAʾishah bint Abi Bakr",
+                  "name": 10522,
+                  "searchname": "Asma bint Abdur-Rahman ibn Abi Bakr",
+                  "generation": "",
+                  "gender": "female",
+                  "label": "Asmāʾ bint ʿAbdur-Raḥmān",
+                  "fullname": "Asmāʾ bint ʿAbdur-Raḥmān ibn Abi Bakr",
+                  "id": "10522"
+              },
+              "position": {
+                  "x": 193.10764014060814,
+                  "y": 449.06037486481426
+              }
+          },
+          {
+              "data": {
+                  "info": "",
+                  "name": 28,
+                  "searchname": "Amr ibn al-As",
+                  "generation": "",
+                  "gender": "male",
+                  "label": "ʿAmr ibn al-ʿĀṣ",
+                  "fullname": "ʿAmr ibn al-ʿĀṣ",
+                  "id": "28"
+              },
+              "position": {
+                  "x": 406,
+                  "y": 510
+              }
+          },
+          {
+              "data": {
+                  "info": "Son of al-Qāsim ibn Muḥammad and great-nephew of ʿAʾishah bint Abi Bakr",
+                  "name": 10530,
+                  "searchname": "Abdur-Rahman ibn al-Qasim ibn Muhammad ibn Abi Bakr",
+                  "generation": "",
+                  "gender": "male",
+                  "label": "ʿAbdur-Raḥmān ibn al-Qāsim ",
+                  "fullname": "ʿAbdur-Raḥmān ibn al-Qāsim ibn Muḥammad ibn Abi Bakr",
+                  "id": "10530"
+              },
+              "position": {
+                  "x": 729.7249589491792,
+                  "y": 185.20577293619036
+              }
+          },
+          {
+              "data": {
+                  "info": "",
+                  "name": 11555,
+                  "searchname": "Ayman ibn Nabil",
+                  "generation": "",
+                  "gender": "male",
+                  "label": "Ayman ibn Nabīl",
+                  "fullname": "Ayman ibn Nabīl",
+                  "id": "11555"
+              },
+              "position": {
+                  "x": 676.4070224855712,
+                  "y": 138.71809710706407
+              }
+          },
+          {
+              "data": {
+                  "info": "Nephew of ʿAʾishah bint Abi Bakr",
+                  "name": 10535,
+                  "searchname": "al-Qasim ibn Muhammad ibn Abi Bakr",
+                  "generation": "",
+                  "gender": "male",
+                  "label": "al-Qāsim ibn Muḥammad",
+                  "fullname": "al-Qāsim ibn Muḥammad ibn Abi Bakr",
+                  "id": "10535"
+              },
+              "position": {
+                  "x": 534.3915744412451,
+                  "y": 193.74056051730804
+              }
+          },
+          {
+              "data": {
+                  "info": "",
+                  "name": 41,
+                  "searchname": "Abu Musa al-Ashari",
+                  "generation": "",
+                  "gender": "male",
+                  "label": "Abu Mūsā al-Ashʿari",
+                  "fullname": "Abu Mūsā al-Ashʿari",
+                  "id": "41"
+              },
+              "position": {
+                  "x": 398.57706889869485,
+                  "y": 455.2438379145633
+              }
+          },
+          {
+              "data": {
+                  "info": "Son of Khayrah Um al-Hasan al-Baṣri, and famous scholar from Iraq",
+                  "name": 11016,
+                  "searchname": "al-Hasan al-Basri",
+                  "generation": "",
+                  "gender": "male",
+                  "label": "al-Hasan al-Baṣri",
+                  "fullname": "al-Hasan al-Baṣri",
+                  "id": "11016"
+              },
+              "position": {
+                  "x": 234.40046769106115,
+                  "y": 551.44742591925
+              }
+          },
+          {
+              "data": {
+                  "info": "",
+                  "name": 53,
+                  "searchname": "Aishah bint Abi Bakr",
+                  "generation": "",
+                  "gender": "female",
+                  "label": "ʿAʾishah bint Abi Bakr",
+                  "fullname": "ʿAʾishah bint Abi Bakr",
+                  "id": "53"
+              },
+              "position": {
+                  "x": 211.25303821198426,
+                  "y": 294.52574080749906
+              }
+          },
+          {
+              "data": {
+                  "info": "Son of ʿUrwah ibn al-Zubayr and great-nephew of ʿAʾishah bint Abi Bakr",
+                  "name": 11065,
+                  "searchname": "Hisham ibn Urwah ibn az-Zubayr ibn al-Awwam",
+                  "generation": "",
+                  "gender": "male",
+                  "label": "Hishām ibn ʿUrwah",
+                  "fullname": "Hishām ibn ʿUrwah ibn az-Zubayr ibn al-ʿAwwām",
+                  "id": "11065"
+              },
+              "position": {
+                  "x": 395.3288611211249,
+                  "y": 1.2953195295613602
+              }
+          },
+          {
+              "data": {
+                  "info": "Daughter of the Prophet and step-daughter of ʿAʾishah bint Abi Bakr",
+                  "name": 63,
+                  "searchname": "Fatimah bint Muhamamd",
+                  "generation": "",
+                  "gender": "female",
+                  "label": "Fāṭimah bint Muḥamamd",
+                  "fullname": "Fāṭimah bint Muḥamamd",
+                  "id": "63"
+              },
+              "position": {
+                  "x": -106.11170295601005,
+                  "y": 308.27956443763003
+              }
+          },
+          {
+              "data": {
+                  "info": "",
+                  "name": 961,
+                  "searchname": "Juthamah bint Jandal al-Asadiyyah",
+                  "generation": "",
+                  "gender": "female",
+                  "label": "Juthāmah bint Jandal al-Asadiyyah",
+                  "fullname": "Juthāmah bint Jandal al-Asadiyyah",
+                  "id": "961"
+              },
+              "position": {
+                  "x": -150.78034985577688,
+                  "y": 421.250546232876
+              }
+          },
+          {
+              "data": {
+                  "info": "Sister of ʿAʾishah bint Abi Bakr",
+                  "name": 70,
+                  "searchname": "Asma bint Abi Bakr",
+                  "generation": "",
+                  "gender": "female",
+                  "label": "Asmāʾ bint Abi Bakr",
+                  "fullname": "Asmāʾ bint Abi Bakr",
+                  "id": "70"
+              },
+              "position": {
+                  "x": 226.58159228550406,
+                  "y": 79.40046769106121
+              }
+          },
+          {
+              "data": {
+                  "info": "",
+                  "name": 10567,
+                  "searchname": "Abu Salamah ibn Abdur-Rahman",
+                  "generation": "",
+                  "gender": "female",
+                  "label": "Abu Salamah ibn ʿAbdur-Raḥmān",
+                  "fullname": "Abu Salamah ibn ʿAbdur-Raḥmān",
+                  "id": "10567"
+              },
+              "position": {
+                  "x": 617.1096715483092,
+                  "y": 348.35803284968165
+              }
+          },
+          {
+              "data": {
+                  "info": "Nephew of ʿAʾishah bint Abi Bakr",
+                  "name": 106,
+                  "searchname": "Abdullah ibn al-Zubayr ibn al-Awwam",
+                  "generation": "",
+                  "gender": "male",
+                  "label": "ʿAbdullāh ibn al-Zubayr",
+                  "fullname": "ʿAbdullāh ibn al-Zubayr ibn al-ʿAwwām",
+                  "id": "106"
+              },
+              "position": {
+                  "x": 612.3737879416128,
+                  "y": 300.42511603280855
+              }
+          },
+          {
+              "data": {
+                  "info": "Servant of Um Salamah and the mother of the famous scholar, Al-Hasan Al-Baṣri",
+                  "name": 10737,
+                  "searchname": "Khayrah Um al-Hasan al-Basri ",
+                  "generation": "",
+                  "gender": "female",
+                  "label": "Khayrah Um al-Hasan al-Baṣri ",
+                  "fullname": "Khayrah Um al-Hasan al-Baṣri ",
+                  "id": "10737"
+              },
+              "position": {
+                  "x": 257.2327597332437,
+                  "y": 478.1274580479412
+              }
+          },
+          {
+              "data": {
+                  "info": "",
+                  "name": 11002,
+                  "searchname": "Said ibn al-Musayyib",
+                  "generation": "",
+                  "gender": "male",
+                  "label": "Saʿīd ibn al-Musayyib",
+                  "fullname": "Saʿīd ibn al-Musayyib",
+                  "id": "11002"
+              },
+              "position": {
+                  "x": 318.5973473774354,
+                  "y": 512.0246483417475
+              }
+          },
+          {
+              "data": {
+                  "info": "",
+                  "name": 11455,
+                  "searchname": "Amrah bint Abdur-Rahman ibn Sad ibn Zararah",
+                  "generation": "",
+                  "gender": "female",
+                  "label": "ʿAmrah bint ʿAbd ur-Raḥmān",
+                  "fullname": "ʿAmrah bint ʿAbd ur-Raḥmān ibn Saʿd ibn Zarārah",
+                  "id": "11455"
+              },
+              "position": {
+                  "x": 490.2014030731836,
+                  "y": 141.97769011355842
+              }
+          }
+      ],
+      "edges": [
+          {
+              "data": {
+                  "source": "1",
+                  "is_directed": true,
+                  "target": "961",
+                  "name": "1-961",
+                  "id": "a5b65563-75d2-42bc-9adf-b2d7583843ba"
+              },
+              "style": {
+                  "width": "3px",
+                  "curve-style": "bezier",
+                  "line-style": "solid",
+                  "line-color": "black"
+              }
+          },
+          {
+              "data": {
+                  "source": "1",
+                  "is_directed": true,
+                  "target": "2",
+                  "name": "1-2",
+                  "id": "fb7ba691-c4f6-4877-8dd6-c36b2016713a"
+              },
+              "style": {
+                  "width": "3px",
+                  "curve-style": "bezier",
+                  "line-style": "solid",
+                  "line-color": "black"
+              }
+          },
+          {
+              "data": {
+                  "source": "1",
+                  "is_directed": true,
+                  "target": "3",
+                  "name": "1-3",
+                  "id": "69154849-fe04-4030-be94-8a57f7dfafd9"
+              },
+              "style": {
+                  "width": "3px",
+                  "curve-style": "bezier",
+                  "line-style": "solid",
+                  "line-color": "black"
+              }
+          },
+          {
+              "data": {
+                  "source": "1",
+                  "is_directed": true,
+                  "target": "6",
+                  "name": "1-6",
+                  "id": "c4d38e68-3cf8-4b67-afb7-c626472452ac"
+              },
+              "style": {
+                  "width": "3px",
+                  "curve-style": "bezier",
+                  "line-style": "solid",
+                  "line-color": "black"
+              }
+          },
+          {
+              "data": {
+                  "source": "1",
+                  "is_directed": true,
+                  "target": "9",
+                  "name": "1-9",
+                  "id": "32ddd91b-2628-4995-9ae2-0c1f054260db"
+              },
+              "style": {
+                  "width": "3px",
+                  "curve-style": "bezier",
+                  "line-style": "solid",
+                  "line-color": "black"
+              }
+          },
+          {
+              "data": {
+                  "source": "1",
+                  "is_directed": true,
+                  "target": "53",
+                  "name": "1-53",
+                  "id": "86b30073-f9ea-4c23-a7db-a3f5c1b8c041"
+              },
+              "style": {
+                  "width": "3px",
+                  "curve-style": "bezier",
+                  "line-style": "solid",
+                  "line-color": "black"
+              }
+          },
+          {
+              "data": {
+                  "source": "1",
+                  "is_directed": true,
+                  "target": "63",
+                  "name": "1-63",
+                  "id": "e7702a76-85f5-4868-976c-3b7cce7f663d"
+              },
+              "style": {
+                  "width": "3px",
+                  "curve-style": "bezier",
+                  "line-style": "solid",
+                  "line-color": "black"
+              }
+          },
+          {
+              "data": {
+                  "source": "2",
+                  "is_directed": true,
+                  "target": "53",
+                  "name": "2-53",
+                  "id": "a2be0b45-c24c-4e6b-8525-e76c9e05d065"
+              },
+              "style": {
+                  "width": "3px",
+                  "curve-style": "bezier",
+                  "line-style": "solid",
+                  "line-color": "black"
+              }
+          },
+          {
+              "data": {
+                  "source": "3",
+                  "is_directed": true,
+                  "target": "53",
+                  "name": "3-53",
+                  "id": "c44d3e9e-d6aa-457c-a39d-962564d8829a"
+              },
+              "style": {
+                  "width": "3px",
+                  "curve-style": "bezier",
+                  "line-style": "solid",
+                  "line-color": "black"
+              }
+          },
+          {
+              "data": {
+                  "source": "6",
+                  "is_directed": true,
+                  "target": "53",
+                  "name": "6-53",
+                  "id": "973b6f5e-98cc-402f-9de6-3c5ed223aced"
+              },
+              "style": {
+                  "width": "3px",
+                  "curve-style": "bezier",
+                  "line-style": "solid",
+                  "line-color": "black"
+              }
+          },
+          {
+              "data": {
+                  "source": "9",
+                  "is_directed": true,
+                  "target": "53",
+                  "name": "9-53",
+                  "id": "4c760879-eb41-4559-9e72-f24896881c1f"
+              },
+              "style": {
+                  "width": "3px",
+                  "curve-style": "bezier",
+                  "line-style": "solid",
+                  "line-color": "black"
+              }
+          },
+          {
+              "data": {
+                  "source": "10511",
+                  "is_directed": true,
+                  "target": "11065",
+                  "name": "10511-11065",
+                  "id": "7670e66a-bb94-4615-9085-f2c889bc47e2"
+              },
+              "style": {
+                  "width": "3px",
+                  "curve-style": "bezier",
+                  "line-style": "solid",
+                  "line-color": "black"
+              }
+          },
+          {
+              "data": {
+                  "source": "10511",
+                  "is_directed": true,
+                  "target": "11013",
+                  "name": "10511-11013",
+                  "id": "e1618339-b4e8-40aa-a050-e2bffb05c9d7"
+              },
+              "style": {
+                  "width": "3px",
+                  "curve-style": "bezier",
+                  "line-style": "solid",
+                  "line-color": "black"
+              }
+          },
+          {
+              "data": {
+                  "source": "10535",
+                  "is_directed": true,
+                  "target": "10530",
+                  "name": "10535-10530",
+                  "id": "0324af9c-83c5-4d8e-a226-cf39e0ad1651"
+              },
+              "style": {
+                  "width": "3px",
+                  "curve-style": "bezier",
+                  "line-style": "solid",
+                  "line-color": "black"
+              }
+          },
+          {
+              "data": {
+                  "source": "10535",
+                  "is_directed": true,
+                  "target": "11555",
+                  "name": "10535-11555",
+                  "id": "0d3acfa7-eb06-4524-92ea-63ea967fa838"
+              },
+              "style": {
+                  "width": "3px",
+                  "curve-style": "bezier",
+                  "line-style": "solid",
+                  "line-color": "black"
+              }
+          },
+          {
+              "data": {
+                  "source": "53",
+                  "is_directed": true,
+                  "target": "70",
+                  "name": "53-70",
+                  "id": "08f07246-c486-40d1-8c86-6da163a86051"
+              },
+              "style": {
+                  "width": "3px",
+                  "curve-style": "bezier",
+                  "line-style": "solid",
+                  "line-color": "black"
+              }
+          },
+          {
+              "data": {
+                  "source": "53",
+                  "is_directed": true,
+                  "target": "10535",
+                  "name": "53-10535",
+                  "id": "6e9bdc3e-0ac1-4df0-a729-1282dde7f398"
+              },
+              "style": {
+                  "width": "3px",
+                  "curve-style": "bezier",
+                  "line-style": "solid",
+                  "line-color": "black"
+              }
+          },
+          {
+              "data": {
+                  "source": "53",
+                  "is_directed": true,
+                  "target": "10504",
+                  "name": "53-10504",
+                  "id": "75871905-539f-431d-963b-1cfc7159a204"
+              },
+              "style": {
+                  "width": "3px",
+                  "curve-style": "bezier",
+                  "line-style": "solid",
+                  "line-color": "black"
+              }
+          },
+          {
+              "data": {
+                  "source": "53",
+                  "is_directed": true,
+                  "target": "41",
+                  "name": "53-41",
+                  "id": "95c2188d-c4c1-4c6b-b5fc-beb67edf0675"
+              },
+              "style": {
+                  "width": "3px",
+                  "curve-style": "bezier",
+                  "line-style": "solid",
+                  "line-color": "black"
+              }
+          },
+          {
+              "data": {
+                  "source": "53",
+                  "is_directed": true,
+                  "target": "106",
+                  "name": "53-106",
+                  "id": "c66801e2-49c6-4bf7-b574-3c18cd664cec"
+              },
+              "style": {
+                  "width": "3px",
+                  "curve-style": "bezier",
+                  "line-style": "solid",
+                  "line-color": "black"
+              }
+          },
+          {
+              "data": {
+                  "source": "53",
+                  "is_directed": true,
+                  "target": "10567",
+                  "name": "53-10567",
+                  "id": "93bdc20c-924d-4c72-8c17-09acf08fd8aa"
+              },
+              "style": {
+                  "width": "3px",
+                  "curve-style": "bezier",
+                  "line-style": "solid",
+                  "line-color": "black"
+              }
+          },
+          {
+              "data": {
+                  "source": "53",
+                  "is_directed": true,
+                  "target": "13",
+                  "name": "53-13",
+                  "id": "d9ab4e8d-de0d-4a38-9a9b-5e7045b49690"
+              },
+              "style": {
+                  "width": "3px",
+                  "curve-style": "bezier",
+                  "line-style": "solid",
+                  "line-color": "black"
+              }
+          },
+          {
+              "data": {
+                  "source": "53",
+                  "is_directed": true,
+                  "target": "10511",
+                  "name": "53-10511",
+                  "id": "fc3b1e61-514a-48ab-8d26-4b50756841ef"
+              },
+              "style": {
+                  "width": "3px",
+                  "curve-style": "bezier",
+                  "line-style": "solid",
+                  "line-color": "black"
+              }
+          },
+          {
+              "data": {
+                  "source": "53",
+                  "is_directed": true,
+                  "target": "17",
+                  "name": "53-17",
+                  "id": "85f5e750-45aa-4029-b272-cd814fb4e1ea"
+              },
+              "style": {
+                  "width": "3px",
+                  "curve-style": "bezier",
+                  "line-style": "solid",
+                  "line-color": "black"
+              }
+          },
+          {
+              "data": {
+                  "source": "53",
+                  "is_directed": true,
+                  "target": "18",
+                  "name": "53-18",
+                  "id": "4b884443-f627-4115-815e-54fba2699400"
+              },
+              "style": {
+                  "width": "3px",
+                  "curve-style": "bezier",
+                  "line-style": "solid",
+                  "line-color": "black"
+              }
+          },
+          {
+              "data": {
+                  "source": "53",
+                  "is_directed": true,
+                  "target": "10737",
+                  "name": "53-10737",
+                  "id": "8e6ca7b7-320c-4316-9e9c-753cc7678894"
+              },
+              "style": {
+                  "width": "3px",
+                  "curve-style": "bezier",
+                  "line-style": "solid",
+                  "line-color": "black"
+              }
+          },
+          {
+              "data": {
+                  "source": "53",
+                  "is_directed": true,
+                  "target": "10520",
+                  "name": "53-10520",
+                  "id": "40701657-81b9-4521-a2fe-54fdba0ecf20"
+              },
+              "style": {
+                  "width": "3px",
+                  "curve-style": "bezier",
+                  "line-style": "solid",
+                  "line-color": "black"
+              }
+          },
+          {
+              "data": {
+                  "source": "53",
+                  "is_directed": true,
+                  "target": "10522",
+                  "name": "53-10522",
+                  "id": "dab2d40e-4225-416d-9e44-48c563a428f9"
+              },
+              "style": {
+                  "width": "3px",
+                  "curve-style": "bezier",
+                  "line-style": "solid",
+                  "line-color": "black"
+              }
+          },
+          {
+              "data": {
+                  "source": "53",
+                  "is_directed": true,
+                  "target": "28",
+                  "name": "53-28",
+                  "id": "0e3f66a1-c1ba-42e8-8bdb-d0d834d46fd7"
+              },
+              "style": {
+                  "width": "3px",
+                  "curve-style": "bezier",
+                  "line-style": "solid",
+                  "line-color": "black"
+              }
+          },
+          {
+              "data": {
+                  "source": "53",
+                  "is_directed": true,
+                  "target": "11002",
+                  "name": "53-11002",
+                  "id": "44e79562-9f9d-4c65-bc2a-8ebc1e681586"
+              },
+              "style": {
+                  "width": "3px",
+                  "curve-style": "bezier",
+                  "line-style": "solid",
+                  "line-color": "black"
+              }
+          },
+          {
+              "data": {
+                  "source": "53",
+                  "is_directed": true,
+                  "target": "11455",
+                  "name": "53-11455",
+                  "id": "3702c478-2eb9-463e-90d5-1428c9a830b1"
+              },
+              "style": {
+                  "width": "3px",
+                  "curve-style": "bezier",
+                  "line-style": "solid",
+                  "line-color": "black"
+              }
+          },
+          {
+              "data": {
+                  "source": "63",
+                  "is_directed": true,
+                  "target": "53",
+                  "name": "63-53",
+                  "id": "73320836-6a6f-4341-b931-1bb939bae5d6"
+              },
+              "style": {
+                  "width": "3px",
+                  "curve-style": "bezier",
+                  "line-style": "solid",
+                  "line-color": "black"
+              }
+          },
+          {
+              "data": {
+                  "source": "961",
+                  "is_directed": true,
+                  "target": "53",
+                  "name": "961-53",
+                  "id": "688b5d56-d2b8-4e8b-b8f2-f19b19be125d"
+              },
+              "style": {
+                  "width": "3px",
+                  "curve-style": "bezier",
+                  "line-style": "solid",
+                  "line-color": "black"
+              }
+          },
+          {
+              "data": {
+                  "source": "10737",
+                  "is_directed": true,
+                  "target": "11016",
+                  "name": "10737-11016",
+                  "id": "12f36a3d-095c-489a-8a03-fb48c04f058c"
+              },
+              "style": {
+                  "width": "3px",
+                  "curve-style": "bezier",
+                  "line-style": "solid",
+                  "line-color": "black"
+              }
+          },
+          {
+              "data": {
+                  "source": "11455",
+                  "is_directed": true,
+                  "target": "10511",
+                  "name": "11455-10511",
+                  "id": "615f366f-0d3b-48ac-932e-9a1f37322ec7"
+              },
+              "style": {
+                  "width": "3px",
+                  "curve-style": "bezier",
+                  "line-style": "solid",
+                  "line-color": "black"
+              }
+          }
+      ]
+  },
+  "data": {
+      "directed": true,
+      "description": "This is a graph of hadith narrators - work in progress",
+      "name": "Graph 02:45PM on October 18, 2022",
+      "tags": []
+  }
+}
