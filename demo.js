@@ -536,6 +536,7 @@ $(function(){
      type: 'GET',
      dataType: 'json'
    });
+   
 
    infoTemplate = Handlebars.compile([
     '<p class="ac-name">{{name}}</p>',
@@ -545,7 +546,9 @@ $(function(){
     '<p class="ac-more"><i class="fa fa-external-link"></i> <a target="_blank" href="https://duckduckgo.com/?q={{name}}">More information</a></p>'
   ].join(''));
    //initCy([ graphP, styleP ]);
-   Promise.resolve([ graphP, styleP ]).then( initCy );
+   Promise.all([ graphP, styleP ]).then( initCy );
+   // problem is that Problem.all call at the top correctly passes the json object into initcy.
+   // here, something else gets passed.
    // then try: Promise.resolve().then( reset )
    // also try RETURNING the promise?
    
