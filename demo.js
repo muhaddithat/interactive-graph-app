@@ -532,7 +532,7 @@ $(function(){
     }
     
     var graphP1 = $.ajax({
-      url: 'data/aishah_53.json',
+      url: 'data/various.json',
      type: 'GET',
      dataType: 'json'
    });
