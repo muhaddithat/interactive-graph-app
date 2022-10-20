@@ -561,11 +561,13 @@ $(function(){
     var aishah = $('#aishah').is(':selected');
     //var hafsah = $('#hafsah').is(':selected');
    // var dataurl = 'data/aishah_53.json';
-    if( various ){
+    if( various ){ // ok this is if statement is not working
       console.log("if various = true");
       initCy([ testing, styleP ]);
      // Promise.all([ testing, styleP ]).then(initCy);
     }
+    console.log("about to initCY in dropdown function");
+    initCy([ testing, styleP ]);
      // dataurl = 'data/various.json';
      // currentgraph = variousgraph; // variousgraph and graphP 
     /*}else if( aishah ){
