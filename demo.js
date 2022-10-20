@@ -20,13 +20,13 @@ $(function(){
     dataType: 'json'
   });
 
-  var variousgraph = $.ajax({ //ayah testing
+/*  ayah testingvar variousgraph = $.ajax({ //ayah testing
     // url: 'https://cdn.rawgit.com/maxkfranz/3d4d3c8eb808bd95bae7/raw', // wine-and-cheese.json
       url: 'data/various.json',
      type: 'GET',
      dataType: 'json'
    });
- 
+ */
   // also get style via ajax
   var styleP = $.ajax({
     url: './style.cycss', // wine-and-cheese-style.cycss
@@ -34,10 +34,6 @@ $(function(){
     dataType: 'text'
   });
 
-  var currentgraph = graphP; //ayah testing
-  var currentgraphelements = currentgraph.elements;
-  console.log("first currentgraphelements");
-  console.log(currentgraphelements);
 
   var infoTemplate = Handlebars.compile([
     '<p class="ac-name">{{name}}</p>',
@@ -243,19 +239,19 @@ $(function(){
     console.log(then[0]);
     console.log("initcy - graphP");
     console.log(graphP);
-    console.log("initcy - variousgraph");
+    console.log("are then[0] and graphP the same?")
+    console.log(then[0] === graphP);
+/*    console.log("initcy - variousgraph");
     console.log(variousgraph);
     console.log("initcy - currentgraph");
     console.log(currentgraph);
     console.log("initcy - currentgraphelements");
-    console.log(currentgraphelements); // undefined? why?
+    console.log(currentgraphelements); // undefined? why?*/
    var expJson = then[0];
    var styleJson = then[1];
- //ayah   var expJson = graphP;
-   // ayahvar styleJson = styleP;
    var elements = expJson.elements;
-   console.log("initcy expjson elements");
-   console.log(elements);
+   //console.log("initcy expjson elements");
+   //console.log(elements);
 
 
     elements.nodes.forEach(function(n){
@@ -548,39 +544,42 @@ $(function(){
   // ayah
   $('#dropdown-content').on('click', 'input', function() {
     console.log('graph dropdown on click');
+  /*  console.log('graphP');
+    console.log(graphP); this is not the graph object it was originally defined as. */
     var various = $('#various').is(':selected');
     var aishah = $('#aishah').is(':selected');
     //var hafsah = $('#hafsah').is(':selected');
     var dataurl = 'data/aishah_53.json';
     if( various ){
-      //dataurl = 'data/various.json';
-      currentgraph = variousgraph;
+      dataurl = 'data/various.json';
+     // currentgraph = variousgraph; // variousgraph and graphP 
     }else if( aishah ){
-      //dataurl = 'data/aishah_53.json';
-      currentgraph = graphP;
+      dataurl = 'data/aishah_53.json';
+      //currentgraph = graphP;
     }
     
  /*   var graphP1 = $.ajax({
-      url: 'data/various.json',
+      url: 'data/various.json', //dataurl
      type: 'GET',
      dataType: 'json'
    });
    
    console.log("graphP in dropdown function:");
-   console.log(graphP); // this is not the graph object for some reason. */
+   console.log(graphP); // this is not the graph object for some reason. 
 
    console.log("currentgraph in dropdown function");
    console.log(currentgraph); // this changes from the initial object it was above. by the time it reaches this line it's no longer the json graph object
    console.log("currentgraphelements in dropdown function");
-   console.log(currentgraphelements);
+   console.log(currentgraphelements);*/
 
+   /* I just put this here to see if this needs to be here for promise.all to work as it does above. 
    infoTemplate = Handlebars.compile([
     '<p class="ac-name">{{name}}</p>',
     '<p class="ac-node-type"><i class="fa fa-info-circle"></i> {{NodeTypeFormatted}} {{#if Type}}({{Type}}){{/if}}</p>',
     '{{#if Milk}}<p class="ac-milk"><i class="fa fa-angle-double-right"></i> {{Milk}}</p>{{/if}}',
     '{{#if Country}}<p class="ac-country"><i class="fa fa-map-marker"></i> {{Country}}</p>{{/if}}',
     '<p class="ac-more"><i class="fa fa-external-link"></i> <a target="_blank" href="https://duckduckgo.com/?q={{name}}">More information</a></p>'
-  ].join(''));
+  ].join(''));*/
   // initCy([ graphP1, styleP ]);
    //Promise.all([ graphP, styleP ]).then( initCy );
    // problem is that Problem.all call at the top correctly passes the json object into initcy.
