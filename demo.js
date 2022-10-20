@@ -243,7 +243,7 @@ $(function(){
     console.log("initcy - graphP");
     console.log(graphP);
     console.log("graphP.responseJSON");
-    console.log(testing);
+    console.log(graphP['responseJSON']);
 /*    console.log("initcy - variousgraph");
     console.log(variousgraph);
     console.log("initcy - currentgraph");
