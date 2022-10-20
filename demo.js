@@ -39,7 +39,10 @@ $(function(){
  
 // const testing = graphP['responseJSON'];
  console.log(graphP['responseJSON']);
-
+ console.log('testing');
+ console.log(testing);
+ testing = graphP['responseJSON'];
+ console.log(testing);
   var infoTemplate = Handlebars.compile([
     '<p class="ac-name">{{name}}</p>',
     '<p class="ac-node-type"><i class="fa fa-info-circle"></i> {{NodeTypeFormatted}} {{#if Type}}({{Type}}){{/if}}</p>',
@@ -52,7 +55,7 @@ $(function(){
   //Promise.all([ graphP, styleP ]).then(initCy);
   Promise.all([ graphP, styleP ]).then(initCy);
 
-  testing = graphP['responseJSON'];
+
 
   var allNodes = null;
   var allEles = null;
@@ -248,7 +251,7 @@ $(function(){
     console.log(graphP);
     console.log("graphP.responseJSON");
     console.log(graphP['responseJSON']); // this works and it looks like then[0]. but the testing variable if defined above  doesn't
-    //testing = graphP['responseJSON'];
+    //testing = graphP['responseJSON']; this allows testing to have the graph in the dropdown function
     console.log("testing");
     console.log(testing);
     /*    console.log("initcy - variousgraph");
