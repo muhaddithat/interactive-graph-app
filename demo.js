@@ -531,14 +531,14 @@ $(function(){
       dataurl = 'data/aishah_53.json';
     }
     
-    var graphP = $.ajax({
-      url: dataurl,
+    var graphP1 = $.ajax({
+      url: 'data/aishah_53.json',
      type: 'GET',
      dataType: 'json'
    });
    
-   console.log("graphP in dropdown function:");
-   console.log(graphP);
+   console.log("graphP1 in dropdown function:");
+   console.log(graphP1); // this is not the graph object for some reason. 
    infoTemplate = Handlebars.compile([
     '<p class="ac-name">{{name}}</p>',
     '<p class="ac-node-type"><i class="fa fa-info-circle"></i> {{NodeTypeFormatted}} {{#if Type}}({{Type}}){{/if}}</p>',
@@ -546,7 +546,7 @@ $(function(){
     '{{#if Country}}<p class="ac-country"><i class="fa fa-map-marker"></i> {{Country}}</p>{{/if}}',
     '<p class="ac-more"><i class="fa fa-external-link"></i> <a target="_blank" href="https://duckduckgo.com/?q={{name}}">More information</a></p>'
   ].join(''));
-   initCy([ graphP, styleP ]);
+   initCy([ graphP1, styleP ]);
   // Promise.all([ graphP, styleP ]).then( initCy );
    // problem is that Problem.all call at the top correctly passes the json object into initcy.
    // here, something else gets passed.
