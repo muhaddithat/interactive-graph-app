@@ -537,7 +537,8 @@ $(function(){
      dataType: 'json'
    });
    
-
+   console.log("graphP in dropdown function:");
+   console.log(graphP);
    infoTemplate = Handlebars.compile([
     '<p class="ac-name">{{name}}</p>',
     '<p class="ac-node-type"><i class="fa fa-info-circle"></i> {{NodeTypeFormatted}} {{#if Type}}({{Type}}){{/if}}</p>',
@@ -545,8 +546,8 @@ $(function(){
     '{{#if Country}}<p class="ac-country"><i class="fa fa-map-marker"></i> {{Country}}</p>{{/if}}',
     '<p class="ac-more"><i class="fa fa-external-link"></i> <a target="_blank" href="https://duckduckgo.com/?q={{name}}">More information</a></p>'
   ].join(''));
-   //initCy([ graphP, styleP ]);
-  return Promise.all([ graphP, styleP ]).then( initCy );
+   initCy([ graphP, styleP ]);
+  // Promise.all([ graphP, styleP ]).then( initCy );
    // problem is that Problem.all call at the top correctly passes the json object into initcy.
    // here, something else gets passed.
    // then try: Promise.resolve().then( reset )
