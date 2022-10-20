@@ -562,7 +562,9 @@ $(function(){
     //var hafsah = $('#hafsah').is(':selected');
    // var dataurl = 'data/aishah_53.json';
     if( various ){
-      Promise.all([ testing, styleP ]).then(initCy);
+      console.log("if various = true");
+      initCy([ testing, styleP ]);
+     // Promise.all([ testing, styleP ]).then(initCy);
     }
      // dataurl = 'data/various.json';
      // currentgraph = variousgraph; // variousgraph and graphP 
