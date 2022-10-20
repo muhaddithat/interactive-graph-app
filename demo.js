@@ -52,6 +52,8 @@ $(function(){
   //Promise.all([ graphP, styleP ]).then(initCy);
   Promise.all([ graphP, styleP ]).then(initCy);
 
+  testing = graphP['responseJSON'];
+
   var allNodes = null;
   var allEles = null;
   var lastHighlighted = null;
@@ -246,7 +248,7 @@ $(function(){
     console.log(graphP);
     console.log("graphP.responseJSON");
     console.log(graphP['responseJSON']); // this works and it looks like then[0]. but the testing variable if defined above  doesn't
-    testing = graphP['responseJSON'];
+    //testing = graphP['responseJSON'];
     console.log("testing");
     console.log(testing);
     /*    console.log("initcy - variousgraph");
@@ -258,8 +260,6 @@ $(function(){
    var expJson = then[0];
    var styleJson = then[1];
    var elements = expJson.elements;
-   //console.log("initcy expjson elements");
-   //console.log(elements);
 
 
     elements.nodes.forEach(function(n){
@@ -555,7 +555,7 @@ $(function(){
     console.log('graphP');
     console.log(graphP); //graphP['responseJSON'] is undefined here
     console.log("testing");
-    console.log(testing);
+    console.log(testing); // this works - definine var testing outside then defining/assigning it in initcy.
   /*  console.log('graphP');
     console.log(graphP); this is not the graph object it was originally defined as. */
     var various = $('#various').is(':selected');
