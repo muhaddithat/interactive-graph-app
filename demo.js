@@ -389,7 +389,7 @@ $(function(){
   });
 
   $('#filters').on('click', 'input', function(){
-
+    console.log('filters on click');
   /* ayah commented var soft = $('#soft').is(':checked');
     var semiSoft = $('#semi-soft').is(':checked');
     var na = $('#na').is(':checked');
@@ -515,7 +515,8 @@ $(function(){
   });
 
   // ayah
-  $('#graph-dropdown').on('click', 'input', function() {
+  $('#dropdown-content').on('click', 'input', function() {
+    console.log('graph dropdown on click');
     var various = $('#various').is(':selected');
     var aishah = $('#aishah').is(':selected');
     //var hafsah = $('#hafsah').is(':selected');
