@@ -21,13 +21,13 @@ $(function(){
     dataType: 'json'
   });
 
-/*  ayah testingvar variousgraph = $.ajax({ //ayah testing
+/*  ayah testingvar */ variousgraph = $.ajax({ //ayah testing
     // url: 'https://cdn.rawgit.com/maxkfranz/3d4d3c8eb808bd95bae7/raw', // wine-and-cheese.json
       url: 'data/various.json',
      type: 'GET',
      dataType: 'json'
    });
- */
+ 
   // also get style via ajax
   var styleP = $.ajax({
     url: './style.cycss', // wine-and-cheese-style.cycss
@@ -247,7 +247,7 @@ $(function(){
     // console.log(graphP);
     console.log(graphP['responseJSON']); // this works and it looks like then[0]. but the testing variable if defined above  doesn't
     if ( testing == null ) {
-    testing = graphP['responseJSON']; } //this allows testing to have the graph in the dropdown function
+    testing = variousgraph['responseJSON']; } //this allows testing to have the graph in the dropdown function
     console.log("testing");
     console.log(testing);
     /*    console.log("initcy - variousgraph");
