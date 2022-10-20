@@ -34,7 +34,8 @@ $(function(){
     dataType: 'text'
   });
 
-
+ var testing = graphP.responseJSON; 
+ 
   var infoTemplate = Handlebars.compile([
     '<p class="ac-name">{{name}}</p>',
     '<p class="ac-node-type"><i class="fa fa-info-circle"></i> {{NodeTypeFormatted}} {{#if Type}}({{Type}}){{/if}}</p>',
@@ -239,8 +240,8 @@ $(function(){
     console.log(then[0]);
     console.log("initcy - graphP");
     console.log(graphP);
-    console.log("are then[0] and graphP the same?")
-    console.log(then[0] === graphP);
+    console.log("graphP.responseJSON");
+    console.log(testing);
 /*    console.log("initcy - variousgraph");
     console.log(variousgraph);
     console.log("initcy - currentgraph");
