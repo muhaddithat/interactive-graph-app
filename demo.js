@@ -533,7 +533,7 @@ $(function(){
      dataType: 'json'
    });
  
-   Promise.all([ graphP, styleP ]).then(initCy);
+   Promise.all([ graphP, styleP ]);//.then(initCy);
   });
   // ayah
   $('#graph-dropdown').qtip({
