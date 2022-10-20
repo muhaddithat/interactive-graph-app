@@ -18,6 +18,13 @@ $(function(){
     dataType: 'json'
   });
 
+  graphP = $.ajax({
+    // url: 'https://cdn.rawgit.com/maxkfranz/3d4d3c8eb808bd95bae7/raw', // wine-and-cheese.json
+      url: 'data/various.json',
+     type: 'GET',
+     dataType: 'json'
+   });
+
   // also get style via ajax
   var styleP = $.ajax({
     url: './style.cycss', // wine-and-cheese-style.cycss
