@@ -10,6 +10,8 @@ $(function(){
 
   var cy;
 
+
+
   // get exported json from cytoscape desktop via ajax
   var graphP = $.ajax({
    // url: 'https://cdn.rawgit.com/maxkfranz/3d4d3c8eb808bd95bae7/raw', // wine-and-cheese.json
@@ -18,7 +20,7 @@ $(function(){
     dataType: 'json'
   });
 
-  var variousgraph = $.ajax({
+  var variousgraph = $.ajax({ //ayah testing
     // url: 'https://cdn.rawgit.com/maxkfranz/3d4d3c8eb808bd95bae7/raw', // wine-and-cheese.json
       url: 'data/various.json',
      type: 'GET',
@@ -32,6 +34,9 @@ $(function(){
     dataType: 'text'
   });
 
+  var currentgraph = graphP; //ayah testing
+  const currentgraphcopy = currentgraph;
+
   var infoTemplate = Handlebars.compile([
     '<p class="ac-name">{{name}}</p>',
     '<p class="ac-node-type"><i class="fa fa-info-circle"></i> {{NodeTypeFormatted}} {{#if Type}}({{Type}}){{/if}}</p>',
@@ -41,6 +46,7 @@ $(function(){
   ].join(''));
 
   // when both graph export json and style loaded, init cy
+  //Promise.all([ graphP, styleP ]).then(initCy);
   Promise.all([ graphP, styleP ]).then(initCy);
 
   var allNodes = null;
@@ -237,11 +243,18 @@ $(function(){
     console.log(graphP);
     console.log("initcy - variousgraph");
     console.log(variousgraph);
+    console.log("initcy - currentgraph");
+    console.log(currentgraph);
    var expJson = then[0];
    var styleJson = then[1];
  //ayah   var expJson = graphP;
    // ayahvar styleJson = styleP;
-    var elements = expJson.elements;
+   console.log("expjson elements 1");
+   console.log(expJson.elements);
+   var elements = expJson.elements;
+   console.log("expjson elements 2");
+   console.log(expJson.elements);
+
 
     elements.nodes.forEach(function(n){
       var data = n.data;
@@ -259,6 +272,9 @@ $(function(){
         y: n.position.y
       };
     });
+
+    console.log("expjson elements 3");
+    console.log(expJson.elements);
 
     loading.classList.add('loaded');
 
@@ -537,19 +553,24 @@ $(function(){
     //var hafsah = $('#hafsah').is(':selected');
     var dataurl = 'data/aishah_53.json';
     if( various ){
-      dataurl = 'data/various.json';
+      //dataurl = 'data/various.json';
+      currentgraph = variousgraph;
     }else if( aishah ){
-      dataurl = 'data/aishah_53.json';
+      //dataurl = 'data/aishah_53.json';
+      currentgraph = graphP;
     }
     
-    var graphP1 = $.ajax({
+ /*   var graphP1 = $.ajax({
       url: 'data/various.json',
      type: 'GET',
      dataType: 'json'
    });
    
-   console.log("graphP1 in dropdown function:");
-   console.log(graphP); // this is not the graph object for some reason. 
+   console.log("graphP in dropdown function:");
+   console.log(graphP); // this is not the graph object for some reason. */
+
+   console.log("currentgraphcopy in dropdown function");
+   console.log(currentgraphcopy); // this changes from the initial object it was above. by the time it reaches this line it's no longer the json graph object
    infoTemplate = Handlebars.compile([
     '<p class="ac-name">{{name}}</p>',
     '<p class="ac-node-type"><i class="fa fa-info-circle"></i> {{NodeTypeFormatted}} {{#if Type}}({{Type}}){{/if}}</p>',
@@ -558,7 +579,7 @@ $(function(){
     '<p class="ac-more"><i class="fa fa-external-link"></i> <a target="_blank" href="https://duckduckgo.com/?q={{name}}">More information</a></p>'
   ].join(''));
   // initCy([ graphP1, styleP ]);
-   Promise.all([ graphP, styleP ]).then( initCy );
+   //Promise.all([ graphP, styleP ]).then( initCy );
    // problem is that Problem.all call at the top correctly passes the json object into initcy.
    // here, something else gets passed.
    // then try: Promise.resolve().then( reset )
