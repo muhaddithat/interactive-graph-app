@@ -225,6 +225,7 @@ $(function(){
   function initCy( then ){
     var loading = document.getElementById('loading');
     console.log("initcy");
+    console.log(then[0]);
    var expJson = then[0];
    var styleJson = then[1];
  //ayah   var expJson = graphP;
@@ -523,7 +524,7 @@ $(function(){
     var various = $('#various').is(':selected');
     var aishah = $('#aishah').is(':selected');
     //var hafsah = $('#hafsah').is(':selected');
-    var dataurl = "";
+    var dataurl = 'data/aishah_53.json';
     if( various ){
       dataurl = 'data/various.json';
     }else if( aishah ){
@@ -536,8 +537,16 @@ $(function(){
      dataType: 'json'
    });
 
-   initCy([ graphP, styleP ]);
-   //Promise.resolve([ graphP, styleP ]).then( initCy );
+   infoTemplate = Handlebars.compile([
+    '<p class="ac-name">{{name}}</p>',
+    '<p class="ac-node-type"><i class="fa fa-info-circle"></i> {{NodeTypeFormatted}} {{#if Type}}({{Type}}){{/if}}</p>',
+    '{{#if Milk}}<p class="ac-milk"><i class="fa fa-angle-double-right"></i> {{Milk}}</p>{{/if}}',
+    '{{#if Country}}<p class="ac-country"><i class="fa fa-map-marker"></i> {{Country}}</p>{{/if}}',
+    '<p class="ac-more"><i class="fa fa-external-link"></i> <a target="_blank" href="https://duckduckgo.com/?q={{name}}">More information</a></p>'
+  ].join(''));
+   //initCy([ graphP, styleP ]);
+   Promise.resolve([ graphP, styleP ]).then( initCy );
+   
   });
   // ayah
   $('#graph-dropdown').qtip({
