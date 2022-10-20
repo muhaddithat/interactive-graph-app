@@ -532,8 +532,8 @@ $(function(){
      type: 'GET',
      dataType: 'json'
    });
- 
-   Promise.all([ graphP, styleP ]);//.then(initCy);
+   
+   Promise.resolve([ graphP, styleP ]).then( initCy );
   });
   // ayah
   $('#graph-dropdown').qtip({
