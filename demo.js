@@ -224,10 +224,11 @@ $(function(){
 
   function initCy( then ){
     var loading = document.getElementById('loading');
-  //  var expJson = then[0];
-   // var styleJson = then[1];
-   var expJson = graphP;
-   var styleJson = styleP;
+    console.log("initcy");
+   var expJson = then[0];
+   var styleJson = then[1];
+ //ayah   var expJson = graphP;
+   // ayahvar styleJson = styleP;
     var elements = expJson.elements;
 
     elements.nodes.forEach(function(n){
