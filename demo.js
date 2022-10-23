@@ -275,7 +275,7 @@ $(function(){
       layout: { name: 'preset', padding: layoutPadding },
       style: styleJson,
      // elements: elements, // expjson.elements instead? ayah testing
-     elements: espJson.elements,
+     elements: expJson.elements,
       motionBlur: true,
       selectionType: 'single',
       boxSelectionEnabled: false,
