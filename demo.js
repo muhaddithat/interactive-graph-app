@@ -11,7 +11,7 @@ $(function(){
   var aniDur = 500;
   var easing = 'linear';
 
-  var cy; 
+  var cy = null; // ayah - originally it was var cy; w/o = null 
 
 
 
@@ -280,7 +280,8 @@ $(function(){
 
     loading.classList.add('loaded');
 
-
+    console.log("cy before being assigned in initcy");
+    console.log(cy);
     cy = window.cy = cytoscape({
       container: document.getElementById('cy'),
       layout: { name: 'preset', padding: layoutPadding },
@@ -291,6 +292,8 @@ $(function(){
       boxSelectionEnabled: false,
       autoungrabify: true
     });
+    console.log("cy after being assigned in initcy");
+    console.log(cy);
 
     allNodes = cy.nodes();
     allEles = cy.elements();
@@ -446,7 +449,8 @@ $(function(){
 */
     var male = $('#male').is(':checked');
     var female = $('#female').is(':checked');
-    
+    console.log('cy in filters function');
+    console.log(cy);
     cy.batch(function(){
 
       allNodes.forEach(function( n ){
@@ -512,7 +516,6 @@ $(function(){
 
         }
 */
-// not ayah:
       });
 
     });
@@ -563,7 +566,7 @@ $(function(){
       initCy([ various, styleP ]);
     } else if ( !switcher ) {
       switcher = true;
-      initCy([ aishah, styleP]);
+      initCy([ aishah, styleP ]);
     }
   });
   // ayah
