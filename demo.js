@@ -270,12 +270,12 @@ $(function(){
 
     loading.classList.add('loaded');
 
-    cy = null; // ayah testing...idk if this will do anything lol
     cy = window.cy = cytoscape({
       container: document.getElementById('cy'),
       layout: { name: 'preset', padding: layoutPadding },
       style: styleJson,
-      elements: elements, // expjson.elements instead?
+     // elements: elements, // expjson.elements instead? ayah testing
+     elements: espJson.elements,
       motionBlur: true,
       selectionType: 'single',
       boxSelectionEnabled: false,
