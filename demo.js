@@ -3,10 +3,6 @@ This demo visualises wine and cheese pairings.
 */
 var various = null;
 var cy = null;
-var allNodes = null;
-var allEles = null;
-var lastHighlighted = null;
-var lastUnhighlighted = null;
 
 $(function(){
 
@@ -26,7 +22,7 @@ $(function(){
     dataType: 'json'
   });
 
- var variousgraph = $.ajax({ //ayah testing
+ variousgraph = $.ajax({ //ayah testing
      url: 'data/various.json',
      type: 'GET',
      dataType: 'json'
@@ -53,10 +49,10 @@ $(function(){
 
 
 
-/*  var allNodes = null;
+  var allNodes = null;
   var allEles = null;
   var lastHighlighted = null;
-  var lastUnhighlighted = null; ayah testing */
+  var lastUnhighlighted = null;
 
   function getFadePromise( ele, opacity ){
     return ele.animation({
@@ -274,8 +270,6 @@ $(function(){
 
     loading.classList.add('loaded');
 
-    console.log("cy before it's updated");
-    console.log(cy);
     cy = window.cy = cytoscape({
       container: document.getElementById('cy'),
       layout: { name: 'preset', padding: layoutPadding },
@@ -287,8 +281,6 @@ $(function(){
       autoungrabify: true
     });
 
-    console.log("cy after it's updated");
-    console.log(cy);
     allNodes = cy.nodes();
     allEles = cy.elements();
 
@@ -420,8 +412,7 @@ $(function(){
   });
 
   $('#filters').on('click', 'input', function(){
-    console.log('filters on click cy');
-    console.log(cy);
+    console.log('filters on click');
   /* ayah commented var soft = $('#soft').is(':checked');
     var semiSoft = $('#semi-soft').is(':checked');
     var na = $('#na').is(':checked');
