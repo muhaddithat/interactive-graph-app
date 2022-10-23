@@ -563,10 +563,12 @@ $(function(){
     console.log("about to initCY in dropdown function");
     if ( switcher ) {
       switcher = false;
-      initCy([ various, styleP ]);
+      cy.json({ elements: various.elements });
+     // initCy([ various, styleP ]);
     } else if ( !switcher ) {
       switcher = true;
-      initCy([ aishah, styleP ]);
+      cy.json({ elements: aishah.elements });
+    //  initCy([ aishah, styleP ]);
     }
   });
   // ayah
