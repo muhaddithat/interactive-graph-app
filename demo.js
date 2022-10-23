@@ -22,7 +22,7 @@ $(function(){
     dataType: 'json'
   });
 
- variousgraph = $.ajax({ //ayah testing
+/*  ayah testingvar */ variousgraph = $.ajax({ //ayah testing
      url: 'data/various.json',
      type: 'GET',
      dataType: 'json'
@@ -270,11 +270,12 @@ $(function(){
 
     loading.classList.add('loaded');
 
+    cy = null; // ayah testing...idk if this will do anything lol
     cy = window.cy = cytoscape({
       container: document.getElementById('cy'),
       layout: { name: 'preset', padding: layoutPadding },
       style: styleJson,
-      elements: elements,
+      elements: elements, // expjson.elements instead?
       motionBlur: true,
       selectionType: 'single',
       boxSelectionEnabled: false,
@@ -541,10 +542,10 @@ $(function(){
   $('#dropdown-content').on('click', 'input', function() {
     var various_selected = $('#various').is(':selected');
     var aishah_selected = $('#aishah').is(':selected');
-    if( various_selected ){ // ok this is if statement is not working
+  /*  if( various_selected ){ // ok this is if statement is not working
       console.log("if various = true");
       initCy([ testing, styleP ]);
-    }
+    }*/
     console.log("about to initCY in dropdown function");
     initCy([ various, styleP ]);
    
