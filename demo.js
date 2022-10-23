@@ -274,6 +274,8 @@ $(function(){
 
     loading.classList.add('loaded');
 
+    console.log("cy before it's updated");
+    console.log(cy);
     cy = window.cy = cytoscape({
       container: document.getElementById('cy'),
       layout: { name: 'preset', padding: layoutPadding },
@@ -285,6 +287,8 @@ $(function(){
       autoungrabify: true
     });
 
+    console.log("cy after it's updated");
+    console.log(cy);
     allNodes = cy.nodes();
     allEles = cy.elements();
 
@@ -416,7 +420,8 @@ $(function(){
   });
 
   $('#filters').on('click', 'input', function(){
-    console.log('filters on click');
+    console.log('filters on click cy');
+    console.log(cy);
   /* ayah commented var soft = $('#soft').is(':checked');
     var semiSoft = $('#semi-soft').is(':checked');
     var na = $('#na').is(':checked');
