@@ -2,6 +2,7 @@
 This demo visualises wine and cheese pairings.
 */
 var various = null;
+var cy = null;
 
 $(function(){
 
@@ -9,7 +10,7 @@ $(function(){
   var aniDur = 500;
   var easing = 'linear';
 
-  var cy;
+  // var cy; ayah testing
 
 
 
