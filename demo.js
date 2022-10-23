@@ -2,7 +2,8 @@
 This demo visualises wine and cheese pairings.
 */
 var various = null;
-var cy = null;
+var aishah = null;
+var switcher = true; //ayah
 
 $(function(){
 
@@ -10,7 +11,7 @@ $(function(){
   var aniDur = 500;
   var easing = 'linear';
 
-  // var cy; ayah testing
+  var cy; 
 
 
 
@@ -27,6 +28,12 @@ $(function(){
      type: 'GET',
      dataType: 'json'
    });
+
+   aishahgraph = $.ajax({ //ayah testing
+    url: 'data/aishah_53.json',
+    type: 'GET',
+    dataType: 'json'
+  });
  
   // also get style via ajax
   var styleP = $.ajax({
@@ -244,6 +251,9 @@ $(function(){
     if ( various == null ) {
           various = variousgraph['responseJSON']; 
         } 
+    if ( aishah == null ) {
+      aishah = aishahgraph['responseJSON']; 
+    } 
 
    var expJson = then[0];
    var styleJson = then[1];
@@ -270,12 +280,12 @@ $(function(){
 
     loading.classList.add('loaded');
 
+
     cy = window.cy = cytoscape({
       container: document.getElementById('cy'),
       layout: { name: 'preset', padding: layoutPadding },
       style: styleJson,
-     // elements: elements, // expjson.elements instead? ayah testing
-     elements: expJson.elements,
+      elements: elements, 
       motionBlur: true,
       selectionType: 'single',
       boxSelectionEnabled: false,
@@ -546,9 +556,15 @@ $(function(){
       console.log("if various = true");
       initCy([ testing, styleP ]);
     }*/
+
     console.log("about to initCY in dropdown function");
-    initCy([ various, styleP ]);
-   
+    if ( switcher ) {
+      switcher = false;
+      initCy([ various, styleP ]);
+    } else if ( !switcher ) {
+      switcher = true;
+      initCy([ aishah, styleP]);
+    }
   });
   // ayah
   $('#graph-dropdown').qtip({
