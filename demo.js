@@ -3,6 +3,10 @@ This demo visualises wine and cheese pairings.
 */
 var various = null;
 var cy = null;
+var allNodes = null;
+var allEles = null;
+var lastHighlighted = null;
+var lastUnhighlighted = null;
 
 $(function(){
 
@@ -22,7 +26,7 @@ $(function(){
     dataType: 'json'
   });
 
-/*  ayah testingvar */ variousgraph = $.ajax({ //ayah testing
+ var variousgraph = $.ajax({ //ayah testing
      url: 'data/various.json',
      type: 'GET',
      dataType: 'json'
@@ -49,10 +53,10 @@ $(function(){
 
 
 
-  var allNodes = null;
+/*  var allNodes = null;
   var allEles = null;
   var lastHighlighted = null;
-  var lastUnhighlighted = null;
+  var lastUnhighlighted = null; ayah testing */
 
   function getFadePromise( ele, opacity ){
     return ele.animation({
