@@ -3,7 +3,7 @@ This demo visualises wine and cheese pairings.
 */
 var various = null;
 var aishah = null;
-var switcher = true; //ayah
+var switcher = true; 
 
 $(function(){
 
@@ -11,7 +11,7 @@ $(function(){
   var aniDur = 500;
   var easing = 'linear';
 
-  var cy = null; // ayah - originally it was var cy; w/o = null 
+  var cy; // var cy = null; worked too
 
 
 

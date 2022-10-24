@@ -210,6 +210,24 @@ body.calc #loading {
   display: none;
 }
 
+
+#dropdown-content label {
+  font-weight: normal;
+  padding: 0 0.25em;
+}
+
+#fildropdown-contentters strong {
+  display: block;
+}
+
+#dropdown-content hr {
+  margin: 0.25em 0;
+}
+
+#dropdown-content {
+  display: none;
+}
+
 .qtip #filter {
   display: block;
 }
@@ -240,6 +258,10 @@ body.calc #loading {
   margin-left: 0.5em;
 }
 
+.filterset input {
+  margin-left: 0.25em;
+}
+
 .filterset-section-title {
   font-size: 1.25em;
   margin-left: 0.2em;
@@ -254,10 +276,20 @@ body.calc #loading {
   padding-left: 0.2em;
 }
 
-.filterset input {
-  margin-left: 0.25em;
-}
-
 .filterset-title {
   margin: 0.25em 0 0.25em 0.25em;
+}
+
+.dropdown-title {
+  font-size: 1.25em;
+  margin-left: 0.2em;
+  margin-top: 0.5em;
+  margin-bottom: 0.25em;
+}
+
+* + .dropdown-title {
+  border-top: 1px solid rgba(128, 128, 128, 0.15);
+  padding-top: 0.5em;
+  margin-left: 0;
+  padding-left: 0.2em;
 }
