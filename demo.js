@@ -44,11 +44,11 @@ $(function () {
 
 
   var infoTemplate = Handlebars.compile([
-    '<p class="ac-name">{{name}}</p>',
+    '<p class="ac-name">Full name: {{fullname}}</p>',
     '<p class="ac-node-type"><i class="fa fa-info-circle"></i> {{NodeTypeFormatted}} {{#if Type}}({{Type}}){{/if}}</p>',
     '{{#if Milk}}<p class="ac-milk"><i class="fa fa-angle-double-right"></i> {{Milk}}</p>{{/if}}',
     '{{#if Country}}<p class="ac-country"><i class="fa fa-map-marker"></i> {{Country}}</p>{{/if}}',
-    '<p class="ac-more"><i class="fa fa-external-link"></i> <a target="_blank" href="https://duckduckgo.com/?q={{name}}">More information</a></p>'
+    '<p class="ac-more"><i class="fa fa-external-link"></i> <a target="_blank" href="https://isnad.io/rawi/${id}">More information</a></p>'
   ].join(''));
 
   // when both graph export json and style loaded, init cy
