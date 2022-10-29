@@ -44,7 +44,7 @@ $(function () {
 
 
   var infoTemplate = Handlebars.compile([
-    '<p class="ac-name">Full name: {{fullname}}</p>',
+    '<p class="ac-name">{{fullname}}</p>',
     '<p class="ac-node-type"><i class="fa fa-info-circle"></i> {{NodeTypeFormatted}} {{#if Type}}({{Type}}){{/if}}</p>',
     '{{#if Milk}}<p class="ac-milk"><i class="fa fa-angle-double-right"></i> {{Milk}}</p>{{/if}}',
     '{{#if Country}}<p class="ac-country"><i class="fa fa-map-marker"></i> {{Country}}</p>{{/if}}',
