@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset=utf-8 />
-<meta name="viewport" content="width=device-width, user-scalable=no" />
 
-<title>Muhaddithat</title>
+<head>
+  <meta charset=utf-8 />
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+
+  <title>Muhaddithat</title>
   <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
   <link href="style.css" rel="stylesheet">
   <link rel="shortcut icon" type="image/png" href="icon.png">
 </head>
+
 <body>
   <div id="cy"></div>
   <div id="loading">
@@ -46,17 +48,20 @@
 
   <button id="about" class="btn btn-default"><i class="fa fa-info"></i></button>
 
-<button id="graph-dropdown" class="btn btn-default"><i class="fa-solid fa-users"></i></button>
+  <button id="graph-dropdown" class="btn btn-default"><i class="fa-solid fa-users"></i></button>
 
   <div id="about-content">
-    <p>This app was made using <a target="_blank" href="http://js.cytoscape.org">Cytoscape.js <i class="fa fa-external-link"></i></a>.</p>
+    <p>This app was made using <a target="_blank" href="http://js.cytoscape.org">Cytoscape.js <i
+          class="fa fa-external-link"></i></a>.</p>
 
-    <p><a target="_blank" href="https://www.amazon.ca/Cheese-Connoisseurs-Guide-Worlds-Best/dp/1400050340/ref=sr_1_3?s=books&ie=UTF8&qid=1416109370&sr=1-3">Data reference <i class="fa fa-external-link"></i></a></p>
+    <p><a target="_blank"
+        href="https://www.amazon.ca/Cheese-Connoisseurs-Guide-Worlds-Best/dp/1400050340/ref=sr_1_3?s=books&ie=UTF8&qid=1416109370&sr=1-3">Data
+        reference <i class="fa fa-external-link"></i></a></p>
   </div>
 
   <div id="filters">
 
-<!-- aea   <div class="filterset-section-title">Cheese</div>
+    <!-- aea   <div class="filterset-section-title">Cheese</div>
 
     <div class="filtersets">
       <div class="filterset">
@@ -85,28 +90,28 @@
 
     <div class="filtersets">
       <div class="filterset">
-      <!--  <input id="white" type="checkbox" checked></input><label for="white">White wine</label><br />
+        <!--  <input id="white" type="checkbox" checked></input><label for="white">White wine</label><br />
         <input id="red" type="checkbox" checked></input><label for="red">Red wine</label><br />
         <input id="cider" type="checkbox" checked></input><label for="cider">Cider</label> -->
         <input id="male" type="checkbox" checked></input><label for="male">Male</label><br />
-        <input id="female" type="checkbox" checked></input><label for="female">Female</label> 
+        <input id="female" type="checkbox" checked></input><label for="female">Female</label>
       </div>
     </div>
 
   </div>
 
- <!-- commented 10/28 
+  <!-- commented 10/28 -->
   <div id="dropdown-content">
-  <div class='dropdown-title'>Choose a graph to view</div>
-  <div class='dropdown'>
-    <form>
-      <input type="radio" id="aishah" name="selected_graph" value="aishah_53"><label for="aishah">aishah</label><br>
-      <input type="radio" id="various" name="selected_graph" value="various"><label for="various">various</label><br>
-    </form>
-    </div> 
+    <div class='dropdown-title'>Choose a graph to view</div>
+    <div class='dropdown'>
+      <form>
+        <input type="radio" id="aishah" name="selected_graph" value="aishah_53"><label for="aishah">aishah</label><br>
+        <input type="radio" id="various" name="selected_graph" value="various"><label for="various">various</label><br>
+      </form>
+    </div>
   </div>
--->
-<!--this whole div is from 10/28-->
+
+  <!--this whole div is from 10/28
 <div id="dropdown-content">
   <div class='dropdown-title'>Choose a graph to view</div>
   <div class='dropdown'>
@@ -120,13 +125,15 @@
     </select>
   </div>
 </div>
-
+-->
 
   <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
     ga('create', 'UA-155159-12', 'auto');
     ga('send', 'pageview');
@@ -134,4 +141,5 @@
   </script>
 
 </body>
+
 </html>

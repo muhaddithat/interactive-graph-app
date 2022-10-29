@@ -3,9 +3,9 @@ This demo visualises wine and cheese pairings.
 */
 var various = null;
 var aishah = null;
-var switcher = true; 
+var switcher = true;
 
-$(function(){
+$(function () {
 
   var layoutPadding = 50;
   var aniDur = 500;
@@ -17,24 +17,24 @@ $(function(){
 
   // get exported json from cytoscape desktop via ajax
   var graphP = $.ajax({ // ayah: graphP would be the default graph, the initial one passed into the initCy function that users see when they first get to the page
-   // url: 'https://cdn.rawgit.com/maxkfranz/3d4d3c8eb808bd95bae7/raw', // wine-and-cheese.json
-     url: 'data/aishah_53.json',
+    // url: 'https://cdn.rawgit.com/maxkfranz/3d4d3c8eb808bd95bae7/raw', // wine-and-cheese.json
+    url: 'data/aishah_53.json',
     type: 'GET',
     dataType: 'json'
   });
 
 /*  ayah testingvar */ variousgraph = $.ajax({ //ayah testing
-     url: 'data/various.json',
-     type: 'GET',
-     dataType: 'json'
-   });
+    url: 'data/various.json',
+    type: 'GET',
+    dataType: 'json'
+  });
 
-   aishahgraph = $.ajax({ //ayah testing
+  aishahgraph = $.ajax({ //ayah testing
     url: 'data/aishah_53.json',
     type: 'GET',
     dataType: 'json'
   });
- 
+
   // also get style via ajax
   var styleP = $.ajax({
     url: './style.cycss', // wine-and-cheese-style.cycss
@@ -52,7 +52,7 @@ $(function(){
   ].join(''));
 
   // when both graph export json and style loaded, init cy
-  Promise.all([ graphP, styleP ]).then(initCy);
+  Promise.all([graphP, styleP]).then(initCy);
 
 
 
@@ -61,15 +61,15 @@ $(function(){
   var lastHighlighted = null;
   var lastUnhighlighted = null;
 
-  function getFadePromise( ele, opacity ){
+  function getFadePromise(ele, opacity) {
     return ele.animation({
       style: { 'opacity': opacity },
       duration: aniDur
     }).play().promise();
   };
 
-  var restoreElesPositions = function( nhood ){
-    return Promise.all( nhood.map(function( ele ){
+  var restoreElesPositions = function (nhood) {
+    return Promise.all(nhood.map(function (ele) {
       var p = ele.data('orgPos');
 
       return ele.animation({
@@ -77,17 +77,17 @@ $(function(){
         duration: aniDur,
         easing: easing
       }).play().promise();
-    }) );
+    }));
   };
 
-  function highlight( node ){
+  function highlight(node) {
     var oldNhood = lastHighlighted;
 
     var nhood = lastHighlighted = node.closedNeighborhood();
-    var others = lastUnhighlighted = cy.elements().not( nhood );
+    var others = lastUnhighlighted = cy.elements().not(nhood);
 
-    var reset = function(){
-      cy.batch(function(){
+    var reset = function () {
+      cy.batch(function () {
         others.addClass('hidden');
         nhood.removeClass('hidden');
 
@@ -95,25 +95,25 @@ $(function(){
 
         nhood.addClass('highlighted');
 
-        others.nodes().forEach(function(n){
+        others.nodes().forEach(function (n) {
           var p = n.data('orgPos');
 
           n.position({ x: p.x, y: p.y });
         });
       });
 
-      return Promise.resolve().then(function(){
-        if( isDirty() ){
+      return Promise.resolve().then(function () {
+        if (isDirty()) {
           return fit();
         } else {
           return Promise.resolve();
         };
-      }).then(function(){
-        return Promise.delay( aniDur );
+      }).then(function () {
+        return Promise.delay(aniDur);
       });
     };
 
-    var runLayout = function(){
+    var runLayout = function () {
       var p = node.data('orgPos');
 
       var l = nhood.filter(':visible').makeLayout({
@@ -129,14 +129,14 @@ $(function(){
           y2: p.y + 1
         },
         avoidOverlap: true,
-        concentric: function( ele ){
-          if( ele.same( node ) ){
+        concentric: function (ele) {
+          if (ele.same(node)) {
             return 2;
           } else {
             return 1;
           }
         },
-        levelWidth: function(){ return 1; },
+        levelWidth: function () { return 1; },
         padding: layoutPadding
       });
 
@@ -147,7 +147,7 @@ $(function(){
       return promise;
     };
 
-    var fit = function(){
+    var fit = function () {
       return cy.animation({
         fit: {
           eles: nhood.filter(':visible'),
@@ -158,29 +158,29 @@ $(function(){
       }).play().promise();
     };
 
-    var showOthersFaded = function(){
-      return Promise.delay( 250 ).then(function(){
-        cy.batch(function(){
+    var showOthersFaded = function () {
+      return Promise.delay(250).then(function () {
+        cy.batch(function () {
           others.removeClass('hidden').addClass('faded');
         });
       });
     };
 
     return Promise.resolve()
-      .then( reset )
-      .then( runLayout )
-      .then( fit )
-      .then( showOthersFaded )
-    ;
+      .then(reset)
+      .then(runLayout)
+      .then(fit)
+      .then(showOthersFaded)
+      ;
 
   }
 
-  function isDirty(){
+  function isDirty() {
     return lastHighlighted != null;
   }
 
-  function clear( opts ){
-    if( !isDirty() ){ return Promise.resolve(); }
+  function clear(opts) {
+    if (!isDirty()) { return Promise.resolve(); }
 
     opts = $.extend({
 
@@ -194,80 +194,80 @@ $(function(){
 
     lastHighlighted = lastUnhighlighted = null;
 
-    var hideOthers = function(){
-      return Promise.delay( 125 ).then(function(){
+    var hideOthers = function () {
+      return Promise.delay(125).then(function () {
         others.addClass('hidden');
 
-        return Promise.delay( 125 );
+        return Promise.delay(125);
       });
     };
 
-    var showOthers = function(){
-      cy.batch(function(){
+    var showOthers = function () {
+      cy.batch(function () {
         allEles.removeClass('hidden').removeClass('faded');
       });
 
-      return Promise.delay( aniDur );
+      return Promise.delay(aniDur);
     };
 
-    var restorePositions = function(){
-      cy.batch(function(){
-        others.nodes().forEach(function( n ){
+    var restorePositions = function () {
+      cy.batch(function () {
+        others.nodes().forEach(function (n) {
           var p = n.data('orgPos');
 
           n.position({ x: p.x, y: p.y });
         });
       });
 
-      return restoreElesPositions( nhood.nodes() );
+      return restoreElesPositions(nhood.nodes());
     };
 
-    var resetHighlight = function(){
+    var resetHighlight = function () {
       nhood.removeClass('highlighted');
     };
 
     return Promise.resolve()
-      .then( resetHighlight )
-      .then( hideOthers )
-      .then( restorePositions )
-      .then( showOthers )
-    ;
+      .then(resetHighlight)
+      .then(hideOthers)
+      .then(restorePositions)
+      .then(showOthers)
+      ;
   }
 
-  function showNodeInfo( node ){
-    $('#info').html( infoTemplate( node.data() ) ).show();
+  function showNodeInfo(node) {
+    $('#info').html(infoTemplate(node.data())).show();
   }
 
-  function hideNodeInfo(){
+  function hideNodeInfo() {
     $('#info').hide();
   }
 
-  function initCy( then ){
+  function initCy(then) {
     var loading = document.getElementById('loading');
-    
+
     // ayah
     // initialize variables with graph data if they haven't yet been initialized
     // this allows various to still store the graph in the dropdown function
-    if ( various == null ) {
-          various = variousgraph['responseJSON']; 
-        } 
-    if ( aishah == null ) {
-      aishah = aishahgraph['responseJSON']; 
-    } 
+    if (various == null) {
+      various = variousgraph['responseJSON'];
+    }
+    if (aishah == null) {
+      aishah = aishahgraph['responseJSON'];
+    }
 
-   var expJson = then[0];
-   var styleJson = then[1];
-   var elements = expJson.elements;
+    var expJson = then[0];
+    var styleJson = then[1];
+    var elements = expJson.elements;
 
 
-    elements.nodes.forEach(function(n){
+    elements.nodes.forEach(function (n) {
       var data = n.data;
 
       data.NodeTypeFormatted = data.NodeType;
 
-      if( data.NodeTypeFormatted === 'RedWine' ){
+      if (data.NodeTypeFormatted === 'RedWine') {
         data.NodeTypeFormatted = 'Red Wine';
-      } else if( data.NodeTypeFormatted === 'WhiteWine' ){
+      } else if (data.NodeTypeFormatted === 'WhiteWine') {
         data.NodeTypeFormatted = 'White Wine';
       }
 
@@ -286,7 +286,7 @@ $(function(){
       container: document.getElementById('cy'),
       layout: { name: 'preset', padding: layoutPadding },
       style: styleJson,
-      elements: elements, 
+      elements: elements,
       motionBlur: true,
       selectionType: 'single',
       boxSelectionEnabled: false,
@@ -298,7 +298,7 @@ $(function(){
     allNodes = cy.nodes();
     allEles = cy.elements();
 
-    cy.on('free', 'node', function( e ){
+    cy.on('free', 'node', function (e) {
       var n = e.cyTarget;
       var p = n.position();
 
@@ -308,25 +308,25 @@ $(function(){
       });
     });
 
-    cy.on('tap', function(){
+    cy.on('tap', function () {
       $('#search').blur();
     });
 
-    cy.on('select unselect', 'node', _.debounce( function(e){
+    cy.on('select unselect', 'node', _.debounce(function (e) {
       var node = cy.$('node:selected');
 
-      if( node.nonempty() ){
-        showNodeInfo( node );
+      if (node.nonempty()) {
+        showNodeInfo(node);
 
-        Promise.resolve().then(function(){
-          return highlight( node );
+        Promise.resolve().then(function () {
+          return highlight(node);
         });
       } else {
         hideNodeInfo();
         clear();
       }
 
-    }, 100 ) );
+    }, 100));
 
   }
 
@@ -336,76 +336,76 @@ $(function(){
     minLength: 2,
     highlight: true,
   },
-  {
-    name: 'search-dataset',
-    source: function( query, cb ){
-      function matches( str, q ){
-        str = (str || '').toLowerCase();
-        q = (q || '').toLowerCase();
+    {
+      name: 'search-dataset',
+      source: function (query, cb) {
+        function matches(str, q) {
+          str = (str || '').toLowerCase();
+          q = (q || '').toLowerCase();
 
-        return str.match( q );
-      }
+          return str.match(q);
+        }
 
-      //var fields = ['name', 'NodeType', 'Country', 'Type', 'Milk'];
-      var fields = ['fullname', 'displayname', 'searchname']; //aea
+        //var fields = ['name', 'NodeType', 'Country', 'Type', 'Milk'];
+        var fields = ['fullname', 'displayname', 'searchname']; //aea
 
-      function anyFieldMatches( n ){
-        for( var i = 0; i < fields.length; i++ ){
-          var f = fields[i];
+        function anyFieldMatches(n) {
+          for (var i = 0; i < fields.length; i++) {
+            var f = fields[i];
 
-          if( matches( n.data(f), query ) ){
-            return true;
+            if (matches(n.data(f), query)) {
+              return true;
+            }
           }
+
+          return false;
         }
 
-        return false;
-      }
+        function getData(n) {
+          var data = n.data();
 
-      function getData(n){
-        var data = n.data();
-
-        return data;
-      }
-
-      function sortByName(n1, n2){
-        if( n1.data('name') < n2.data('name') ){
-          return -1;
-        } else if( n1.data('name') > n2.data('name') ){
-          return 1;
+          return data;
         }
 
-        return 0;
+        function sortByName(n1, n2) {
+          if (n1.data('name') < n2.data('name')) {
+            return -1;
+          } else if (n1.data('name') > n2.data('name')) {
+            return 1;
+          }
+
+          return 0;
+        }
+
+        var res = allNodes.stdFilter(anyFieldMatches).sort(sortByName).map(getData);
+
+        cb(res);
+      },
+      templates: {
+        suggestion: infoTemplate
       }
+    }).on('typeahead:selected', function (e, entry, dataset) {
+      var n = cy.getElementById(entry.id);
 
-      var res = allNodes.stdFilter( anyFieldMatches ).sort( sortByName ).map( getData );
+      cy.batch(function () {
+        allNodes.unselect();
 
-      cb( res );
-    },
-    templates: {
-      suggestion: infoTemplate
-    }
-  }).on('typeahead:selected', function(e, entry, dataset){
-    var n = cy.getElementById(entry.id);
+        n.select();
+      });
 
-    cy.batch(function(){
-      allNodes.unselect();
+      showNodeInfo(n);
+    }).on('keydown keypress keyup change', _.debounce(function (e) {
+      var thisSearch = $('#search').val();
 
-      n.select();
-    });
+      if (thisSearch !== lastSearch) {
+        $('.tt-dropdown-menu').scrollTop(0);
 
-    showNodeInfo( n );
-  }).on('keydown keypress keyup change', _.debounce(function(e){
-    var thisSearch = $('#search').val();
+        lastSearch = thisSearch;
+      }
+    }, 50));
 
-    if( thisSearch !== lastSearch ){
-      $('.tt-dropdown-menu').scrollTop(0);
-
-      lastSearch = thisSearch;
-    }
-  }, 50));
-
-  $('#reset').on('click', function(){
-    if( isDirty() ){
+  $('#reset').on('click', function () {
+    if (isDirty()) {
       clear();
     } else {
       allNodes.unselect();
@@ -425,97 +425,97 @@ $(function(){
     }
   });
 
-  $('#filters').on('click', 'input', function(){
+  $('#filters').on('click', 'input', function () {
     console.log('filters on click');
-  /* ayah commented var soft = $('#soft').is(':checked');
-    var semiSoft = $('#semi-soft').is(':checked');
-    var na = $('#na').is(':checked');
-    var semiHard = $('#semi-hard').is(':checked');
-    var hard = $('#hard').is(':checked');
-
-    var red = $('#red').is(':checked');
-    var white = $('#white').is(':checked');
-    var cider = $('#cider').is(':checked');
-
-    var england = $('#chs-en').is(':checked');
-    var france = $('#chs-fr').is(':checked');
-    var italy = $('#chs-it').is(':checked');
-    var usa = $('#chs-usa').is(':checked');
-    var spain = $('#chs-es').is(':checked');
-    var switzerland = $('#chs-ch').is(':checked');
-    var euro = $('#chs-euro').is(':checked');
-    var newWorld = $('#chs-nworld').is(':checked');
-    var naCountry = $('#chs-na').is(':checked');
-*/
+    /* ayah commented var soft = $('#soft').is(':checked');
+      var semiSoft = $('#semi-soft').is(':checked');
+      var na = $('#na').is(':checked');
+      var semiHard = $('#semi-hard').is(':checked');
+      var hard = $('#hard').is(':checked');
+  
+      var red = $('#red').is(':checked');
+      var white = $('#white').is(':checked');
+      var cider = $('#cider').is(':checked');
+  
+      var england = $('#chs-en').is(':checked');
+      var france = $('#chs-fr').is(':checked');
+      var italy = $('#chs-it').is(':checked');
+      var usa = $('#chs-usa').is(':checked');
+      var spain = $('#chs-es').is(':checked');
+      var switzerland = $('#chs-ch').is(':checked');
+      var euro = $('#chs-euro').is(':checked');
+      var newWorld = $('#chs-nworld').is(':checked');
+      var naCountry = $('#chs-na').is(':checked');
+  */
     var male = $('#male').is(':checked');
     var female = $('#female').is(':checked');
     console.log('cy in filters function');
     console.log(cy);
-    cy.batch(function(){
+    cy.batch(function () {
 
-      allNodes.forEach(function( n ){
+      allNodes.forEach(function (n) {
 
-//        var type = n.data('NodeType'); ayah
+        //        var type = n.data('NodeType'); ayah
 
-        
+
         //ayah:
         var gender = n.data('gender');
 
         // not ayah:
         n.removeClass('filtered');
 
-        var filter = function(){
+        var filter = function () {
           n.addClass('filtered');
         };
 
         // ayah:
-        if( gender === 'male' ){
-          if( !male ){ filter(); }
-        } else if( gender === 'female'){
-          if( !female ){ filter(); }
+        if (gender === 'male') {
+          if (!male) { filter(); }
+        } else if (gender === 'female') {
+          if (!female) { filter(); }
         }
-/*
-        if( type === 'Cheese' || type === 'CheeseType' ){
-
-          var cType = n.data('Type');
-          var cty = n.data('Country');
-
-          if(
-            // moisture
-               (cType === 'Soft' && !soft)
-            || (cType === 'Semi-soft' && !semiSoft)
-            || (cType === undefined && !na)
-            || (cType === 'Semi-hard' && !semiHard)
-            || (cType === 'Hard' && !hard)
-
-            // country
-            || (cty === 'England' && !england)
-            || (cty === 'France' && !france)
-            || (cty === 'Italy' && !italy)
-            || (cty === 'US' && !usa)
-            || (cty === 'Spain' && !spain)
-            || (cty === 'Switzerland' && !switzerland)
-            || ( (cty === 'Holland' || cty === 'Ireland' || cty === 'Portugal' || cty === 'Scotland' || cty === 'Wales') && !euro )
-            || ( (cty === 'Canada' || cty === 'Australia') && !newWorld )
-            || (cty === undefined && !naCountry)
-          ){
-            filter();
-          }
-
-        } else if( type === 'RedWine' ){
-
-          if( !red ){ filter(); }
-
-        } else if( type === 'WhiteWine' ){
-
-          if( !white ){ filter(); }
-
-        } else if( type === 'Cider' ){
-
-          if( !cider ){ filter(); }
-
-        }
-*/
+        /*
+                if( type === 'Cheese' || type === 'CheeseType' ){
+        
+                  var cType = n.data('Type');
+                  var cty = n.data('Country');
+        
+                  if(
+                    // moisture
+                       (cType === 'Soft' && !soft)
+                    || (cType === 'Semi-soft' && !semiSoft)
+                    || (cType === undefined && !na)
+                    || (cType === 'Semi-hard' && !semiHard)
+                    || (cType === 'Hard' && !hard)
+        
+                    // country
+                    || (cty === 'England' && !england)
+                    || (cty === 'France' && !france)
+                    || (cty === 'Italy' && !italy)
+                    || (cty === 'US' && !usa)
+                    || (cty === 'Spain' && !spain)
+                    || (cty === 'Switzerland' && !switzerland)
+                    || ( (cty === 'Holland' || cty === 'Ireland' || cty === 'Portugal' || cty === 'Scotland' || cty === 'Wales') && !euro )
+                    || ( (cty === 'Canada' || cty === 'Australia') && !newWorld )
+                    || (cty === undefined && !naCountry)
+                  ){
+                    filter();
+                  }
+        
+                } else if( type === 'RedWine' ){
+        
+                  if( !red ){ filter(); }
+        
+                } else if( type === 'WhiteWine' ){
+        
+                  if( !white ){ filter(); }
+        
+                } else if( type === 'Cider' ){
+        
+                  if( !cider ){ filter(); }
+        
+                }
+        */
       });
 
     });
@@ -552,31 +552,31 @@ $(function(){
   });
 
   // ayah
-  $('#dropdown-content').on('click', 'input', function() {
+  $('#dropdown-content').on('click', 'input', function () {
     var various_selected = $('#various').is(':selected');
     var aishah_selected = $('#aishah').is(':selected');
-  /*  if( various_selected ){ // ok this is if statement is not working
-      console.log("if various = true");
-      initCy([ testing, styleP ]);
-    }*/
+    /*  if( various_selected ){ // ok this is if statement is not working
+        console.log("if various = true");
+        initCy([ testing, styleP ]);
+      }*/
 
-    
-  /*  if ( switcher ) {
+
+    if (switcher) {
       switcher = false;
       cy.json({ elements: various.elements });
-     // initCy([ various, styleP ]);
-    } else if ( !switcher ) {
+      // initCy([ various, styleP ]);
+    } else if (!switcher) {
       switcher = true;
       cy.json({ elements: aishah.elements });
-    //  initCy([ aishah, styleP ]);
-    } */
-   // const select = document.getElementById('narrator-select');
+      //  initCy([ aishah, styleP ]);
+    }
+    // 10/28/22:
     var narrator = $('#narrator-select');
     if (narrator.val() === '"aishah53"') {
-  console.log('aishah selected');
-} else {
-  console.log('aishah not selected');
-}
+      console.log('aishah selected');
+    } else {
+      console.log('aishah not selected');
+    }
   });
   // ayah
   $('#graph-dropdown').qtip({
@@ -607,7 +607,7 @@ $(function(){
 
     content: $('#dropdown-content')
   });
-// not ayah
+  // not ayah
   $('#about').qtip({
     position: {
       my: 'bottom center',
