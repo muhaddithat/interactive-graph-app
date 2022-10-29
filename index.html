@@ -46,7 +46,7 @@
 
   <button id="about" class="btn btn-default"><i class="fa fa-info"></i></button>
 
-  <button id="graph-dropdown" class="btn btn-default"><i class="fa-solid fa-users"></i></button>
+<button id="graph-dropdown" class="btn btn-default"><i class="fa-solid fa-users"></i></button>
 
   <div id="about-content">
     <p>This app was made using <a target="_blank" href="http://js.cytoscape.org">Cytoscape.js <i class="fa fa-external-link"></i></a>.</p>
@@ -95,36 +95,29 @@
 
   </div>
 
-  <div id="dropdown-content">
+ <!-- commented 10/28 <div id="dropdown-content">
   <div class='dropdown-title'>Choose a graph to view</div>
   <div class='dropdown'>
     <form>
       <input type="radio" id="aishah" name="selected_graph" value="aishah_53"><label for="aishah">aishah</label><br>
       <input type="radio" id="various" name="selected_graph" value="various"><label for="various">various</label><br>
     </form>
-<!--       <select id="sample" class="dropbtn" >
-      <div id="myDropdown" class="dropdown-content">
-      <option id="various">Various Narrators</option>
-      <option id="aishah" selected>ʿAʾishah bint Abi Bakr</option>
-      <option id="hafsah">Ḥafṣah bint ʿUmar</option>
-      <option id="sample4">Um Salamah</option>
-      <option id="sample4">Ramlah bint Abi Sufyān</option>
-      <option id="sample5">Asmāʾ bint ʿUmays</option>
-    </div>         
-    </select>
-    -->
-   <!-- <select id="sample" class="dropbtn" style="width:auto;" onchange="location = this.value;">
-        <div id="myDropdown" class="dropdown-content">
-        <option value="index.html" selected="">Various Narrators</option>
-        <option value="aishah53.html">ʿAʾishah bint Abi Bakr</option>
+    </div> 
+  </div>
+-->
+<div id="dropdown-content"> <!--this whole div is from 10/28-->
+  <div class='dropdown-title'>Choose a graph to view</div>
+  <div class='dropdown'>
+ <select id="narrator-select" class="dropbtn">
+        
+        <option value="index.html">Various Narrators</option>
+        <option value="aishah53">ʿAʾishah bint Abi Bakr</option>
         <option value="sample3">Ḥafṣah bint ʿUmar</option>
         <option value="sample4">Um Salamah</option>
         <option value="sample4">Ramlah bint Abi Sufyān</option>
         <option value="sample5">Asmāʾ bint ʿUmays</option>
       </div>         
       </select> 
-
--->
     </div> 
   </div>
 

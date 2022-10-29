@@ -560,8 +560,8 @@ $(function(){
       initCy([ testing, styleP ]);
     }*/
 
-    console.log("about to initCY in dropdown function");
-    if ( switcher ) {
+    
+  /*  if ( switcher ) {
       switcher = false;
       cy.json({ elements: various.elements });
      // initCy([ various, styleP ]);
@@ -569,7 +569,14 @@ $(function(){
       switcher = true;
       cy.json({ elements: aishah.elements });
     //  initCy([ aishah, styleP ]);
-    }
+    } */
+   // const select = document.getElementById('narrator-select');
+    var narrator = $('#narrator-select');
+    if (narrator.val() === '"aishah53"') {
+  console.log('aishah selected');
+} else {
+  console.log('aishah not selected');
+}
   });
   // ayah
   $('#graph-dropdown').qtip({

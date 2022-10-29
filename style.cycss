@@ -43,13 +43,15 @@ edge[interaction = "cc"] {
 }
 
 node[gender = "female"] {
-	text-outline-color: #cc99ff;
-	background-color: #cc99ff;
+	text-outline-color: #9CBD8B;
+	background-color: #9CBD8B;
+	color: #000;
 }
 
 node[gender = "male"] {
-	text-outline-color: #99cc00;
-	background-color: #99cc00;
+	text-outline-color: #E2CDAB;
+	background-color: #E2CDAB;
+	color: #000;
 }
 
 node.highlighted {
