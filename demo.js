@@ -43,13 +43,14 @@ $(function () {
   });
 
 
-  var infoTemplate = Handlebars.compile([
-    '<p class="ac-name">{{fullname}}</p>',
-    '<p class="ac-node-type"><i class="fa fa-info-circle"></i> {{NodeTypeFormatted}} {{#if Type}}({{Type}}){{/if}}</p>',
-    '{{#if Milk}}<p class="ac-milk"><i class="fa fa-angle-double-right"></i> {{Milk}}</p>{{/if}}',
-    '{{#if Country}}<p class="ac-country"><i class="fa fa-map-marker"></i> {{Country}}</p>{{/if}}',
-    '<p class="ac-more"><i class="fa fa-external-link"></i> <a target="_blank" href="https://isnad.io/rawi/${id}">More information</a></p>'
-  ].join(''));
+  var infoTemplate = Handlebars.compile([ //10/30/2022
+    h('div', { class: 'node-info-fullname'}, 'Full name: ' + fullname),
+    h('div', { class: 'node-info-info'}, info),
+    h('div', { class: 'node-info-gender'}, 'Gender: ' + gender),
+    h('div', { class: 'node-info-generation'}, 'Generation: ' + generation),
+    h('div', { class: 'node-info-more' }, [
+      h('a', { target: '_blank', href: `https://isnad.io/rawi/${id}` }, 'More information')
+    ])].join(''));
 
   // when both graph export json and style loaded, init cy
   Promise.all([graphP, styleP]).then(initCy);
