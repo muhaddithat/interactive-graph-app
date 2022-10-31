@@ -43,14 +43,14 @@ $(function () {
   });
 
 
-  var infoTemplate = Handlebars.compile([ //10/30/2022
+  var infoTemplate = $('#handlebars-demo').html(); /*Handlebars.compile([ //10/30/2022
     h('div', { class: 'node-info-fullname'}, 'Full name: ' + fullname),
     h('div', { class: 'node-info-info'}, info),
     h('div', { class: 'node-info-gender'}, 'Gender: ' + gender),
     h('div', { class: 'node-info-generation'}, 'Generation: ' + generation),
     h('div', { class: 'node-info-more' }, [
       h('a', { target: '_blank', href: `https://isnad.io/rawi/${id}` }, 'More information')
-    ])].join(''));
+    ])].join(''));*/
 
   // when both graph export json and style loaded, init cy
   Promise.all([graphP, styleP]).then(initCy);
