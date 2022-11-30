@@ -245,17 +245,38 @@ $(function () {
     // this allows various to still store the graph in the dropdown function
     if (various == null) {
       various = variousgraph['responseJSON'];
+      elementsetup(various.elements); //11/30
     }
     if (aishah == null) {
       aishah = aishahgraph['responseJSON'];
+      elementsetup(aishah.elements); //11/30
     }
 
     var expJson = then[0];
     var styleJson = then[1];
     var elements = expJson.elements;
+    elementsetup(elements);//11/30
 
-
-    elements.nodes.forEach(function (n) {
+    //11/30
+    function elementsetup(e) {
+      e.nodes.forEach(function (n) {
+      var data = n.data;
+  
+        data.NodeTypeFormatted = data.NodeType;
+  
+        if (data.NodeTypeFormatted === 'RedWine') {
+          data.NodeTypeFormatted = 'Red Wine';
+        } else if (data.NodeTypeFormatted === 'WhiteWine') {
+          data.NodeTypeFormatted = 'White Wine';
+        }
+  
+        n.data.orgPos = {
+          x: n.position.x,
+          y: n.position.y
+        };
+      });
+    }
+ /* 11/30   elements.nodes.forEach(function (n) {
       var data = n.data;
 
       data.NodeTypeFormatted = data.NodeType;
@@ -270,7 +291,7 @@ $(function () {
         x: n.position.x,
         y: n.position.y
       };
-    });
+    }); */
 
 
     loading.classList.add('loaded');
@@ -642,9 +663,9 @@ function changeGraph() {
   var selectednarrator = nargraphs.options[nargraphs.selectedIndex].value;
   if (selectednarrator == "aishah_53") {
     cy.json({ elements: aishah.elements });
-    reset;
+    reset();
   } else if (selectednarrator == "various") {
     cy.json({ elements: various.elements });
-    reset;
+    reset();
   }
   }
