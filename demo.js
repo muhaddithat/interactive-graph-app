@@ -243,6 +243,25 @@ $(function () {
     // ayah
     // initialize variables with graph data if they haven't yet been initialized
     // this allows various to still store the graph in the dropdown function
+        //11/30
+        function elementsetup(e) {
+          e.nodes.forEach(function (n) {
+          var data = n.data;
+      
+            data.NodeTypeFormatted = data.NodeType;
+      
+            if (data.NodeTypeFormatted === 'RedWine') {
+              data.NodeTypeFormatted = 'Red Wine';
+            } else if (data.NodeTypeFormatted === 'WhiteWine') {
+              data.NodeTypeFormatted = 'White Wine';
+            }
+      
+            n.data.orgPos = {
+              x: n.position.x,
+              y: n.position.y
+            };
+          });
+        }
     if (various == null) {
       various = variousgraph['responseJSON'];
       elementsetup(various.elements); //11/30
@@ -255,28 +274,9 @@ $(function () {
     var expJson = then[0];
     var styleJson = then[1];
     var elements = expJson.elements;
-    elementsetup(elements);//11/30
 
-    //11/30
-    function elementsetup(e) {
-      e.nodes.forEach(function (n) {
-      var data = n.data;
-  
-        data.NodeTypeFormatted = data.NodeType;
-  
-        if (data.NodeTypeFormatted === 'RedWine') {
-          data.NodeTypeFormatted = 'Red Wine';
-        } else if (data.NodeTypeFormatted === 'WhiteWine') {
-          data.NodeTypeFormatted = 'White Wine';
-        }
-  
-        n.data.orgPos = {
-          x: n.position.x,
-          y: n.position.y
-        };
-      });
-    }
- /* 11/30   elements.nodes.forEach(function (n) {
+
+  elements.nodes.forEach(function (n) {
       var data = n.data;
 
       data.NodeTypeFormatted = data.NodeType;
@@ -291,7 +291,7 @@ $(function () {
         x: n.position.x,
         y: n.position.y
       };
-    }); */
+    }); 
 
 
     loading.classList.add('loaded');
