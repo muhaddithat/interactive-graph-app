@@ -5,6 +5,7 @@ var various = null;
 var aishah = null;
 var switcher = true;
 
+
 $(function () {
 
   var layoutPadding = 50;
@@ -575,15 +576,7 @@ $(function () {
     }
   });
   */
-  function changeGraph() {
-    var nargraphs = document.getElementById("dropdown-list");
-    var selectednarrator = nargraphs.options[nargraphs.selectedIndex].value;
-    if (selectednarrator == "aishah_53") {
-      cy.json({ elements: aishah.elements });
-    } else if (selectednarrator == "various") {
-      cy.json({ elements: various.elements });
-    }
-    }
+ 
   // ayah
   $('#graph-dropdown').qtip({
     position: {
@@ -643,3 +636,13 @@ $(function () {
     content: $('#about-content')
   });
 });
+
+function changeGraph() {
+  var nargraphs = document.getElementById("dropdown-list");
+  var selectednarrator = nargraphs.options[nargraphs.selectedIndex].value;
+  if (selectednarrator == "aishah_53") {
+    cy.json({ elements: aishah.elements });
+  } else if (selectednarrator == "various") {
+    cy.json({ elements: various.elements });
+  }
+  }
