@@ -252,19 +252,6 @@ $(function () {
               y: n.position.y
             };
           });
-//pt2          loading.classList.add('loaded');
-      
-//pt2          allNodes = cy.nodes();
- //pt2         allEles = cy.elements();
-      
-            var n = el.cyTarget;
-            var p = n.position();
-      
-            n.data('orgPos', {
-              x: p.x,
-              y: p.y
-            });
-      
         } 
     if (various == null) {
       various = variousgraph['responseJSON'];
