@@ -244,14 +244,59 @@ $(function () {
     // initialize variables with graph data if they haven't yet been initialized
     // this allows various to still store the graph in the dropdown function
         //11/30
-       function elementsetup(e) {
-          e.nodes.forEach(function (n) {
+       function elementsetup(el) {
+          el.nodes.forEach(function (n) {
 
             n.data.orgPos = {
               x: n.position.x,
               y: n.position.y
             };
           });
+          loading.classList.add('loaded');
+
+          cy = window.cy = cytoscape({
+            container: document.getElementById('cy'),
+            layout: { name: 'preset', padding: layoutPadding },
+            style: styleJson,
+            elements: el,
+            motionBlur: true,
+            selectionType: 'single',
+            boxSelectionEnabled: false,
+            autoungrabify: true
+          });
+      
+          allNodes = cy.nodes();
+          allEles = cy.elements();
+      
+          cy.on('free', 'node', function (e) {
+            var n = e.cyTarget;
+            var p = n.position();
+      
+            n.data('orgPos', {
+              x: p.x,
+              y: p.y
+            });
+          });
+      
+          cy.on('tap', function () {
+            $('#search').blur();
+          });
+      
+          cy.on('select unselect', 'node', _.debounce(function (e) {
+            var node = cy.$('node:selected');
+      
+            if (node.nonempty()) {
+              showNodeInfo(node);
+      
+              Promise.resolve().then(function () {
+                return highlight(node);
+              });
+            } else {
+              hideNodeInfo();
+              clear();
+            }
+      
+          }, 100));
         } 
     if (various == null) {
       various = variousgraph['responseJSON'];
