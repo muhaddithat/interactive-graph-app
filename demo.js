@@ -244,31 +244,22 @@ $(function () {
     // initialize variables with graph data if they haven't yet been initialized
     // this allows various to still store the graph in the dropdown function
         //11/30
-  /*11/30pt2      function elementsetup(e) {
+       function elementsetup(e) {
           e.nodes.forEach(function (n) {
-          var data = n.data;
-      
-            data.NodeTypeFormatted = data.NodeType;
-      
-            if (data.NodeTypeFormatted === 'RedWine') {
-              data.NodeTypeFormatted = 'Red Wine';
-            } else if (data.NodeTypeFormatted === 'WhiteWine') {
-              data.NodeTypeFormatted = 'White Wine';
-            }
-      
+
             n.data.orgPos = {
               x: n.position.x,
               y: n.position.y
             };
           });
-        } */
+        } 
     if (various == null) {
       various = variousgraph['responseJSON'];
-     //pt2 elementsetup(various.elements); //11/30
+      elementsetup(various.elements); //11/30
     }
     if (aishah == null) {
       aishah = aishahgraph['responseJSON'];
-     //pt2 elementsetup(aishah.elements); //11/30
+      elementsetup(aishah.elements); //11/30
     }
 
     var expJson = then[0];
@@ -277,16 +268,6 @@ $(function () {
 
 
   elements.nodes.forEach(function (n) {
-      var data = n.data;
-
-      data.NodeTypeFormatted = data.NodeType;
-
-      if (data.NodeTypeFormatted === 'RedWine') {
-        data.NodeTypeFormatted = 'Red Wine';
-      } else if (data.NodeTypeFormatted === 'WhiteWine') {
-        data.NodeTypeFormatted = 'White Wine';
-      }
-
       n.data.orgPos = {
         x: n.position.x,
         y: n.position.y
@@ -661,10 +642,8 @@ function changeGraph() {
   if (selectednarrator == "aishah_53") {
     cy.json({ elements: aishah.elements });
     //reset();
-    initCy([ aishah.elements, styleP ]);
   } else if (selectednarrator == "various") {
     cy.json({ elements: various.elements });
-    initCy([ various.elements, styleP ]);
     //reset();
   }
   }
