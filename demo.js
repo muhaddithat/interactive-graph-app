@@ -257,7 +257,6 @@ $(function () {
 //pt2          allNodes = cy.nodes();
  //pt2         allEles = cy.elements();
       
-          cy.on('free', 'node', function (e) {
             var n = e.cyTarget;
             var p = n.position();
       
@@ -265,7 +264,6 @@ $(function () {
               x: p.x,
               y: p.y
             });
-          });
       
         } 
     if (various == null) {
