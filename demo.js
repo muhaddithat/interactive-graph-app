@@ -257,7 +257,7 @@ $(function () {
 //pt2          allNodes = cy.nodes();
  //pt2         allEles = cy.elements();
       
-            var n = e.cyTarget;
+            var n = el.cyTarget;
             var p = n.position();
       
             n.data('orgPos', {
