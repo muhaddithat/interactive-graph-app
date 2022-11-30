@@ -100,15 +100,24 @@
 
   </div>
 
-  <!-- commented 10/28 -->
+  
   <div id="dropdown-content">
     <div class='dropdown-title'>Choose a graph to view</div>
     <div class='dropdown'>
       <form>
+        <!-- commented 11/30 
         <input type="radio" id="aishah" name="selected_graph" value="aishah_53"><label for="aishah">Aishah</label><br>
         <input type="radio" id="hafsah" name="selected_graph" value="hafsah_54"><label for="hafsah_54">Hafsah</label><br>
         <input type="radio" id="umsalamah" name="selected_graph" value="umsalamah_X"><label for="umsalamah_X">Um Salamah</label><br>
         <input type="radio" id="various" name="selected_graph" value="various"><label for="various">various</label><br>
+      -->
+      <select id = "dropdown-list" onchange = "changeGraph()" >
+        <option> Choose a graph </option>
+        <option value="aishah_53"> Aishah </option>
+        <option value="hafsah_54"> Hafsah </option>
+        <option value="umsalamah_56"> Um Salamah </option>
+        <option value="various"> Various </option>
+        </select>
       </form>
     </div>
   </div>
@@ -129,8 +138,8 @@
 </div>
 -->
 
-<script id="handlebars-demo" type="text/x-handlebars-template">
-  <div class='node-info-fullname'>Fullname: {{fullname}}</div>
+<script id="node-info" type="text/x-handlebars-template">
+  <div class='node-info-fullname'>Full Name: {{fullname}}</div>
   <div class='node-info-gender'>Gender: {{gender}}</div>
   <div class='node-info-generation'>Generation: {{generation}}</div>
   <div class='node-info-info'>{{info}}</div>

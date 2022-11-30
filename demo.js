@@ -43,14 +43,7 @@ $(function () {
   });
 
 
-  var infoTemplate = Handlebars.compile($('#handlebars-demo').html()); /*Handlebars.compile([ //10/30/2022
-    h('div', { class: 'node-info-fullname'}, 'Full name: ' + fullname),
-    h('div', { class: 'node-info-info'}, info),
-    h('div', { class: 'node-info-gender'}, 'Gender: ' + gender),
-    h('div', { class: 'node-info-generation'}, 'Generation: ' + generation),
-    h('div', { class: 'node-info-more' }, [
-      h('a', { target: '_blank', href: `https://isnad.io/rawi/${id}` }, 'More information')
-    ])].join(''));*/
+  var infoTemplate = Handlebars.compile($('#node-info').html()); 
 
   // when both graph export json and style loaded, init cy
   Promise.all([graphP, styleP]).then(initCy);
@@ -553,18 +546,20 @@ $(function () {
   });
 
   // ayah
+  /* commented 11/30/22
   $('#dropdown-content').on('click', 'input', function () {
     var various_selected = $('#various').is(':selected');
     var aishah_selected = $('#aishah').is(':selected');
-    /*  if( various_selected ){ // ok this is if statement is not working
-        console.log("if various = true");
-        initCy([ testing, styleP ]);
-      }*/
+    //  if( various_selected ){ // ok this is if statement is not working
+      //  console.log("if various = true");
+       // initCy([ testing, styleP ]);
+    //  }
 
 
     if (switcher) {
       switcher = false;
       cy.json({ elements: various.elements });
+      //also here do whatever the reset button does so it recenters on the new graph
       // initCy([ various, styleP ]);
     } else if (!switcher) {
       switcher = true;
@@ -579,6 +574,16 @@ $(function () {
       console.log('aishah not selected');
     }
   });
+  */
+  function changeGraph() {
+    var nargraphs = document.getElementById("dropdown-list");
+    var selectednarrator = nargraphs.options[nargraphs.selectedIndex].value;
+    if (selectednarrator == "aishah_53") {
+      cy.json({ elements: aishah.elements });
+    } else if (selectednarrator == "various") {
+      cy.json({ elements: various.elements });
+    }
+    }
   // ayah
   $('#graph-dropdown').qtip({
     position: {
