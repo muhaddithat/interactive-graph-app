@@ -252,7 +252,7 @@ $(function () {
               y: n.position.y
             };
           });
-          loading.classList.add('loaded');
+//pt2          loading.classList.add('loaded');
       
 //pt2          allNodes = cy.nodes();
  //pt2         allEles = cy.elements();
