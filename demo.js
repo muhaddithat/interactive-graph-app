@@ -255,7 +255,7 @@ $(function () {
           loading.classList.add('loaded');
       
 //pt2          allNodes = cy.nodes();
-          allEles = cy.elements();
+ //pt2         allEles = cy.elements();
       
           cy.on('free', 'node', function (e) {
             var n = e.cyTarget;
