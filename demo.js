@@ -253,17 +253,6 @@ $(function () {
             };
           });
           loading.classList.add('loaded');
-
-          cy = window.cy = cytoscape({
-            container: document.getElementById('cy'),
-            layout: { name: 'preset', padding: layoutPadding },
-            style: styleJson,
-            elements: el,
-            motionBlur: true,
-            selectionType: 'single',
-            boxSelectionEnabled: false,
-            autoungrabify: true
-          });
       
           allNodes = cy.nodes();
           allEles = cy.elements();
@@ -278,25 +267,6 @@ $(function () {
             });
           });
       
-          cy.on('tap', function () {
-            $('#search').blur();
-          });
-      
-          cy.on('select unselect', 'node', _.debounce(function (e) {
-            var node = cy.$('node:selected');
-      
-            if (node.nonempty()) {
-              showNodeInfo(node);
-      
-              Promise.resolve().then(function () {
-                return highlight(node);
-              });
-            } else {
-              hideNodeInfo();
-              clear();
-            }
-      
-          }, 100));
         } 
     if (various == null) {
       various = variousgraph['responseJSON'];
