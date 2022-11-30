@@ -244,7 +244,7 @@ $(function () {
     // initialize variables with graph data if they haven't yet been initialized
     // this allows various to still store the graph in the dropdown function
         //11/30
-        function elementsetup(e) {
+  /*11/30pt2      function elementsetup(e) {
           e.nodes.forEach(function (n) {
           var data = n.data;
       
@@ -261,14 +261,14 @@ $(function () {
               y: n.position.y
             };
           });
-        }
+        } */
     if (various == null) {
       various = variousgraph['responseJSON'];
-      elementsetup(various.elements); //11/30
+     //pt2 elementsetup(various.elements); //11/30
     }
     if (aishah == null) {
       aishah = aishahgraph['responseJSON'];
-      elementsetup(aishah.elements); //11/30
+     //pt2 elementsetup(aishah.elements); //11/30
     }
 
     var expJson = then[0];
@@ -296,8 +296,6 @@ $(function () {
 
     loading.classList.add('loaded');
 
-    console.log("cy before being assigned in initcy");
-    console.log(cy);
     cy = window.cy = cytoscape({
       container: document.getElementById('cy'),
       layout: { name: 'preset', padding: layoutPadding },
@@ -308,8 +306,6 @@ $(function () {
       boxSelectionEnabled: false,
       autoungrabify: true
     });
-    console.log("cy after being assigned in initcy");
-    console.log(cy);
 
     allNodes = cy.nodes();
     allEles = cy.elements();
@@ -658,14 +654,17 @@ $(function () {
   });
 });
 
+//11/30
 function changeGraph() {
   var nargraphs = document.getElementById("dropdown-list");
   var selectednarrator = nargraphs.options[nargraphs.selectedIndex].value;
   if (selectednarrator == "aishah_53") {
     cy.json({ elements: aishah.elements });
-    reset();
+    //reset();
+    initCy([ aishah.elements, styleP ]);
   } else if (selectednarrator == "various") {
     cy.json({ elements: various.elements });
-    reset();
+    initCy([ various.elements, styleP ]);
+    //reset();
   }
   }
