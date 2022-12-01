@@ -407,44 +407,8 @@ recenter = function() {
   }).play();
 }
 };
-//12/1
-/* function elementsetup(el) {
-  el.nodes.forEach(function (n) {
 
-    n.data.orgPos = {
-      x: n.position.x,
-      y: n.position.y
-    };
-  });
-} 
-onclick doesn't work for option tag $('#aishah_53').on('click', function () {
-  elementsetup(aishah.elements);
-  cy.json({ elements: aishah.elements });
-  reset();
-});
-$('#various').on('click', function () {
-  elementsetup(various.elements);
-  cy.json({ elements: various.elements });
-  reset();
-}); 
-window.changeGraph = function() {
-  var nargraphs = document.getElementById("dropdown-list");
-  var selectednarrator = nargraphs.options[nargraphs.selectedIndex].value;
-  if (selectednarrator == "aishah_53") {
-    elementsetup(aishah.elements);
-    cy.json({ elements: aishah.elements });
-    reset();
-  } else if (selectednarrator == "various") {
-    elementsetup(various.elements);
-    cy.json({ elements: various.elements });
-    reset();
-  }
-  };
-
-*/
-//12/1 ^
-
-  $('#reset').on('click', function () {
+  $('#reset').on('click', recenter());/* function () {
     if (isDirty()) {
       clear();
     } else {
@@ -463,7 +427,7 @@ window.changeGraph = function() {
         easing: easing
       }).play();
     }
-  });
+  }); */ //commented 12/1
 
   $('#filters').on('click', 'input', function () {
     /* ayah commented var soft = $('#soft').is(':checked');
@@ -678,27 +642,7 @@ window.changeGraph = function() {
     content: $('#about-content')
   });
 });
-//12/1
-/*function reset() {
-  if (isDirty()) {
-  clear();
-} else {
-  allNodes.unselect();
 
-  hideNodeInfo();
-
-  cy.stop();
-
-  cy.animation({
-    fit: {
-      eles: cy.elements(),
-      padding: layoutPadding
-    },
-    duration: aniDur,
-    easing: easing
-  }).play();
-}
-} */
 //12/1
 function elementsetup(el) {
   el.nodes.forEach(function (n) {
@@ -709,7 +653,6 @@ function elementsetup(el) {
     };
   });
 } 
-//11/30
  //12/1 
  function changeGraph() {
   var nargraphs = document.getElementById("dropdown-list");
