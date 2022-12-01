@@ -397,7 +397,7 @@ $(function () {
       }
     }, 50));
 
-  $('#reset').on('click', function () {
+  $('#reset').on('click', function reset() {
     if (isDirty()) {
       clear();
     } else {
@@ -641,9 +641,9 @@ function changeGraph() {
   var selectednarrator = nargraphs.options[nargraphs.selectedIndex].value;
   if (selectednarrator == "aishah_53") {
     cy.json({ elements: aishah.elements });
-    //reset();
+    reset();
   } else if (selectednarrator == "various") {
     cy.json({ elements: various.elements });
-    //reset();
+    reset();
   }
   }
