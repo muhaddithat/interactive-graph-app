@@ -417,16 +417,20 @@ function elementsetup(el) {
     };
   });
 } 
-$('#aishah_53').on('click'), function () {
+$('#aishah_53').on('click', function () {
   elementsetup(aishah.elements);
   cy.json({ elements: aishah.elements });
   reset();
-}
-$('#various').on('click'), function () {
+});
+$('#various').on('click', function () {
   elementsetup(various.elements);
   cy.json({ elements: various.elements });
   reset();
-}
+});
+/*$('#aishah_53').qtip({
+show: {
+  event: 'click'
+}})*/
 
 //12/1 ^
 
@@ -452,7 +456,6 @@ $('#various').on('click'), function () {
   });
 
   $('#filters').on('click', 'input', function () {
-    console.log('filters on click');
     /* ayah commented var soft = $('#soft').is(':checked');
       var semiSoft = $('#semi-soft').is(':checked');
       var na = $('#na').is(':checked');
@@ -475,8 +478,6 @@ $('#various').on('click'), function () {
   */
     var male = $('#male').is(':checked');
     var female = $('#female').is(':checked');
-    console.log('cy in filters function');
-    console.log(cy);
     cy.batch(function () {
 
       allNodes.forEach(function (n) {
