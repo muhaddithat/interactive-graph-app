@@ -4,7 +4,7 @@ This demo visualises wine and cheese pairings.
 var various = null;
 var aishah = null;
 var switcher = true;
-
+var recenter = null;
 
 $(function () {
 
@@ -387,7 +387,7 @@ $(function () {
 
 //12/1:
 //12/1
-function reset() {
+recenter = function() {
   if (isDirty()) {
   clear();
 } else {
@@ -406,9 +406,9 @@ function reset() {
     easing: easing
   }).play();
 }
-}
+};
 //12/1
-function elementsetup(el) {
+/* function elementsetup(el) {
   el.nodes.forEach(function (n) {
 
     n.data.orgPos = {
@@ -417,7 +417,7 @@ function elementsetup(el) {
     };
   });
 } 
-/* onclick doesn't work for option tag $('#aishah_53').on('click', function () {
+onclick doesn't work for option tag $('#aishah_53').on('click', function () {
   elementsetup(aishah.elements);
   cy.json({ elements: aishah.elements });
   reset();
@@ -426,7 +426,7 @@ $('#various').on('click', function () {
   elementsetup(various.elements);
   cy.json({ elements: various.elements });
   reset();
-}); */
+}); 
 window.changeGraph = function() {
   var nargraphs = document.getElementById("dropdown-list");
   var selectednarrator = nargraphs.options[nargraphs.selectedIndex].value;
@@ -441,7 +441,7 @@ window.changeGraph = function() {
   }
   };
 
-
+*/
 //12/1 ^
 
   $('#reset').on('click', function () {
@@ -679,7 +679,7 @@ window.changeGraph = function() {
   });
 });
 //12/1
-function reset() {
+/*function reset() {
   if (isDirty()) {
   clear();
 } else {
@@ -698,7 +698,7 @@ function reset() {
     easing: easing
   }).play();
 }
-}
+} */
 //12/1
 function elementsetup(el) {
   el.nodes.forEach(function (n) {
@@ -710,16 +710,17 @@ function elementsetup(el) {
   });
 } 
 //11/30
-/* 12/1 function changeGraph() {
+ //12/1 
+ function changeGraph() {
   var nargraphs = document.getElementById("dropdown-list");
   var selectednarrator = nargraphs.options[nargraphs.selectedIndex].value;
   if (selectednarrator == "aishah_53") {
     elementsetup(aishah.elements);
     cy.json({ elements: aishah.elements });
-    reset();
+    recenter();
   } else if (selectednarrator == "various") {
     elementsetup(various.elements);
     cy.json({ elements: various.elements });
-    reset();
+    recenter();
   }
-  } */
+  } 
