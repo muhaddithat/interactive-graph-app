@@ -408,7 +408,8 @@ recenter = function() {
 }
 };
 
-  $('#reset').on('click', recenter());/* function () {
+
+  $('#reset').on('click', function () {
     if (isDirty()) {
       clear();
     } else {
@@ -427,7 +428,7 @@ recenter = function() {
         easing: easing
       }).play();
     }
-  }); */ //commented 12/1
+  });
 
   $('#filters').on('click', 'input', function () {
     /* ayah commented var soft = $('#soft').is(':checked');
