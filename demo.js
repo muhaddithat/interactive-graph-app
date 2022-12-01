@@ -255,11 +255,11 @@ $(function () {
         } 
     if (various == null) {
       various = variousgraph['responseJSON'];
-      elementsetup(various.elements); //11/30
+    //12/1  elementsetup(various.elements); //11/30
     }
     if (aishah == null) {
       aishah = aishahgraph['responseJSON'];
-      elementsetup(aishah.elements); //11/30
+      //12/1 elementsetup(aishah.elements); //11/30
     }
 
     var expJson = then[0];
@@ -397,7 +397,7 @@ $(function () {
       }
     }, 50));
 
-  $('#reset').on('click', function reset() {
+  $('#reset').on('click', function () {
     if (isDirty()) {
       clear();
     } else {
@@ -634,15 +634,47 @@ $(function () {
     content: $('#about-content')
   });
 });
+//12/1
+function reset() {
+  if (isDirty()) {
+  clear();
+} else {
+  allNodes.unselect();
 
+  hideNodeInfo();
+
+  cy.stop();
+
+  cy.animation({
+    fit: {
+      eles: cy.elements(),
+      padding: layoutPadding
+    },
+    duration: aniDur,
+    easing: easing
+  }).play();
+}
+}
+//12/1
+function elementsetup(el) {
+  el.nodes.forEach(function (n) {
+
+    n.data.orgPos = {
+      x: n.position.x,
+      y: n.position.y
+    };
+  });
+} 
 //11/30
 function changeGraph() {
   var nargraphs = document.getElementById("dropdown-list");
   var selectednarrator = nargraphs.options[nargraphs.selectedIndex].value;
   if (selectednarrator == "aishah_53") {
+    elementsetup(aishah.elements);
     cy.json({ elements: aishah.elements });
     reset();
   } else if (selectednarrator == "various") {
+    elementsetup(various.elements);
     cy.json({ elements: various.elements });
     reset();
   }
