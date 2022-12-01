@@ -391,13 +391,7 @@ recenter = function() {
   if (isDirty()) {
   clear();
 } else {
- // allNodes = cy.nodes(); //12/1
-  //allNodes.unselect();
-
-  //12/1
-  if (allNodes == null) {
-    allNodes = cy.nodes();
-  } 
+  allNodes = cy.nodes(); //12/1
   allNodes.unselect();
 
   hideNodeInfo();
@@ -416,7 +410,7 @@ recenter = function() {
 };
 
 
-  $('#reset').on('click', recenter()); /*function () {
+  $('#reset').on('click', function () {
     if (isDirty()) {
       clear();
     } else {
@@ -435,7 +429,7 @@ recenter = function() {
         easing: easing
       }).play();
     }
-  }); */
+  });
 
   $('#filters').on('click', 'input', function () {
     /* ayah commented var soft = $('#soft').is(':checked');
