@@ -391,6 +391,7 @@ recenter = function() {
   if (isDirty()) {
   clear();
 } else {
+  allNodes = cy.nodes(); //12/1
   allNodes.unselect();
 
   hideNodeInfo();
