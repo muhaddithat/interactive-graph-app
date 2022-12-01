@@ -417,7 +417,7 @@ function elementsetup(el) {
     };
   });
 } 
-$('#aishah_53').on('click', function () {
+/* onclick doesn't work for option tag $('#aishah_53').on('click', function () {
   elementsetup(aishah.elements);
   cy.json({ elements: aishah.elements });
   reset();
@@ -426,11 +426,21 @@ $('#various').on('click', function () {
   elementsetup(various.elements);
   cy.json({ elements: various.elements });
   reset();
-});
-/*$('#aishah_53').qtip({
-show: {
-  event: 'click'
-}})*/
+}); */
+window.changeGraph = function() {
+  var nargraphs = document.getElementById("dropdown-list");
+  var selectednarrator = nargraphs.options[nargraphs.selectedIndex].value;
+  if (selectednarrator == "aishah_53") {
+    elementsetup(aishah.elements);
+    cy.json({ elements: aishah.elements });
+    reset();
+  } else if (selectednarrator == "various") {
+    elementsetup(various.elements);
+    cy.json({ elements: various.elements });
+    reset();
+  }
+  };
+
 
 //12/1 ^
 
@@ -700,7 +710,7 @@ function elementsetup(el) {
   });
 } 
 //11/30
-function changeGraph() {
+/* 12/1 function changeGraph() {
   var nargraphs = document.getElementById("dropdown-list");
   var selectednarrator = nargraphs.options[nargraphs.selectedIndex].value;
   if (selectednarrator == "aishah_53") {
@@ -712,4 +722,4 @@ function changeGraph() {
     cy.json({ elements: various.elements });
     reset();
   }
-  }
+  } */
