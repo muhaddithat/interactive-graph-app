@@ -243,23 +243,11 @@ $(function () {
     // ayah
     // initialize variables with graph data if they haven't yet been initialized
     // this allows various to still store the graph in the dropdown function
-        //11/30
-       function elementsetup(el) {
-          el.nodes.forEach(function (n) {
-
-            n.data.orgPos = {
-              x: n.position.x,
-              y: n.position.y
-            };
-          });
-        } 
     if (various == null) {
       various = variousgraph['responseJSON'];
-    //12/1  elementsetup(various.elements); //11/30
     }
     if (aishah == null) {
       aishah = aishahgraph['responseJSON'];
-      //12/1 elementsetup(aishah.elements); //11/30
     }
 
     var expJson = then[0];
@@ -396,6 +384,51 @@ $(function () {
         lastSearch = thisSearch;
       }
     }, 50));
+
+//12/1:
+//12/1
+function reset() {
+  if (isDirty()) {
+  clear();
+} else {
+  allNodes.unselect();
+
+  hideNodeInfo();
+
+  cy.stop();
+
+  cy.animation({
+    fit: {
+      eles: cy.elements(),
+      padding: layoutPadding
+    },
+    duration: aniDur,
+    easing: easing
+  }).play();
+}
+}
+//12/1
+function elementsetup(el) {
+  el.nodes.forEach(function (n) {
+
+    n.data.orgPos = {
+      x: n.position.x,
+      y: n.position.y
+    };
+  });
+} 
+$('#aishah_53').on('click'), function () {
+  elementsetup(aishah.elements);
+  cy.json({ elements: aishah.elements });
+  reset();
+}
+$('#various').on('click'), function () {
+  elementsetup(various.elements);
+  cy.json({ elements: various.elements });
+  reset();
+}
+
+//12/1 ^
 
   $('#reset').on('click', function () {
     if (isDirty()) {
