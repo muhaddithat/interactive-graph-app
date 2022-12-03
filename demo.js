@@ -5,8 +5,7 @@ var various = null;
 var aishah = null;
 //var switcher = true;
 var recenter = null;
-//var clear = null; //12/3
-var graphswitched = false; //12/3
+var testing = null; //12/3
 
 $(function () {
 
@@ -173,8 +172,7 @@ $(function () {
   }
 
   function isDirty() {
-    //12/3 return lastHighlighted != null;
-    return (lastHighlighted != null || graphswitched); //12/3
+    return lastHighlighted != null;
   }
 
   function clear(opts) {
@@ -412,6 +410,18 @@ if (isDirty()) {
 }
 };
 
+//12/3
+testing = function (nhood) {
+  return Promise.all(nhood.map(function (ele) {
+    var p = ele.data('orgPos');
+
+    return ele.animation({
+      position: { x: p.x, y: p.y },
+      duration: aniDur,
+      easing: easing
+    }).play().promise();
+  }));
+};
 
   $('#reset').on('click', function () {
     if (isDirty()) {
@@ -660,19 +670,17 @@ function elementsetup(el) {
 } 
  //12/1 
  function changeGraph() {
-  graphswitched = true; //12/3
   var nargraphs = document.getElementById("dropdown-list");
   var selectednarrator = nargraphs.options[nargraphs.selectedIndex].value;
   if (selectednarrator == "aishah_53") {
     elementsetup(aishah.elements);
     cy.json({ elements: aishah.elements });
     recenter();
-    //showOthers(); //12/3
+    testing(cy.nodes()); //12/3
   } else if (selectednarrator == "various") {
     elementsetup(various.elements);
     cy.json({ elements: various.elements });
     recenter();
-   // showOthers(); //12/3
+    testing(cy.nodes()); //12/3
   }
-  graphswitched = false; //12/3
   } 
