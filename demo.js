@@ -5,7 +5,6 @@ var various = null;
 var aishah = null;
 //var switcher = true;
 var recenter = null;
-var testing = null; //12/3
 
 $(function () {
 
@@ -410,19 +409,6 @@ if (isDirty()) {
 }
 };
 
-//12/3
-testing = function (nhood) {
-  return Promise.all(nhood.map(function (ele) {
-    var p = ele.data('orgPos');
-
-    return ele.animation({
-      position: { x: p.x, y: p.y },
-      duration: aniDur,
-      easing: easing
-    }).play().promise();
-  }));
-};
-
   $('#reset').on('click', function () {
     if (isDirty()) {
       clear();
@@ -676,11 +662,9 @@ function elementsetup(el) {
     elementsetup(aishah.elements);
     cy.json({ elements: aishah.elements });
     recenter();
-    testing(cy.elements()); //12/3
   } else if (selectednarrator == "various") {
     elementsetup(various.elements);
     cy.json({ elements: various.elements });
     recenter();
-    testing(cy.elements()); //12/3
   }
   } 
