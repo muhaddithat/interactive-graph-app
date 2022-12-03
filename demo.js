@@ -664,11 +664,11 @@ function elementsetup(el) {
     elementsetup(aishah.elements);
     cy.json({ elements: aishah.elements });
     recenter();
-    showOthers(); //12/3
+    //showOthers(); //12/3
   } else if (selectednarrator == "various") {
     elementsetup(various.elements);
     cy.json({ elements: various.elements });
     recenter();
-    showOthers(); //12/3
+   // showOthers(); //12/3
   }
   } 
