@@ -676,11 +676,11 @@ function elementsetup(el) {
     elementsetup(aishah.elements);
     cy.json({ elements: aishah.elements });
     recenter();
-    testing(cy.nodes()); //12/3
+    testing(cy.elements()); //12/3
   } else if (selectednarrator == "various") {
     elementsetup(various.elements);
     cy.json({ elements: various.elements });
     recenter();
-    testing(cy.nodes()); //12/3
+    testing(cy.elements()); //12/3
   }
   } 
