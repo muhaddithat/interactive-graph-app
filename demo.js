@@ -176,7 +176,7 @@ $(function () {
   }
 
   function clear(opts) {
-    // 12/3 if (!isDirty()) { return Promise.resolve(); }
+    if (!isDirty()) { return Promise.resolve(); }
 
     opts = $.extend({
 
@@ -388,10 +388,10 @@ $(function () {
 
 //12/1
 recenter = function () {
- /* 12/3if (isDirty()) {
-  clear();
-} else { */
-clear();
+if (isDirty()) {
+  clear(); // clear checks isDirty anyway so the if statement here might be redundant
+} else { 
+ 
   allNodes = cy.nodes(); // this line is the only difference from the function for #reset
   allNodes.unselect();
 
@@ -407,7 +407,7 @@ clear();
     duration: aniDur,
     easing: easing
   }).play();
-//12/3 }
+}
 };
 
 
@@ -664,11 +664,13 @@ function elementsetup(el) {
     elementsetup(aishah.elements);
     cy.json({ elements: aishah.elements });
     recenter();
+    initCy(); //12/3
     //showOthers(); //12/3
   } else if (selectednarrator == "various") {
     elementsetup(various.elements);
     cy.json({ elements: various.elements });
     recenter();
+    initCy(); //12/3
    // showOthers(); //12/3
   }
   } 
