@@ -5,7 +5,7 @@ var various = null;
 var aishah = null;
 //var switcher = true;
 var recenter = null;
-var showOthers = null; //12/3
+//var clear = null; //12/3
 
 $(function () {
 
@@ -198,8 +198,7 @@ $(function () {
       });
     };
 
-    //12/3 var showOthers = function () {
-      showOthers = function () { //12/3
+    var showOthers = function () {
       cy.batch(function () {
         allEles.removeClass('hidden').removeClass('faded');
       });
@@ -388,10 +387,11 @@ $(function () {
     }, 50));
 
 //12/1
-recenter = function() {
-  if (isDirty()) {
+recenter = function () {
+ /* 12/3if (isDirty()) {
   clear();
-} else {
+} else { */
+clear();
   allNodes = cy.nodes(); // this line is the only difference from the function for #reset
   allNodes.unselect();
 
@@ -407,7 +407,7 @@ recenter = function() {
     duration: aniDur,
     easing: easing
   }).play();
-}
+//12/3 }
 };
 
 
