@@ -5,7 +5,8 @@ var various = null;
 var aishah = null;
 //var switcher = true;
 var recenter = null;
-var initCy = null; //12/3
+//var clear = null; //12/3
+var graphswitched = false; //12/3
 
 $(function () {
 
@@ -172,7 +173,8 @@ $(function () {
   }
 
   function isDirty() {
-    return lastHighlighted != null;
+    //12/3 return lastHighlighted != null;
+    return (lastHighlighted != null || graphswitched); //12/3
   }
 
   function clear(opts) {
@@ -238,8 +240,7 @@ $(function () {
     $('#info').hide();
   }
 
-  //12/3function initCy(then) {
-    initCy = function (then) {
+  function initCy(then) {
     var loading = document.getElementById('loading');
 
     // ayah
@@ -659,19 +660,19 @@ function elementsetup(el) {
 } 
  //12/1 
  function changeGraph() {
+  graphswitched = true; //12/3
   var nargraphs = document.getElementById("dropdown-list");
   var selectednarrator = nargraphs.options[nargraphs.selectedIndex].value;
   if (selectednarrator == "aishah_53") {
     elementsetup(aishah.elements);
     cy.json({ elements: aishah.elements });
     recenter();
-    initCy(); //12/3
     //showOthers(); //12/3
   } else if (selectednarrator == "various") {
     elementsetup(various.elements);
     cy.json({ elements: various.elements });
     recenter();
-    initCy(); //12/3
    // showOthers(); //12/3
   }
+  graphswitched = false; //12/3
   } 
