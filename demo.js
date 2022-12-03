@@ -3,8 +3,9 @@ This demo visualises wine and cheese pairings.
 */
 var various = null;
 var aishah = null;
-var switcher = true;
+//var switcher = true;
 var recenter = null;
+var showOthers = null; //12/3
 
 $(function () {
 
@@ -197,7 +198,8 @@ $(function () {
       });
     };
 
-    var showOthers = function () {
+    //12/3 var showOthers = function () {
+      showOthers = function () { //12/3
       cy.batch(function () {
         allEles.removeClass('hidden').removeClass('faded');
       });
@@ -385,13 +387,12 @@ $(function () {
       }
     }, 50));
 
-//12/1:
 //12/1
 recenter = function() {
   if (isDirty()) {
   clear();
 } else {
-  allNodes = cy.nodes(); //12/1
+  allNodes = cy.nodes(); // this line is the only difference from the function for #reset
   allNodes.unselect();
 
   hideNodeInfo();
@@ -663,9 +664,11 @@ function elementsetup(el) {
     elementsetup(aishah.elements);
     cy.json({ elements: aishah.elements });
     recenter();
+    showOthers(); //12/3
   } else if (selectednarrator == "various") {
     elementsetup(various.elements);
     cy.json({ elements: various.elements });
     recenter();
+    showOthers(); //12/3
   }
   } 
