@@ -176,7 +176,7 @@ $(function () {
   }
 
   function clear(opts) {
-    if (!isDirty()) { return Promise.resolve(); }
+    // 12/3 if (!isDirty()) { return Promise.resolve(); }
 
     opts = $.extend({
 
