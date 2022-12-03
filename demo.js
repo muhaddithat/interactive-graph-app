@@ -5,7 +5,7 @@ var various = null;
 var aishah = null;
 //var switcher = true;
 var recenter = null;
-//var clear = null; //12/3
+var initCy = null; //12/3
 
 $(function () {
 
@@ -238,7 +238,8 @@ $(function () {
     $('#info').hide();
   }
 
-  function initCy(then) {
+  //12/3function initCy(then) {
+    initCy = function (then) {
     var loading = document.getElementById('loading');
 
     // ayah
