@@ -6,6 +6,9 @@ var aishah = null;
 //var switcher = true;
 var recenter = null;
 
+var allNodes = null; //12/5
+var allEles = null; //12/5
+
 $(function () {
 
   var layoutPadding = 50;
@@ -51,8 +54,8 @@ $(function () {
 
 
 
-  var allNodes = null;
-  var allEles = null;
+//12/5  var allNodes = null;
+//12/5  var allEles = null;
   var lastHighlighted = null;
   var lastUnhighlighted = null;
 
