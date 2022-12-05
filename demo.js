@@ -661,10 +661,15 @@ function elementsetup(el) {
   if (selectednarrator == "aishah_53") {
     elementsetup(aishah.elements);
     cy.json({ elements: aishah.elements });
+    allNodes = cy.nodes(); //12/5
+    allEles = cy.elements(); //12/5
     recenter();
   } else if (selectednarrator == "various") {
     elementsetup(various.elements);
     cy.json({ elements: various.elements });
+    allNodes = cy.nodes(); //12/5
+    allEles = cy.elements(); //12/5
     recenter();
+    
   }
   } 
