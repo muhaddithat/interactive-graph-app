@@ -409,7 +409,7 @@ if (isDirty()) {
 }
 };
 
-  $('#reset').on('click', function () {
+  $('#reset').on('click', recenter ()/* 12/6 function () {
     if (isDirty()) {
       clear();
     } else {
@@ -427,8 +427,8 @@ if (isDirty()) {
         duration: aniDur,
         easing: easing
       }).play();
-    }
-  });
+    } 
+  }*/);
 
   $('#filters').on('click', 'input', function () {
     /* ayah commented var soft = $('#soft').is(':checked');
