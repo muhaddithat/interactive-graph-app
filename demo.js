@@ -391,7 +391,7 @@ if (isDirty()) {
   clear(); // clear checks isDirty anyway so the if statement here might be redundant
 } else { 
  
-  allNodes = cy.nodes(); // this line is the only difference from the function for #reset
+//12/6  allNodes = cy.nodes(); // this line is the only difference from the function for #reset
   allNodes.unselect();
 
   hideNodeInfo();
