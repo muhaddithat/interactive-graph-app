@@ -1,6 +1,3 @@
-/* 
-This demo visualises wine and cheese pairings.
-*/
 var various = null;
 var aishah = null;
 //var switcher = true;
