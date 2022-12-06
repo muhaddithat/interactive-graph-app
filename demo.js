@@ -391,7 +391,7 @@ if (isDirty()) {
   clear(); // clear checks isDirty anyway so the if statement here might be redundant
 } else { 
  
-//12/6  allNodes = cy.nodes(); // this line is the only difference from the function for #reset
+  allNodes = cy.nodes(); // this line is the only difference from the function for #reset
   allNodes.unselect();
 
   hideNodeInfo();
@@ -409,7 +409,7 @@ if (isDirty()) {
 }
 };
 
-  $('#reset').on('click', recenter ()/* 12/6 function () {
+  $('#reset').on('click', function () {
     if (isDirty()) {
       clear();
     } else {
@@ -427,8 +427,8 @@ if (isDirty()) {
         duration: aniDur,
         easing: easing
       }).play();
-    } 
-  }*/);
+    }
+  });
 
   $('#filters').on('click', 'input', function () {
     /* ayah commented var soft = $('#soft').is(':checked');
