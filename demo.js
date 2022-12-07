@@ -237,6 +237,15 @@ $(function () {
     $('#info').hide();
   }
 
+  //12/6
+  function showEdgeInfo(edge) {
+    $('#info').html(infoTemplate(edge.data())).show();
+  }
+  function hideEdgeInfo() {
+    $('#info').hide();
+  }
+//12/6^
+
   function initCy(then) {
     var loading = document.getElementById('loading');
 
@@ -308,6 +317,24 @@ $(function () {
       }
 
     }, 100));
+
+    //12/6
+    cy.on('select unselect', 'edge', _.debounce(function (e) {
+      var edge = cy.$('edge:selected');
+
+      if (edge.nonempty()) {
+        showEdgeInfo(edge);
+
+        Promise.resolve().then(function () {
+          return highlight(node);
+        });
+      } else {
+        hideEdgeInfo();
+        clear();
+      }
+
+    }, 100));
+    //12/6^
 
   }
 
@@ -552,37 +579,6 @@ if (isDirty()) {
 
     content: $('#filters')
   });
-
-  // ayah
-  /* commented 11/30/22
-  $('#dropdown-content').on('click', 'input', function () {
-    var various_selected = $('#various').is(':selected');
-    var aishah_selected = $('#aishah').is(':selected');
-    //  if( various_selected ){ // ok this is if statement is not working
-      //  console.log("if various = true");
-       // initCy([ testing, styleP ]);
-    //  }
-
-
-    if (switcher) {
-      switcher = false;
-      cy.json({ elements: various.elements });
-      //also here do whatever the reset button does so it recenters on the new graph
-      // initCy([ various, styleP ]);
-    } else if (!switcher) {
-      switcher = true;
-      cy.json({ elements: aishah.elements });
-      //  initCy([ aishah, styleP ]);
-    }
-    // 10/28/22:
-    var narrator = $('#narrator-select');
-    if (narrator.val() === '"aishah53"') {
-      console.log('aishah selected');
-    } else {
-      console.log('aishah not selected');
-    }
-  });
-  */
  
   // ayah
   $('#graph-dropdown').qtip({
