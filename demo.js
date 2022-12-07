@@ -303,6 +303,7 @@ $(function () {
     });
 
     cy.on('select unselect', 'node', _.debounce(function (e) {
+      console.log("node selected"); //12/6
       var node = cy.$('node:selected');
 
       if (node.nonempty()) {
@@ -320,13 +321,14 @@ $(function () {
 
     //12/6
     cy.on('select unselect', 'edge', _.debounce(function (e) {
+      console.log("edge selected"); //12/6
       var edge = cy.$('edge:selected');
 
       if (edge.nonempty()) {
         showEdgeInfo(edge);
 
         Promise.resolve().then(function () {
-          return highlight(node);
+          return highlight(edge);
         });
       } else {
         hideEdgeInfo();
