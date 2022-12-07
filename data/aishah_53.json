@@ -658,7 +658,8 @@
                     "line-color": "black"
                 },
                 "grabbable": true,
-                "selectable": true
+                "selectable": true,
+                "selected": false
             },
             {
                 "data": {
