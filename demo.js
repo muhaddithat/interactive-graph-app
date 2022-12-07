@@ -305,6 +305,8 @@ $(function () {
     cy.on('select unselect', 'node', _.debounce(function (e) {
       console.log("node selected"); //12/6
       var node = cy.$('node:selected');
+      var edge = cy.$('edge:selected');//12/6
+      console.log(edge);
 
       if (node.nonempty()) {
         showNodeInfo(node);
