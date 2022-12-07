@@ -237,14 +237,6 @@ $(function () {
     $('#info').hide();
   }
 
-  //12/6
-  function showEdgeInfo(edge) {
-    $('#info').html(infoTemplate(edge.data())).show();
-  }
-  function hideEdgeInfo() {
-    $('#info').hide();
-  }
-//12/6^
 
   function initCy(then) {
     var loading = document.getElementById('loading');
@@ -303,10 +295,7 @@ $(function () {
     });
 
     cy.on('select unselect', 'node', _.debounce(function (e) {
-      console.log("node selected"); //12/6
       var node = cy.$('node:selected');
-      var edge = cy.$('edge:selected');//12/6
-      console.log(edge);
 
       if (node.nonempty()) {
         showNodeInfo(node);
@@ -321,24 +310,11 @@ $(function () {
 
     }, 100));
 
-    //12/6
-    cy.on('select unselect', 'edge', _.debounce(function (e) {
-      console.log("edge selected"); //12/6
-      var edge = cy.$('edge:selected');
-
-      if (edge.nonempty()) {
-        showEdgeInfo(edge);
-
-        Promise.resolve().then(function () {
-          return highlight(edge);
-        });
-      } else {
-        hideEdgeInfo();
-        clear();
-      }
-
-    }, 100));
-    //12/6^
+//    12/6
+    cy.on('tap', 'edge', function(e){
+      console.log('edge tapped');
+    });
+// 12/6
 
   }
 

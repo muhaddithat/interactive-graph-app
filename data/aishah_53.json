@@ -656,7 +656,9 @@
                     "curve-style": "bezier",
                     "line-style": "solid",
                     "line-color": "black"
-                }
+                },
+                "grabbable": true,
+                "selectable": true
             },
             {
                 "data": {
