@@ -310,7 +310,7 @@ $(function () {
 
     }, 100));
 
-//    12/6
+//    12/6 - this doesn't do anything btw
     cy.on('tap', 'edge', function(e){
       console.log('edge tapped');
     });
