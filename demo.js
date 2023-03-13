@@ -281,6 +281,8 @@ $(function () {
     allNodes = cy.nodes();
     allEles = cy.elements();
     allEdges = cy.edges(); // 3/13/23
+    console.log('testing'); //3/13
+    console.log(allEdges); //3/13
 
     cy.on('free', 'node', function (e) {
       var n = e.cyTarget;
