@@ -4,6 +4,7 @@ var aishah = null;
 var recenter = null;
 
 var allNodes = null; //12/5/22
+var allEdges = null; //3/13/23
 var allEles = null; //12/5/22
 
 $(function () {
@@ -280,6 +281,9 @@ $(function () {
     allNodes = cy.nodes();
     console.log(allNodes.selectable());//3/13
     allEles = cy.elements();
+    console.log(allEles.selectable());//3/13
+    allEdges = cy.edges(); //3/13/23
+    console.log(allEdges.selectable());//3/13
 
     cy.on('free', 'node', function (e) {
       var n = e.cyTarget;
@@ -640,12 +644,14 @@ function elementsetup(el) {
     elementsetup(aishah.elements);
     cy.json({ elements: aishah.elements });
     allNodes = cy.nodes(); //12/5/22
+    allEdges = cy.edges(); //3/13/23
     allEles = cy.elements(); //12/5/22
     recenter();
   } else if (selectednarrator == "various") {
     elementsetup(various.elements);
     cy.json({ elements: various.elements });
     allNodes = cy.nodes(); //12/5/22
+    allEdges = cy.edges(); //3/13/23
     allEles = cy.elements(); //12/5/22
     recenter();
     
