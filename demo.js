@@ -315,6 +315,13 @@ $(function () {
 
     }, 100));
 
+    //3/13/23
+    cy.on('select unselect', 'edge', _.debounce(function (e) {
+      var edge = cy.$('edge:selected');
+      console.log(edge.selectable());
+
+    }, 100));
+
 /*    12/6/22 - this doesn't do anything btw
     cy.on('tap', 'edge', function(e){
       console.log('edge tapped');

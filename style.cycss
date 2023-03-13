@@ -94,6 +94,10 @@ node:selected {
 	border-width: 10;
 }
 
+edge:selected {
+	line-color: #4287F5; /*3/13/23*/
+}
+
 .filtered {
 	display: none;
 }
