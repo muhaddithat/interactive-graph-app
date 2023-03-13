@@ -278,6 +278,7 @@ $(function () {
     });
 
     allNodes = cy.nodes();
+    console.log(allNodes.selectable());//3/13
     allEles = cy.elements();
 
     cy.on('free', 'node', function (e) {
