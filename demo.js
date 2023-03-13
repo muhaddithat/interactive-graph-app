@@ -321,10 +321,12 @@ $(function () {
  12/6/22 */
 
  // 03/13/23
-/* cy.on('select unselect', 'edge', _.debounce(function (e) {
+ cy.on('select unselect', 'edge', _.debounce(function (e) {
   var edge = cy.$('edge:selected');
+  console.log('in select edge function');
+  console.log(edge);
 
-  if (edge.nonempty()) {
+/*  if (edge.nonempty()) {
     showNodeInfo(edge);
 
     Promise.resolve().then(function () {
@@ -333,10 +335,10 @@ $(function () {
   } else {
     hideNodeInfo();
     clear();
-  }
+  } */
 
 }, 100));
-*/
+
   }
 
   var lastSearch = '';
