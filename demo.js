@@ -3,8 +3,9 @@ var aishah = null;
 //var switcher = true;
 var recenter = null;
 
-var allNodes = null; //12/5
-var allEles = null; //12/5
+var allNodes = null; //12/5/22
+var allEles = null; //12/5/22
+var allEdges = null // 3/13/23
 
 $(function () {
 
@@ -279,6 +280,7 @@ $(function () {
 
     allNodes = cy.nodes();
     allEles = cy.elements();
+    allEdges = cy.edges(); // 3/13/23
 
     cy.on('free', 'node', function (e) {
       var n = e.cyTarget;
@@ -310,12 +312,29 @@ $(function () {
 
     }, 100));
 
-//    12/6 - this doesn't do anything btw
+/*    12/6/22 - this doesn't do anything btw
     cy.on('tap', 'edge', function(e){
       console.log('edge tapped');
     });
-// 12/6
+ 12/6/22 */
 
+ // 03/13/23
+/* cy.on('select unselect', 'edge', _.debounce(function (e) {
+  var edge = cy.$('edge:selected');
+
+  if (edge.nonempty()) {
+    showNodeInfo(edge);
+
+    Promise.resolve().then(function () {
+      return highlight(edge);
+    });
+  } else {
+    hideNodeInfo();
+    clear();
+  }
+
+}, 100));
+*/
   }
 
   var lastSearch = '';
@@ -392,10 +411,10 @@ $(function () {
       }
     }, 50));
 
-//12/1
+//12/1/22
 recenter = function () {
 if (isDirty()) {
-  clear(); // clear checks isDirty anyway so the if statement here might be redundant
+  clear(); // clear() checks isDirty anyway so the if statement here might be redundant
 } else { 
  
   allNodes = cy.nodes(); // this line is the only difference from the function for #reset
@@ -620,7 +639,7 @@ if (isDirty()) {
   });
 });
 
-//12/1
+//12/1/22
 function elementsetup(el) {
   el.nodes.forEach(function (n) {
 
@@ -630,21 +649,23 @@ function elementsetup(el) {
     };
   });
 } 
- //12/1 
+ //12/1/22 
  function changeGraph() {
   var nargraphs = document.getElementById("dropdown-list");
   var selectednarrator = nargraphs.options[nargraphs.selectedIndex].value;
   if (selectednarrator == "aishah_53") {
     elementsetup(aishah.elements);
     cy.json({ elements: aishah.elements });
-    allNodes = cy.nodes(); //12/5
-    allEles = cy.elements(); //12/5
+    allNodes = cy.nodes(); //12/5/22
+    allEles = cy.elements(); //12/5/22
+    allEdges = cy.edges(); // 3/13/23
     recenter();
   } else if (selectednarrator == "various") {
     elementsetup(various.elements);
     cy.json({ elements: various.elements });
-    allNodes = cy.nodes(); //12/5
-    allEles = cy.elements(); //12/5
+    allNodes = cy.nodes(); //12/5/22
+    allEles = cy.elements(); //12/5/22
+    allEdges = cy.edges(); // 3/13/23
     recenter();
     
   }
