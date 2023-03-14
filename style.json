@@ -1,0 +1,59 @@
+[{
+    "selector": "node",
+    "style": {
+        "width": 40,
+        "height": 40,
+        "font-size": 10,
+        "font-weight": "bold",
+        "min-zoomed-font-size": 4,
+        "label": "data(label)",
+        "text-wrap": "wrap",
+        "text-max-width": 10,
+        "text-valign": "center",
+        "text-halign": "center",
+        "color": "#000",
+        "text-outline-width": 1,
+        "text-outline-color": "#fff",
+        "text-outline-opacity": 1,
+        "overlay-color": "#fff",
+        "text-events": "yes"
+    }
+  },  {
+    "selector": "edge",
+    "style": {
+        "curve-style": "bezier",
+        "opacity": 0.333,
+        "width": 7,
+        "z-index": 0,
+        "overlay-opacity": 0,
+        "target-arrow-shape": "triangle",
+        "target-arrow-color": "#000"
+    }
+  }, {
+    "selector": "node[gender = 'female']",
+    "style": {
+     "text-outline-color": "#9CBD8B",
+	"background-color": "#9CBD8B",
+	"color": "#000"
+    }
+  }, {
+    "selector": "node[gender = 'male']",
+    "style": {
+     "text-outline-color": "#E2CDAB",
+	"background-color": "#E2CDAB",
+	"color": "#000"
+    }
+  }, {
+    "selector": "edge.highlighted",
+    "style": {
+        "opacity": 0.8,
+        "width": 4,
+        "z-index": 9999
+    }
+  }, {
+    "selector": "node.highlighted",
+    "style": {
+        "min-zoomed-font-size": 0,
+        "z-index": 9999
+    }
+  }]

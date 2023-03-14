@@ -95,7 +95,7 @@ node:selected {
 }
 
 edge:selected {
-	line-color: #4287F5; /*3/13/23*/
+	line-color: #4287F5; /*3/13/23 - this doesn't do anything :( */
 }
 
 .filtered {
