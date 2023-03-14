@@ -1,4 +1,21 @@
-[{
+[{ 
+    "selector": "core",
+    "style": {
+        "active-bg-color": "#fff",
+        "active-bg-opacity": 0.333    
+    }
+},{
+    "selector": "edge",
+    "style": {
+        "curve-style": "bezier",
+        "opacity": 0.333,
+        "width": 7,
+        "z-index": 0,
+        "overlay-opacity": 0,
+        "target-arrow-shape": "triangle",
+        "target-arrow-color": "#000"
+    }
+  },{
     "selector": "node",
     "style": {
         "width": 40,
@@ -19,17 +36,6 @@
         "text-events": "yes"
     }
   },  {
-    "selector": "edge",
-    "style": {
-        "curve-style": "bezier",
-        "opacity": 0.333,
-        "width": 7,
-        "z-index": 0,
-        "overlay-opacity": 0,
-        "target-arrow-shape": "triangle",
-        "target-arrow-color": "#000"
-    }
-  }, {
     "selector": "node[gender = 'female']",
     "style": {
      "text-outline-color": "#9CBD8B",
@@ -44,16 +50,54 @@
 	"color": "#000"
     }
   }, {
+    "selector": "node.highlighted",
+    "style": {
+        "min-zoomed-font-size": 0,
+        "z-index": 9999
+    }
+  }, {
     "selector": "edge.highlighted",
     "style": {
         "opacity": 0.8,
         "width": 4,
         "z-index": 9999
     }
-  }, {
-    "selector": "node.highlighted",
+  },  { "selector": ".faded",
+  "style": {
+    "events":"no"
+  }
+  },  {
+    "selector": "node.faded",
     "style": {
-        "min-zoomed-font-size": 0,
-        "z-index": 9999
+        "opacity": 0.08
+    }
+  }, {
+    "selector": "edge.faded",
+    "style": {
+        "opacity": 0.06
+    }
+  }, {
+    "selector": ".hidden",
+    "style": {
+        "display": "none"
+    }
+  }, {
+    "selector": "node:selected",
+    "style": {
+        "width": 40,
+        "height": 40,
+        "border-color": "rgb(187, 219, 247)",
+        "border-opacity": 0.5,
+        "border-width": 10
+    }
+  },{
+    "selector": "edge:selected",
+    "style": {
+        "line-color": "#4287F5"
+    }
+  }, {
+    "selector": ".filtered",
+    "style": {
+        "display": "none"
     }
   }]
