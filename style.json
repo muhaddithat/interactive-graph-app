@@ -29,4 +29,31 @@
         "target-arrow-shape": "triangle",
         "target-arrow-color": "#000"
     }
+  }, {
+    "selector": "node[gender = 'female']",
+    "style": {
+     "text-outline-color": "#9CBD8B",
+	"background-color": "#9CBD8B",
+	"color": "#000"
+    }
+  }, {
+    "selector": "node[gender = 'male']",
+    "style": {
+     "text-outline-color": "#E2CDAB",
+	"background-color": "#E2CDAB",
+	"color": "#000"
+    }
+  }, {
+    "selector": "edge.highlighted",
+    "style": {
+        "opacity": 0.8,
+        "width": 4,
+        "z-index": 9999
+    }
+  }, {
+    "selector": "node.highlighted",
+    "style": {
+        "min-zoomed-font-size": 0,
+        "z-index": 9999
+    }
   }]
