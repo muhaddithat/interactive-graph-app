@@ -39,7 +39,7 @@ $(function () {
 
   // also get style via ajax
   var styleP = $.ajax({
-    url: './style.json',//3/14/23'./style.cycss', // wine-and-cheese-style.cycss
+    url: './style.cycss', // wine-and-cheese-style.cycss
     type: 'GET',
     dataType: 'text'
   });
