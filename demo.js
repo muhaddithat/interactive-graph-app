@@ -239,7 +239,7 @@ $(function () {
   }
 
   //3/27
-  function showEdgeInfo(node) {
+  function showEdgeInfo(edge) {
     $('#info').html(EdgeInfoTemplate(edge.data())).show();
   }
 
