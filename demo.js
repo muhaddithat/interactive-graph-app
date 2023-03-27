@@ -44,7 +44,8 @@ $(function () {
   });
 
 
-  var infoTemplate = Handlebars.compile($('#node-info').html()); 
+  var NodeInfoTemplate = Handlebars.compile($('#node-info').html());
+  var EdgeInfoTemplate = Handlebars.compile($('#edge-info').html()); //3/27
 
   // when both graph export json and style loaded, init cy
   Promise.all([graphP, styleP]).then(initCy);
@@ -230,13 +231,21 @@ $(function () {
   }
 
   function showNodeInfo(node) {
-    $('#info').html(infoTemplate(node.data())).show();
+    $('#info').html(NodeInfoTemplate(node.data())).show();
   }
 
   function hideNodeInfo() {
     $('#info').hide();
   }
 
+  //3/27
+  function showEdgeInfo(node) {
+    $('#info').html(EdgeInfoTemplate(edge.data())).show();
+  }
+
+  function hideEdgeInfo() {
+    $('#info').hide();
+  }
 
   function initCy(then) {
     var loading = document.getElementById('loading');
@@ -278,11 +287,10 @@ $(function () {
     });
 
     allNodes = cy.nodes();
-    console.log(allNodes.selectable());//3/13
-    allEles = cy.elements();
-    console.log(allEles.selectable());//3/13
-    allEdges = cy.edges(); //3/13/23
-    console.log(allEdges.selectable());//3/13
+    //03/13/23
+    console.log(allNodes.selectable());
+    console.log(allEles.selectable());
+    console.log(allEdges.selectable());
 
     cy.on('free', 'node', function (e) {
       var n = e.cyTarget;
@@ -320,6 +328,14 @@ $(function () {
       var edge = cy.$('edge:selected');
       console.log(edge.selectable());
 
+      //3/27/23
+      if (edge.nonempty()) {
+        showEdgeInfo(edge);
+      } else {
+        hideEdgeInfo();
+        clear();
+      }
+
     }, 100));
 
  
@@ -341,7 +357,6 @@ $(function () {
           return str.match(q);
         }
 
-        //var fields = ['name', 'NodeType', 'Country', 'Type', 'Milk'];
         var fields = ['fullname', 'displayname', 'searchname']; //aea
 
         function anyFieldMatches(n) {
@@ -377,7 +392,7 @@ $(function () {
         cb(res);
       },
       templates: {
-        suggestion: infoTemplate
+        suggestion: NodeInfoTemplate
       }
     }).on('typeahead:selected', function (e, entry, dataset) {
       var n = cy.getElementById(entry.id);
