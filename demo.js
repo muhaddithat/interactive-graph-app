@@ -19,7 +19,6 @@ $(function () {
 
   // get exported json from cytoscape desktop via ajax
   var graphP = $.ajax({ // ayah: graphP would be the default graph, the initial one passed into the initCy function that users see when they first get to the page
-    // url: 'https://cdn.rawgit.com/maxkfranz/3d4d3c8eb808bd95bae7/raw', // wine-and-cheese.json
     url: 'data/aishah_53.json',
     type: 'GET',
     dataType: 'json'
@@ -39,7 +38,7 @@ $(function () {
 
   // also get style via ajax
   var styleP = $.ajax({
-    url: './style.json',//3/14/23'./style.cycss', // wine-and-cheese-style.cycss
+    url: './style.json',//3/14/23'./style.cycss', 
     type: 'GET',
     dataType: 'json'//3/14'text'
   });
@@ -315,7 +314,8 @@ $(function () {
 
     }, 100));
 
-    //3/13/23 (this doesn't do anything :/ )
+    //3/13/23 this doesn't do anything :/
+    //3/14/23 this does something! :) 
     cy.on('select unselect', 'edge', _.debounce(function (e) {
       var edge = cy.$('edge:selected');
       console.log(edge.selectable());
@@ -490,48 +490,6 @@ if (isDirty()) {
         } else if (gender === 'female') {
           if (!female) { filter(); }
         }
-        /*
-                if( type === 'Cheese' || type === 'CheeseType' ){
-        
-                  var cType = n.data('Type');
-                  var cty = n.data('Country');
-        
-                  if(
-                    // moisture
-                       (cType === 'Soft' && !soft)
-                    || (cType === 'Semi-soft' && !semiSoft)
-                    || (cType === undefined && !na)
-                    || (cType === 'Semi-hard' && !semiHard)
-                    || (cType === 'Hard' && !hard)
-        
-                    // country
-                    || (cty === 'England' && !england)
-                    || (cty === 'France' && !france)
-                    || (cty === 'Italy' && !italy)
-                    || (cty === 'US' && !usa)
-                    || (cty === 'Spain' && !spain)
-                    || (cty === 'Switzerland' && !switzerland)
-                    || ( (cty === 'Holland' || cty === 'Ireland' || cty === 'Portugal' || cty === 'Scotland' || cty === 'Wales') && !euro )
-                    || ( (cty === 'Canada' || cty === 'Australia') && !newWorld )
-                    || (cty === undefined && !naCountry)
-                  ){
-                    filter();
-                  }
-        
-                } else if( type === 'RedWine' ){
-        
-                  if( !red ){ filter(); }
-        
-                } else if( type === 'WhiteWine' ){
-        
-                  if( !white ){ filter(); }
-        
-                } else if( type === 'Cider' ){
-        
-                  if( !cider ){ filter(); }
-        
-                }
-        */
       });
 
     });

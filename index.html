@@ -59,39 +59,10 @@
   </div>
 
   <div id="filters">
-
-    <!-- aea   <div class="filterset-section-title">Cheese</div>
-
-    <div class="filtersets">
-      <div class="filterset">
-        <div class="filterset-title">Moisture</div>
-        <input id="soft" type="checkbox" checked></input><label for="soft">Soft</label><br />
-        <input id="semi-soft" type="checkbox" checked></input><label for="semi-soft">Semi-soft</label><br />
-        <input id="semi-hard" type="checkbox" checked></input><label for="semi-hard">Semi-hard</label><br />
-        <input id="hard" type="checkbox" checked></input><label for="hard">Hard</label><br />
-        <input id="na" type="checkbox" checked></input><label for="na">Other</label><br />
-      </div>
-      <div class="filterset right">
-        <div class="filterset-title">Country</div>
-        <input id="chs-en" type="checkbox" checked></input><label for="chs-en">England</label><br />
-        <input id="chs-fr" type="checkbox" checked></input><label for="chs-fr">France</label><br />
-        <input id="chs-it" type="checkbox" checked></input><label for="chs-it">Italy</label><br />
-        <input id="chs-usa" type="checkbox" checked></input><label for="chs-us">USA</label><br />
-        <input id="chs-es" type="checkbox" checked></input><label for="chs-es">Spain</label><br />
-        <input id="chs-ch" type="checkbox" checked></input><label for="chs-ch">Switzerland</label><br />
-        <input id="chs-euro" type="checkbox" checked></input><label for="chs-euro">Other Europe</label><br />
-        <input id="chs-nworld" type="checkbox" checked></input><label for="chs-nworld">Other New World</label><br />
-        <input id="chs-na" type="checkbox" checked></input><label for="chs-na">Other</label><br />
-      </div>
-    </div>
-    -->
     <div class="filterset-section-title">Gender</div>
 
     <div class="filtersets">
       <div class="filterset">
-        <!--  <input id="white" type="checkbox" checked></input><label for="white">White wine</label><br />
-        <input id="red" type="checkbox" checked></input><label for="red">Red wine</label><br />
-        <input id="cider" type="checkbox" checked></input><label for="cider">Cider</label> -->
         <input id="male" type="checkbox" checked></input><label for="male">Male</label><br />
         <input id="female" type="checkbox" checked></input><label for="female">Female</label>
       </div>
@@ -104,12 +75,6 @@
     <div class='dropdown-title'>Choose a graph to view</div>
     <div class='dropdown'>
       <form>
-        <!-- commented 11/30 
-        <input type="radio" id="aishah" name="selected_graph" value="aishah_53"><label for="aishah">Aishah</label><br>
-        <input type="radio" id="hafsah" name="selected_graph" value="hafsah_54"><label for="hafsah_54">Hafsah</label><br>
-        <input type="radio" id="umsalamah" name="selected_graph" value="umsalamah_X"><label for="umsalamah_X">Um Salamah</label><br>
-        <input type="radio" id="various" name="selected_graph" value="various"><label for="various">various</label><br>
-      -->
       <select id = "dropdown-list" onchange = "changeGraph()" >
         <option> Choose a graph </option>
         <option value="aishah_53"> Aishah </option>
@@ -121,21 +86,6 @@
     </div>
   </div>
 
-  <!--this whole div is from 10/28
-<div id="dropdown-content">
-  <div class='dropdown-title'>Choose a graph to view</div>
-  <div class='dropdown'>
-    <select id="narrator-select" class="dropbtn">
-      <option value="index.html">Various Narrators</option>
-      <option value="aishah53">ʿAʾishah bint Abi Bakr</option>
-      <option value="sample3">Ḥafṣah bint ʿUmar</option>
-      <option value="sample4">Um Salamah</option>
-      <option value="sample4">Ramlah bint Abi Sufyān</option>
-      <option value="sample5">Asmāʾ bint ʿUmays</option>
-    </select>
-  </div>
-</div>
--->
 
 <script id="node-info" type="text/x-handlebars-template">
   <div class='node-info-fullname'>Full Name: {{fullname}}</div>
