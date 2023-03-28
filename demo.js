@@ -1,4 +1,4 @@
-var various = null;
+//var various = null;
 var aishah = null;
 var safiyyah2802 = null;
 var recenter = null;
@@ -24,11 +24,11 @@ $(function () {
     dataType: 'json'
   });
 
-/*  ayah testingvar */ variousgraph = $.ajax({
+/*   variousgraph = $.ajax({
     url: 'data/various.json',
     type: 'GET',
     dataType: 'json'
-  });
+  }); */
 
   aishahgraph = $.ajax({ 
     url: 'data/aishah_53.json',
@@ -259,9 +259,9 @@ $(function () {
     // ayah
     // initialize variables with graph data if they haven't yet been initialized
     // this allows various to still store the graph in the dropdown function
-    if (various == null) {
+    /*if (various == null) {
       various = variousgraph['responseJSON'];
-    }
+    } */
     if (aishah == null) {
       aishah = aishahgraph['responseJSON'];
     }
@@ -337,7 +337,7 @@ $(function () {
     //3/14/23 this does something! :) 
     cy.on('select unselect', 'edge', _.debounce(function (e) {
       var edge = cy.$('edge:selected');
-      console.log(edge.selectable());
+      //console.log(edge.selectable());
 
       //3/27/23
       if (edge.nonempty()) {
@@ -632,7 +632,7 @@ function elementsetup(el) {
     allEdges = cy.edges(); //3/13/23
     allEles = cy.elements(); //12/5/22
     recenter();
-  } else if (selectednarrator == "various") {
+  } /*else if (selectednarrator == "various") {
     elementsetup(various.elements);
     cy.json({ elements: various.elements });
     allNodes = cy.nodes(); //12/5/22
@@ -640,7 +640,7 @@ function elementsetup(el) {
     allEles = cy.elements(); //12/5/22
     recenter();
     
-  } else if (selectednarrator == "safiyyah2802") {
+  }*/else if (selectednarrator == "safiyyah2802") {
     elementsetup(safiyyah2802.elements);
     cy.json({ elements: safiyyah2802.elements });
     allNodes = cy.nodes(); 
