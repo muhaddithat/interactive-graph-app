@@ -1,6 +1,6 @@
 var various = null;
 var aishah = null;
-//var switcher = true;
+var safiyyah2802 = null;
 var recenter = null;
 
 var allNodes = null; //12/5/22
@@ -24,14 +24,20 @@ $(function () {
     dataType: 'json'
   });
 
-/*  ayah testingvar */ variousgraph = $.ajax({ //ayah testing
+/*  ayah testingvar */ variousgraph = $.ajax({
     url: 'data/various.json',
     type: 'GET',
     dataType: 'json'
   });
 
-  aishahgraph = $.ajax({ //ayah testing
+  aishahgraph = $.ajax({ 
     url: 'data/aishah_53.json',
+    type: 'GET',
+    dataType: 'json'
+  });
+
+  safiyyah2802graph = $.ajax({ //ayah testing
+    url: 'data/safiyyah_53.json',
     type: 'GET',
     dataType: 'json'
   });
@@ -258,6 +264,9 @@ $(function () {
     }
     if (aishah == null) {
       aishah = aishahgraph['responseJSON'];
+    }
+    if (safiyyah2802 == null) {
+      safiyyah2802 = safiyyah2802graph['responseJSON'];
     }
 
     var expJson = then[0];
@@ -629,6 +638,14 @@ function elementsetup(el) {
     allNodes = cy.nodes(); //12/5/22
     allEdges = cy.edges(); //3/13/23
     allEles = cy.elements(); //12/5/22
+    recenter();
+    
+  } else if (selectednarrator == "safiyyah2802") {
+    elementsetup(safiyyah2802.elements);
+    cy.json({ elements: safiyyah2802.elements });
+    allNodes = cy.nodes(); 
+    allEdges = cy.edges(); 
+    allEles = cy.elements();
     recenter();
     
   }
