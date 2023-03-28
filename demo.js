@@ -37,7 +37,7 @@ $(function () {
   });
 
   safiyyah2802graph = $.ajax({ //ayah testing
-    url: 'data/safiyyah_53.json',
+    url: 'data/safiyyah_2802.json',
     type: 'GET',
     dataType: 'json'
   });
@@ -297,11 +297,11 @@ $(function () {
 
     allNodes = cy.nodes();
     //03/13/23
-    console.log(allNodes.selectable());//3/13
+    //console.log(allNodes.selectable());//3/13
     allEles = cy.elements();
-    console.log(allEles.selectable());//3/13
+    //console.log(allEles.selectable());//3/13
     allEdges = cy.edges(); //3/13/23
-    console.log(allEdges.selectable());//3/13
+    //console.log(allEdges.selectable());//3/13
 
     cy.on('free', 'node', function (e) {
       var n = e.cyTarget;
