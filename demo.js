@@ -1,9 +1,10 @@
 //var various = null;
 var aishah = null;
 var hafsah54 = null;
-var safiyyah2802 = null;
 var ramlah59 = null;
 var umsalamah56 = null;
+var safiyyah2802 = null;
+var amrah11455 = null;
 var recenter = null;
 
 var allNodes = null; //12/5/22
@@ -59,6 +60,12 @@ $(function () {
 
   safiyyah2802graph = $.ajax({ //ayah testing
     url: 'data/safiyyah_2802.json',
+    type: 'GET',
+    dataType: 'json'
+  });
+
+  amrah11455graph = $.ajax({ //ayah testing
+    url: 'data/amrah_11455.json',
     type: 'GET',
     dataType: 'json'
   });
@@ -286,9 +293,6 @@ $(function () {
     if (aishah == null) {
       aishah = aishahgraph['responseJSON'];
     }
-    if (safiyyah2802 == null) {
-      safiyyah2802 = safiyyah2802graph['responseJSON'];
-    }
     if (hafsah54 == null) {
       hafsah54 = hafsah54graph['responseJSON'];
     } 
@@ -297,6 +301,12 @@ $(function () {
     }
     if (ramlah59 == null) {
       ramlah59 = ramlah59graph['responseJSON'];
+    }
+    if (safiyyah2802 == null) {
+      safiyyah2802 = safiyyah2802graph['responseJSON'];
+    }
+    if (amrah11455 == null) {
+      amrah11455 = amrah11455graph['responseJSON'];
     }
 
     var expJson = then[0];
@@ -670,15 +680,7 @@ function elementsetup(el) {
     allEles = cy.elements(); //12/5/22
     recenter();
     
-  }*/else if (selectednarrator == "safiyyah2802") {
-    elementsetup(safiyyah2802.elements);
-    cy.json({ elements: safiyyah2802.elements });
-    allNodes = cy.nodes(); 
-    allEdges = cy.edges(); 
-    allEles = cy.elements();
-    recenter();
-    
-  } else if (selectednarrator == "hafsah54") {
+  }*/ else if (selectednarrator == "hafsah54") {
     elementsetup(hafsah54.elements);
     cy.json({ elements: hafsah54.elements });
     allNodes = cy.nodes(); 
@@ -697,6 +699,22 @@ function elementsetup(el) {
   } else if (selectednarrator == "ramlah59") {
     elementsetup(ramlah59.elements);
     cy.json({ elements: ramlah59.elements });
+    allNodes = cy.nodes(); 
+    allEdges = cy.edges(); 
+    allEles = cy.elements();
+    recenter();
+    
+  } else if (selectednarrator == "safiyyah2802") {
+    elementsetup(safiyyah2802.elements);
+    cy.json({ elements: safiyyah2802.elements });
+    allNodes = cy.nodes(); 
+    allEdges = cy.edges(); 
+    allEles = cy.elements();
+    recenter();
+    
+  } else if (selectednarrator == "amrah11455") {
+    elementsetup(amrah11455.elements);
+    cy.json({ elements: amrah11455.elements });
     allNodes = cy.nodes(); 
     allEdges = cy.edges(); 
     allEles = cy.elements();

@@ -1,0 +1,393 @@
+{
+    "format_version": "1.0",
+    "generated_by": "graphspace-2.0.0",
+    "target_cytoscapejs_version": "~2.7",
+    "elements": {
+        "nodes": [
+            {
+                "data": {
+                    "info": "The final messenger of Allah",
+                    "name": 1,
+                    "searchname": "Prophet Muhammad",
+                    "gender": "male",
+                    "arabicname": "محمد رسول الله صلى الله عليه وسلم",
+                    "fullname": "Prophet Muḥammad, peace and blessings be upon him",
+                    "label": "Prophet Muḥammad",
+                    "id": "1"
+                },
+                "position": {
+                    "x": 272.1185976627963,
+                    "y": 274.3085998677054
+                }
+            },
+            {
+                "data": {
+                    "info": "A successor, respected jurist, and prolific hadith narrator who narrated hadith from several companions ",
+                    "name": 11013,
+                    "searchname": "Muhammad ibn Muslim ibn Ubaydullah ibn Abdullah ibn Shihab al-Zuhri",
+                    "gender": "male",
+                    "arabicname": "ابن شهاب الزهري",
+                    "fullname": "Muḥammad ibn Muslim ibn ʿUbaydullāh ibn ʿAbdullāh ibn Shihāb al-Zuhri",
+                    "label": "Ibn Shihāb az-Zuhri",
+                    "id": "11013"
+                },
+                "position": {
+                    "x": 736.167428193444,
+                    "y": 373.0058991400854
+                }
+            },
+            {
+                "data": {
+                    "info": "Founder of one of the four legal schools of thought in Sunni Islam",
+                    "name": 20001,
+                    "searchname": "Malik ibn Anas",
+                    "gender": "male",
+                    "arabicname": "مالك بن أنس",
+                    "fullname": "Mālik ibn Anas",
+                    "label": "Imām Mālik",
+                    "id": "20001"
+                },
+                "position": {
+                    "x": 900.0271431721299,
+                    "y": 233.13438588122884
+                }
+            },
+            {
+                "data": {
+                    "info": "An Anṣārī companion of the Prophet ﷺ who took part in the Pledge of the Tree ",
+                    "name": 1259,
+                    "searchname": "Umm Hisham bint Harithah bint al-Numan",
+                    "gender": "female",
+                    "arabicname": "أم هشام بنت حارثة",
+                    "fullname": "Umm Hishām bint Ḥārithah bint al-Nuʿmān",
+                    "label": "Umm Hishām bint Ḥārithah",
+                    "id": "1259"
+                },
+                "position": {
+                    "x": 382.61631308246393,
+                    "y": 388.37512781860966
+                }
+            },
+            {
+                "data": {
+                    "info": "A companion of the Prophet ﷺ",
+                    "name": 4109,
+                    "searchname": "Harithah ibn Wahb al-Khuzai",
+                    "gender": "male",
+                    "arabicname": "حارثة بن وهب",
+                    "fullname": "Ḥārithah ibn Wahb al-Khuzāʿi",
+                    "label": "Ḥārithah ibn Wahb",
+                    "id": "4109"
+                },
+                "position": {
+                    "x": 628.4031576436864,
+                    "y": 163.20814295163893
+                }
+            },
+            {
+                "data": {
+                    "info": "Son of Asmāʾ bint Abi Bakr and therefore nephew of ʿĀʾishah bint Abi Bakr",
+                    "name": 10511,
+                    "searchname": "Urwah ibn al-Zubayr ibn al-Awwam",
+                    "gender": "male",
+                    "arabicname": "عروة بن الزبير",
+                    "fullname": "ʿUrwah ibn al-Zubayr ibn al-ʿAwwām",
+                    "label": "ʿUrwah ibn al-Zubayr",
+                    "id": "10511"
+                },
+                "position": {
+                    "x": 739.2343994708219,
+                    "y": 298.2882424886081
+                }
+            },
+            {
+                "data": {
+                    "info": "An Anṣārī companion of the Prophet ﷺ",
+                    "name": 1264,
+                    "searchname": "Habibah bint Sahl bint Thalabah al-Ansariyyah",
+                    "gender": "female",
+                    "arabicname": "حبيبة بنت سهل",
+                    "fullname": "Ḥabībah bint Sahl bint Thaʿlabah al-Anṣāriyyah",
+                    "label": "Ḥabībah bint Sahl",
+                    "id": "1264"
+                },
+                "position": {
+                    "x": 399.9516127958257,
+                    "y": 216.61719973541088
+                }
+            },
+            {
+                "data": {
+                    "info": "Wife of the Prophet ﷺand daughter of Abi Bakr, the first caliph",
+                    "name": 53,
+                    "searchname": "Aishah bint Abi Bakr",
+                    "gender": "female",
+                    "arabicname": "عائشة بنت أبي بكر",
+                    "fullname": "ʿAʾishah bint Abi Bakr",
+                    "label": "ʿAʾishah bint Abi Bakr",
+                    "id": "53"
+                },
+                "position": {
+                    "x": 400.5769283036896,
+                    "y": 314.0805428634426
+                }
+            },
+            {
+                "data": {
+                    "info": "Successor who narrated several hadiths from various companions",
+                    "name": 11062,
+                    "searchname": "Yahya ibn Said al-Ansari",
+                    "gender": "male",
+                    "arabicname": "يحيى بن سعيد الأنصاري",
+                    "fullname": "Yaḥyā ibn Saʿīd al-Anṣārī",
+                    "label": "Yaḥyā ibn Saʿīd",
+                    "id": "11062"
+                },
+                "position": {
+                    "x": 721.3882560782012,
+                    "y": 226.29591493458753
+                }
+            },
+            {
+                "data": {
+                    "info": "A successor (one of the Tābiʿīn) who narrated from several female companions.",
+                    "name": 11455,
+                    "searchname": "Amrah bint Abdur-Rahman ibn Sad ibn Zararah",
+                    "gender": "female",
+                    "arabicname": "عمرة بنت عبد الرحمن بن سعد بن زرارة",
+                    "fullname": "ʿAmrah bint ʿAbd ur-Raḥmān ibn Saʿd ibn Zarārah",
+                    "label": "ʿAmrah bint ʿAbd ur-Raḥmān",
+                    "id": "11455"
+                },
+                "position": {
+                    "x": 543,
+                    "y": 271
+                }
+            }
+        ],
+        "edges": [
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/nasai:3462",
+                    "narratedfrom": "Prophet Muḥammad",
+                    "target": "1264",
+                    "narratedto": "Ḥabībah bint Sahl",
+                    "source": "1",
+                    "is_directed": false,
+                    "name": "1-1264",
+                    "id": "814c3848-3665-46c2-96a9-9e9d67d3e600"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/nasai:949",
+                    "narratedfrom": "Prophet Muḥammad",
+                    "target": "1259",
+                    "narratedto": "Umm Hishām bint Ḥārithah",
+                    "source": "1",
+                    "is_directed": false,
+                    "name": "1-1259",
+                    "id": "390df69e-26a8-4307-ab2c-79aa5d5323d1"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/nasai:1856",
+                    "narratedfrom": "Prophet Muḥammad",
+                    "target": "53",
+                    "narratedto": "ʿAʾishah bint Abi Bakr",
+                    "source": "1",
+                    "is_directed": false,
+                    "name": "1-53",
+                    "id": "1bc5a75f-71a4-414c-ac5c-e3a4c1ac33d7"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/nasai:949",
+                    "narratedfrom": "Umm Hishām bint Ḥārithah",
+                    "target": "11455",
+                    "narratedto": "ʿAmrah bint ʿAbd ur-Raḥmān",
+                    "source": "1259",
+                    "is_directed": false,
+                    "name": "1259-11455",
+                    "id": "cc53c683-275e-43d1-ac49-7787cf489685"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/muslim:297a",
+                    "narratedfrom": "ʿUrwah ibn al-Zubayr",
+                    "target": "11013",
+                    "narratedto": "Ibn Shihāb az-Zuhri",
+                    "source": "10511",
+                    "is_directed": false,
+                    "name": "10511-11013",
+                    "id": "8f87e956-0e2a-4815-80a2-a558845399dd"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/nasai:3462",
+                    "narratedfrom": "Ḥabībah bint Sahl",
+                    "target": "11455",
+                    "narratedto": "ʿAmrah bint ʿAbd ur-Raḥmān",
+                    "source": "1264",
+                    "is_directed": false,
+                    "name": "1264-11455",
+                    "id": "d76d70c4-05ca-4697-8394-98956a520b43"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/nasai:1856",
+                    "narratedfrom": "ʿAʾishah bint Abi Bakr",
+                    "target": "11455",
+                    "narratedto": "ʿAmrah bint ʿAbd ur-Raḥmān",
+                    "source": "53",
+                    "is_directed": false,
+                    "name": "53-11455",
+                    "id": "af0bf77f-49e2-490c-bbb4-4f977689b4e8"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/nasai:3462",
+                    "narratedfrom": "Yaḥyā ibn Saʿīd",
+                    "target": "20001",
+                    "narratedto": "Imām Mālik",
+                    "source": "11062",
+                    "is_directed": false,
+                    "name": "11062-20001",
+                    "id": "429a86a0-31a6-4d73-b5c5-a949462fe065"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/muslim:297a",
+                    "narratedfrom": "ʿAmrah bint ʿAbd ur-Raḥmān",
+                    "target": "10511",
+                    "narratedto": "ʿUrwah ibn al-Zubayr",
+                    "source": "11455",
+                    "is_directed": false,
+                    "name": "11455-10511",
+                    "id": "841dc0f1-755d-4227-b6ae-5de40b89f569"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/ibnmajah:2479",
+                    "narratedfrom": "ʿAmrah bint ʿAbd ur-Raḥmān",
+                    "target": "4109",
+                    "narratedto": "Ḥārithah ibn Wahb",
+                    "source": "11455",
+                    "is_directed": false,
+                    "name": "11455-4109",
+                    "id": "a8eb3931-14a0-4575-ba36-dd4b71eca360"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/nasai:3462",
+                    "narratedfrom": "ʿAmrah bint ʿAbd ur-Raḥmān",
+                    "target": "11062",
+                    "narratedto": "Yaḥyā ibn Saʿīd",
+                    "source": "11455",
+                    "is_directed": false,
+                    "name": "11455-11062",
+                    "id": "8510232b-0c54-4677-9317-65c02782fd5e"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/bukhari:327",
+                    "narratedfrom": "ʿAmrah bint ʿAbd ur-Raḥmān",
+                    "target": "11013",
+                    "narratedto": "Ibn Shihāb az-Zuhri",
+                    "source": "11455",
+                    "is_directed": false,
+                    "name": "11455-11013",
+                    "id": "6dfe7834-f07b-4940-8fe0-e6e37aa53cfc"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            }
+        ]
+    },
+    "data": {
+        "directed": true,
+        "description": "This is a graph of hadith narrators - work in progress",
+        "name": "Graph 11:02AM on March 29, 2023",
+        "tags": []
+    }
+}
