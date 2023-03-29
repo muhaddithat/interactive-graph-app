@@ -2,6 +2,7 @@
 var aishah = null;
 var hafsah54 = null;
 var safiyyah2802 = null;
+var umsalamah56 = null;
 var recenter = null;
 
 var allNodes = null; //12/5/22
@@ -39,6 +40,12 @@ $(function () {
 
   hafsah54graph = $.ajax({ //ayah testing
     url: 'data/hafsah_54.json',
+    type: 'GET',
+    dataType: 'json'
+  });
+
+  umsalamah56graph = $.ajax({ //ayah testing
+    url: 'data/umsalamah_56.json',
     type: 'GET',
     dataType: 'json'
   });
@@ -277,6 +284,9 @@ $(function () {
     }
     if (hafsah54 == null) {
       hafsah54 = hafsah54graph['responseJSON'];
+    } 
+    if (umsalamah56 == null) {
+      umsalamah56 = umsalamah56graph['responseJSON'];
     }
 
     var expJson = then[0];
@@ -661,6 +671,14 @@ function elementsetup(el) {
   } else if (selectednarrator == "hafsah54") {
     elementsetup(hafsah54.elements);
     cy.json({ elements: hafsah54.elements });
+    allNodes = cy.nodes(); 
+    allEdges = cy.edges(); 
+    allEles = cy.elements();
+    recenter();
+    
+  } else if (selectednarrator == "umsalamah56") {
+    elementsetup(umsalamah56.elements);
+    cy.json({ elements: umsalamah56.elements });
     allNodes = cy.nodes(); 
     allEdges = cy.edges(); 
     allEles = cy.elements();
