@@ -8,6 +8,11 @@ var amrah11455 = null;
 var fatimah10526 = null;
 var hafsah11039 = null;
 var asma69 = null;
+var asma70 = null;
+var asma84 = null;
+var khayrah10737 = null;
+var nusaybah71 = null;
+var umdarda11457 = null;
 var recenter = null;
 
 var allNodes = null; //12/5/22
@@ -67,6 +72,24 @@ $(function () {
     dataType: 'json'
   });
 
+  umdarda11457graph = $.ajax({ //ayah testing
+    url: 'data/umdarda_11457.json',
+    type: 'GET',
+    dataType: 'json'
+  });
+
+  nusaybah71graph = $.ajax({ //ayah testing
+    url: 'data/nusaybah_71.json',
+    type: 'GET',
+    dataType: 'json'
+  });
+
+  khayrah10737graph = $.ajax({ //ayah testing
+    url: 'data/khayrah_10737.json',
+    type: 'GET',
+    dataType: 'json'
+  });
+
   amrah11455graph = $.ajax({ //ayah testing
     url: 'data/amrah_11455.json',
     type: 'GET',
@@ -87,6 +110,18 @@ $(function () {
 
   asma69graph = $.ajax({ //ayah testing
     url: 'data/asma_69.json',
+    type: 'GET',
+    dataType: 'json'
+  });
+
+  asma70graph = $.ajax({ //ayah testing
+    url: 'data/asma_70.json',
+    type: 'GET',
+    dataType: 'json'
+  });
+
+  asma84graph = $.ajax({ //ayah testing
+    url: 'data/asma_84.json',
     type: 'GET',
     dataType: 'json'
   });
@@ -325,6 +360,15 @@ $(function () {
     if (safiyyah2802 == null) {
       safiyyah2802 = safiyyah2802graph['responseJSON'];
     }
+    if (umdarda11457 == null) {
+      umdarda11457 = umdarda11457graph['responseJSON'];
+    }
+    if (nusaybah71 == null) {
+      nusaybah71 = nusaybah71graph['responseJSON'];
+    }
+    if (khayrah10737 == null) {
+      khayrah10737 = khayrah10737graph['responseJSON'];
+    }
     if (amrah11455 == null) {
       amrah11455 = amrah11455graph['responseJSON'];
     }
@@ -336,6 +380,12 @@ $(function () {
     }
     if (asma69 == null) {
       asma69 = asma69graph['responseJSON'];
+    }
+    if (asma70 == null) {
+      asma70 = asma70['responseJSON'];
+    }
+    if (asma84 == null) {
+      asma84 = asma84graph['responseJSON'];
     }
 
     var expJson = then[0];
@@ -741,6 +791,30 @@ function elementsetup(el) {
     allEles = cy.elements();
     recenter();
     
+  } else if (selectednarrator == "umdarda11457") {
+    elementsetup(umdarda11457.elements);
+    cy.json({ elements: umdarda11457.elements });
+    allNodes = cy.nodes(); 
+    allEdges = cy.edges(); 
+    allEles = cy.elements();
+    recenter();
+    
+  } else if (selectednarrator == "nusaybah71") {
+    elementsetup(nusaybah71.elements);
+    cy.json({ elements: nusaybah71.elements });
+    allNodes = cy.nodes(); 
+    allEdges = cy.edges(); 
+    allEles = cy.elements();
+    recenter();
+    
+  } else if (selectednarrator == "khayrah10737") {
+    elementsetup(khayrah10737.elements);
+    cy.json({ elements: khayrah10737.elements });
+    allNodes = cy.nodes(); 
+    allEdges = cy.edges(); 
+    allEles = cy.elements();
+    recenter();
+    
   } else if (selectednarrator == "amrah11455") {
     elementsetup(amrah11455.elements);
     cy.json({ elements: amrah11455.elements });
@@ -768,6 +842,22 @@ function elementsetup(el) {
   } else if (selectednarrator == "asma69") {
     elementsetup(asma69.elements);
     cy.json({ elements: asma69.elements });
+    allNodes = cy.nodes(); 
+    allEdges = cy.edges(); 
+    allEles = cy.elements();
+    recenter();
+    
+  } else if (selectednarrator == "asma70") {
+    elementsetup(asma70.elements);
+    cy.json({ elements: asma70.elements });
+    allNodes = cy.nodes(); 
+    allEdges = cy.edges(); 
+    allEles = cy.elements();
+    recenter();
+    
+  } else if (selectednarrator == "asma84") {
+    elementsetup(asma84.elements);
+    cy.json({ elements: asma84.elements });
     allNodes = cy.nodes(); 
     allEdges = cy.edges(); 
     allEles = cy.elements();

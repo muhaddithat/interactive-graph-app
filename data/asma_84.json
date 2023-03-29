@@ -1,0 +1,237 @@
+{
+    "format_version": "1.0",
+    "generated_by": "graphspace-2.0.0",
+    "target_cytoscapejs_version": "~2.7",
+    "elements": {
+        "nodes": [
+            {
+                "data": {
+                    "info": "The final messenger of Allah",
+                    "name": 1,
+                    "searchname": "Prophet Muhammad",
+                    "gender": "male",
+                    "arabicname": "محمد رسول الله صلى الله عليه وسلم",
+                    "fullname": "Prophet Muḥammad, peace and blessings be upon him",
+                    "label": "Prophet Muḥammad",
+                    "id": "1"
+                },
+                "position": {
+                    "x": 270.2914910610741,
+                    "y": 229.9486587725416
+                }
+            },
+            {
+                "data": {
+                    "info": "Servant of Asmāʾ bint Yazīd",
+                    "name": 11044,
+                    "searchname": "Shahr ibn Hawshab al-Ashari",
+                    "gender": "male",
+                    "arabicname": "شهر بن حوشب",
+                    "fullname": "Shahr ibn Ḥawshab al-Ashʿari",
+                    "label": "Shahr ibn Ḥawshab",
+                    "id": "11044"
+                },
+                "position": {
+                    "x": 589.1140655780281,
+                    "y": 292.83515063332334
+                }
+            },
+            {
+                "data": {
+                    "info": "Servant of Asmāʿ bint Yazīd",
+                    "name": 17066,
+                    "searchname": "Muhajir ibn Abi Muslim",
+                    "gender": "male",
+                    "arabicname": "مهاجر بن أبي مسلم",
+                    "fullname": "Muhājir ibn Abi Muslim",
+                    "label": "Muhājir ibn Abi Muslim",
+                    "id": "17066"
+                },
+                "position": {
+                    "x": 584.5128548357741,
+                    "y": 156.6240551041149
+                }
+            },
+            {
+                "data": {
+                    "info": "8th century jurist, author, ascetic, and hafiẓ ",
+                    "name": 20012,
+                    "searchname": "Sufyan ibn Said al-Thawri",
+                    "gender": "male",
+                    "arabicname": "سفيان الثوري",
+                    "fullname": "Sufyān ibn Saʾīd al-Thawri",
+                    "label": "Sufyān al-Thawri",
+                    "id": "20012"
+                },
+                "position": {
+                    "x": 918.8288625751386,
+                    "y": 293.0245166782903
+                }
+            },
+            {
+                "data": {
+                    "info": "One of the successors (Tābiʿīn) from Makkah",
+                    "name": 10644,
+                    "searchname": "Abdullah ibn Uthman ibn Khuthaym",
+                    "gender": "male",
+                    "arabicname": "عبد الله بن عثمان بن خثيم",
+                    "fullname": "ʿAbdullāh ibn ʿUthmān ibn Khuthaym",
+                    "label": "ʿAbdullāh ibn ʿUthmān ibn Khuthaym",
+                    "id": "10644"
+                },
+                "position": {
+                    "x": 754.8248823878316,
+                    "y": 294.1300644428946
+                }
+            },
+            {
+                "data": {
+                    "info": "Companion of the Prophet ﷺ, an Anṣāri woman known as Khaṭībat al-Nisāʾ, or the Speaker of the Women, due to her outspokenness and eloquence. She also participated in battles with the Prophet ﷺon multiple occasions",
+                    "name": 84,
+                    "searchname": "Asma bint Yazid ibn al-Sakan",
+                    "gender": "female",
+                    "arabicname": "أسماء بنت يزيد بن السكن",
+                    "fullname": "Asmāʾ bint Yazīd ibn al-Sakan",
+                    "label": "Asmāʾ bint Yazīd",
+                    "id": "84"
+                },
+                "position": {
+                    "x": 441.31887304905194,
+                    "y": 224.47918478961174
+                }
+            },
+            {
+                "data": {
+                    "info": "Son of Muhājir ibn Abi Muslim",
+                    "name": 17532,
+                    "searchname": "Amr ibn Muhajir ibn Abi Muslim",
+                    "gender": "male",
+                    "arabicname": "عمرو بن المهاجر بن أبي مسلم",
+                    "fullname": "ʿAmr ibn Muhājir ibn Abi Muslim",
+                    "label": "ʿAmr ibn Muhājir",
+                    "id": "17532"
+                },
+                "position": {
+                    "x": 757.4096149420475,
+                    "y": 156.52368052007566
+                }
+            }
+        ],
+        "edges": [
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/ibnmajah:3701",
+                    "narratedfrom": "Prophet Muḥammad",
+                    "target": "84",
+                    "narratedto": "Asmāʾ bint Yazīd",
+                    "source": "1",
+                    "is_directed": false,
+                    "name": "1-84",
+                    "id": "e56b8fcd-bb83-4ce0-b232-b9a2da013c0c"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/tirmidhi:1939",
+                    "narratedfrom": "Shahr ibn Ḥawshab",
+                    "target": "10644",
+                    "narratedto": "ʿAbdullāh ibn ʿUthmān ibn Khuthaym",
+                    "source": "11044",
+                    "is_directed": false,
+                    "name": "11044-10644",
+                    "id": "f4d4c21c-d1cc-4442-8e8c-5fdb7ca5b0c2"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/abudawud:2281",
+                    "narratedfrom": "Muhājir ibn Abi Muslim",
+                    "target": "17532",
+                    "narratedto": "ʿAmr ibn Muhājir",
+                    "source": "17066",
+                    "is_directed": false,
+                    "name": "17066-17532",
+                    "id": "325453bd-be8a-49b2-b3f9-330650cbeb41"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/tirmidhi:1939",
+                    "narratedfrom": "ʿAbdullāh ibn ʿUthmān ibn Khuthaym",
+                    "target": "20012",
+                    "narratedto": "Sufyān al-Thawri",
+                    "source": "10644",
+                    "is_directed": false,
+                    "name": "10644-20012",
+                    "id": "1f47b894-cda1-489d-b539-75f54b1969ee"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/abudawud:2281",
+                    "narratedfrom": "Asmāʾ bint Yazīd",
+                    "target": "17066",
+                    "narratedto": "Muhājir ibn Abi Muslim",
+                    "source": "84",
+                    "is_directed": false,
+                    "name": "84-17066",
+                    "id": "108fca40-a593-4ade-8243-064b5bdf50fb"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/ibnmajah:3701",
+                    "narratedfrom": "Asmāʾ bint Yazīd",
+                    "target": "11044",
+                    "narratedto": "Shahr ibn Ḥawshab",
+                    "source": "84",
+                    "is_directed": false,
+                    "name": "84-11044",
+                    "id": "a5172f74-233a-4f77-90dc-2ec104043730"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            }
+        ]
+    },
+    "data": {
+        "directed": true,
+        "description": "This is a graph of hadith narrators - work in progress",
+        "name": "Graph 01:24PM on March 29, 2023",
+        "tags": []
+    }
+}

@@ -1,0 +1,221 @@
+{
+    "format_version": "1.0",
+    "generated_by": "graphspace-2.0.0",
+    "target_cytoscapejs_version": "~2.7",
+    "elements": {
+        "nodes": [
+            {
+                "data": {
+                    "info": "The final messenger of Allah",
+                    "name": 1,
+                    "searchname": "Prophet Muhammad",
+                    "gender": "male",
+                    "arabicname": "محمد رسول الله صلى الله عليه وسلم",
+                    "fullname": "Prophet Muḥammad, peace and blessings be upon him",
+                    "label": "Prophet Muḥammad",
+                    "id": "1"
+                },
+                "position": {
+                    "x": 324.2114210277471,
+                    "y": 191.86473670567605
+                }
+            },
+            {
+                "data": {
+                    "info": "Son of Khayrah Umm al-Hasan al-Baṣri, and famous scholar from Iraq",
+                    "name": 11016,
+                    "searchname": "al-Hasan al-Basri",
+                    "gender": "male",
+                    "arabicname": "الحسن البصري",
+                    "fullname": "al-Hasan al-Baṣri",
+                    "label": "al-Hasan al-Baṣri",
+                    "id": "11016"
+                },
+                "position": {
+                    "x": 761.1371685537928,
+                    "y": 139.53998412618037
+                }
+            },
+            {
+                "data": {
+                    "info": "Servant of Umm Salamah and the mother of the famous scholar, Al-Hasan Al-Baṣri",
+                    "name": 10737,
+                    "searchname": "Khayrah Umm al-Hasan al-Basri ",
+                    "gender": "female",
+                    "arabicname": "خيرة أم الحسن البصري",
+                    "fullname": "Khayrah Umm al-Hasan al-Baṣri ",
+                    "label": "Khayrah Umm al-Hasan al-Baṣri ",
+                    "id": "10737"
+                },
+                "position": {
+                    "x": 587.265043653004,
+                    "y": 199.74150833375532
+                }
+            },
+            {
+                "data": {
+                    "info": "Wife of the Prophet ﷺand daughter of Abi Bakr, the first caliph",
+                    "name": 53,
+                    "searchname": "Aishah bint Abi Bakr",
+                    "gender": "female",
+                    "arabicname": "عائشة بنت أبي بكر",
+                    "fullname": "ʿAʾishah bint Abi Bakr",
+                    "label": "ʿAʾishah bint Abi Bakr",
+                    "id": "53"
+                },
+                "position": {
+                    "x": 455.00906061181894,
+                    "y": 270.6089865072534
+                }
+            },
+            {
+                "data": {
+                    "info": "Son of Khayrah Umm al-Ḥasan al-Baṣri and brother of al-Ḥasan al-Baṣri",
+                    "name": 11287,
+                    "searchname": "Said ibn Abi al-Hasan",
+                    "gender": "male",
+                    "arabicname": "سعيد بن أبي الحسن",
+                    "fullname": "Saʿīd ibn Abi al-Ḥasan",
+                    "label": "Saʿīd ibn Abi al-Ḥasan",
+                    "id": "11287"
+                },
+                "position": {
+                    "x": 750.7811907771402,
+                    "y": 267.75437946451177
+                }
+            },
+            {
+                "data": {
+                    "info": "Wife of the Prophet Muḥammad ﷺ",
+                    "name": 56,
+                    "searchname": "Umm Salamah Hind bint Abi Umayyah ibn al-Mughīrah",
+                    "gender": "female",
+                    "arabicname": "أم سلمة",
+                    "fullname": "Hind bint Abi Umayyah ibn al-Mughīrah",
+                    "label": "Umm Salamah",
+                    "id": "56"
+                },
+                "position": {
+                    "x": 451.64295317223184,
+                    "y": 140.94935168532737
+                }
+            }
+        ],
+        "edges": [
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/muslim:2916c",
+                    "narratedfrom": "Prophet Muḥammad",
+                    "target": "56",
+                    "narratedto": "Umm Salamah",
+                    "source": "1",
+                    "is_directed": false,
+                    "name": "1-56",
+                    "id": "e89c440e-dfc9-4ffb-897b-9011fcb65d8b"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/muslim:2005b",
+                    "narratedfrom": "Prophet Muḥammad",
+                    "target": "53",
+                    "narratedto": "ʿAʾishah bint Abi Bakr",
+                    "source": "1",
+                    "is_directed": false,
+                    "name": "1-53",
+                    "id": "9c221ba4-dd18-4281-a779-290bc0a3a5ec"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/muslim:2005b",
+                    "narratedfrom": "Khayrah Umm al-Hasan al-Baṣri ",
+                    "target": "11016",
+                    "narratedto": "al-Hasan al-Baṣri",
+                    "source": "10737",
+                    "is_directed": false,
+                    "name": "10737-11016",
+                    "id": "1a408163-9087-4521-8de1-c84844ad26d9"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/muslim:2916a",
+                    "narratedfrom": "Khayrah Umm al-Hasan al-Baṣri ",
+                    "target": "11287",
+                    "narratedto": "Saʿīd ibn Abi al-Ḥasan",
+                    "source": "10737",
+                    "is_directed": false,
+                    "name": "10737-11287",
+                    "id": "8d610a49-c1d5-44ab-b52c-df86d54c28f3"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/muslim:2005b",
+                    "narratedfrom": "ʿAʾishah bint Abi Bakr",
+                    "target": "10737",
+                    "narratedto": "Khayrah Umm al-Hasan al-Baṣri ",
+                    "source": "53",
+                    "is_directed": false,
+                    "name": "53-10737",
+                    "id": "2ce45c49-f3e9-4e7c-9769-9b672922745c"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/muslim:2916c",
+                    "narratedfrom": "Umm Salamah",
+                    "target": "10737",
+                    "narratedto": "Khayrah Umm al-Hasan al-Baṣri ",
+                    "source": "56",
+                    "is_directed": false,
+                    "name": "56-10737",
+                    "id": "d95a0ece-78fe-403d-ba9a-dcab2a42a702"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            }
+        ]
+    },
+    "data": {
+        "directed": true,
+        "description": "This is a graph of hadith narrators - work in progress",
+        "name": "Graph 01:36PM on March 29, 2023",
+        "tags": []
+    }
+}
