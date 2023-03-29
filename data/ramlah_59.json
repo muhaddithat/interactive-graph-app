@@ -1,0 +1,681 @@
+{
+    "format_version": "1.0",
+    "generated_by": "graphspace-2.0.0",
+    "target_cytoscapejs_version": "~2.7",
+    "elements": {
+        "nodes": [
+            {
+                "data": {
+                    "info": "The final messenger of Allah",
+                    "name": 1,
+                    "searchname": "Prophet Muhammad",
+                    "gender": "male",
+                    "arabicname": "محمد رسول الله صلى الله عليه وسلم",
+                    "fullname": "Prophet Muḥammad, peace and blessings be upon him",
+                    "label": "Prophet Muḥammad",
+                    "id": "1"
+                },
+                "position": {
+                    "x": 91.36366028421452,
+                    "y": 243.44578709527653
+                }
+            },
+            {
+                "data": {
+                    "info": "A successor from Kufa",
+                    "name": 11394,
+                    "searchname": "al-Musayyib ibn Rafi al-Asadi",
+                    "gender": "male",
+                    "arabicname": "المسيب بن رافع الأسدي",
+                    "fullname": "al-Musayyib ibn Rāfiʿ al-Asadi",
+                    "label": "al-Musayyib ibn Rāfiʿ",
+                    "id": "11394"
+                },
+                "position": {
+                    "x": 677.8543227579735,
+                    "y": 289.3745798276141
+                }
+            },
+            {
+                "data": {
+                    "info": "Wife of the Prophet ﷺand daught of Abi Sufyān",
+                    "name": 59,
+                    "searchname": "Umm Ḥabībah Ramlah bint Abi Sufyan",
+                    "gender": "female",
+                    "arabicname": "أم حبيبة بنت أبي سفيان",
+                    "fullname": "Umm al-Muʿminīn Umm Ḥabībah Ramlah bint Abi Sufyān",
+                    "label": "Ramlah bint Abi Sufyān",
+                    "id": "59"
+                },
+                "position": {
+                    "x": 300.4468856277754,
+                    "y": 264.892672723052
+                }
+            },
+            {
+                "data": {
+                    "info": "Brother of Ramlah Umm Ḥabībah bint Abi Sufyān",
+                    "name": 846,
+                    "searchname": "Unbasah ibn Abi Sufyan ibn Harb",
+                    "gender": "male",
+                    "arabicname": "عنبسة بن أبي سفيان",
+                    "fullname": "ʿUnbasah ibn Abi Sufyān ibn Ḥarb",
+                    "label": "ʿUnbasah ibn Abi Sufyān",
+                    "id": "846"
+                },
+                "position": {
+                    "x": 526.3395254600325,
+                    "y": 294.06681313766654
+                }
+            },
+            {
+                "data": {
+                    "info": "A successor from Egypt",
+                    "name": 16165,
+                    "searchname": "Suwayd ibn Qays al-Tajibi",
+                    "gender": "male",
+                    "arabicname": "سويد بن قيس التجيبي",
+                    "fullname": "Suwayd ibn Qays al-Tajībī",
+                    "label": "Suwayd ibn Qays",
+                    "id": "16165"
+                },
+                "position": {
+                    "x": 746.946336361526,
+                    "y": 200.66922990916424
+                }
+            },
+            {
+                "data": {
+                    "info": "Servant of ʿAbdullāh ibn ʿUmar",
+                    "name": 11014,
+                    "searchname": "Nafi Abu Abdullah Mawla Ibn Umar",
+                    "gender": "male",
+                    "arabicname": "نافع مولى ابن عمر",
+                    "fullname": "Nāfiʿ Abu ʿAbdullāh Mawlā Ibn ʿUmar",
+                    "label": "Nāfiʿ Mawlā Ibn ʿUmar",
+                    "id": "11014"
+                },
+                "position": {
+                    "x": 544.5619026322163,
+                    "y": 105.45564099697215
+                }
+            },
+            {
+                "data": {
+                    "info": "8th century jurist, author, ascetic, and hafiẓ ",
+                    "name": 20012,
+                    "searchname": "Sufyan ibn Said al-Thawri",
+                    "gender": "male",
+                    "arabicname": "سفيان الثوري",
+                    "fullname": "Sufyān ibn Saʾīd al-Thawri",
+                    "label": "Sufyān al-Thawri",
+                    "id": "20012"
+                },
+                "position": {
+                    "x": 856.5629682739203,
+                    "y": 275.82366252038753
+                }
+            },
+            {
+                "data": {
+                    "info": "A companion of the Prophet ﷺ",
+                    "name": 398,
+                    "searchname": "Muawiyah ibn Hadij",
+                    "gender": "male",
+                    "arabicname": "معاوية بن حديج",
+                    "fullname": "Muʾāwiyah ibn Ḥadīj",
+                    "label": "Muʾāwiyah ibn Ḥadīj",
+                    "id": "398"
+                },
+                "position": {
+                    "x": 584.7886081528058,
+                    "y": 214.0317587700849
+                }
+            },
+            {
+                "data": {
+                    "info": "Son of Asmāʾ bint Abi Bakr and therefore nephew of ʿĀʾishah bint Abi Bakr",
+                    "name": 10511,
+                    "searchname": "Urwah ibn al-Zubayr ibn al-Awwam",
+                    "gender": "male",
+                    "arabicname": "عروة بن الزبير",
+                    "fullname": "ʿUrwah ibn al-Zubayr ibn al-ʿAwwām",
+                    "label": "ʿUrwah ibn al-Zubayr",
+                    "id": "10511"
+                },
+                "position": {
+                    "x": 624.0427112042794,
+                    "y": 406.93318686233346
+                }
+            },
+            {
+                "data": {
+                    "info": "8th century author of the famous Sīrat Rasūlullah, a biography of the Prophet Muḥammad ﷺ ",
+                    "name": 11107,
+                    "searchname": "Muhammad ibn Ishaq ibn Yassar",
+                    "gender": "male",
+                    "arabicname": "محمد بن إسحاق بن يسار",
+                    "fullname": "Muḥammad ibn Isḥāq ibn Yassār",
+                    "label": "Ibn Isḥāq",
+                    "id": "11107"
+                },
+                "position": {
+                    "x": 1113.3329342650388,
+                    "y": 172.4545424644732
+                }
+            },
+            {
+                "data": {
+                    "info": "A successor from Egypt",
+                    "name": 11411,
+                    "searchname": "Yazid ibn Abi Habib",
+                    "gender": "male",
+                    "arabicname": "يزيد بن أبي حبيب",
+                    "fullname": "Yazīd ibn Abi Ḥabīb",
+                    "label": "Yazīd ibn Abi Ḥabīb",
+                    "id": "11411"
+                },
+                "position": {
+                    "x": 907.9945073375051,
+                    "y": 182.7798527836091
+                }
+            },
+            {
+                "data": {
+                    "info": "Daughter of Umm Salamah, and step-daughter of the Prophet ﷺ",
+                    "name": 244,
+                    "searchname": "Zaynab bint Abi Salamah",
+                    "gender": "female",
+                    "arabicname": "زينب بنت أبي سلمة",
+                    "fullname": "Zaynab bint Abi Salamah",
+                    "label": "Zaynab bint Abi Salamah",
+                    "id": "244"
+                },
+                "position": {
+                    "x": 495.22783694388335,
+                    "y": 346.6560804099717
+                }
+            },
+            {
+                "data": {
+                    "info": "Wife of the Prophet ﷺand daughter of Abi Bakr, the first caliph",
+                    "name": 53,
+                    "searchname": "Aishah bint Abi Bakr",
+                    "gender": "female",
+                    "arabicname": "عائشة بنت أبي بكر",
+                    "fullname": "ʿAʾishah bint Abi Bakr",
+                    "label": "ʿAʾishah bint Abi Bakr",
+                    "id": "53"
+                },
+                "position": {
+                    "x": 437.7962649895035,
+                    "y": 405.5859716748082
+                }
+            },
+            {
+                "data": {
+                    "info": "Son of ʿUrwah ibn al-Zubayr and great-nephew of ʿAʾishah bint Abi Bakr",
+                    "name": 11065,
+                    "searchname": "Hisham ibn Urwah ibn az-Zubayr ibn al-Awwam",
+                    "gender": "male",
+                    "arabicname": "هشام بن عروة بن الزبير بن العوام",
+                    "fullname": "Hishām ibn ʿUrwah ibn az-Zubayr ibn al-ʿAwwām",
+                    "label": "Hishām ibn ʿUrwah",
+                    "id": "11065"
+                },
+                "position": {
+                    "x": 779.0427112042795,
+                    "y": 389.02410193338704
+                }
+            },
+            {
+                "data": {
+                    "info": "Son of ʿAbdullah ibn ʿUmar ibn al-Khaṭṭāb",
+                    "name": 11011,
+                    "searchname": "Salim ibn Abdullah ibn Umar ibn al-Khattab",
+                    "gender": "male",
+                    "arabicname": "سالم بن عبد الله بن عمر بن الخطاب",
+                    "fullname": "Sālim ibn ʿAbdullāh ibn ʿUmar ibn al-Khaṭṭāb",
+                    "label": "Sālim ibn ʿAbdullāh ibn ʿUmar",
+                    "id": "11011"
+                },
+                "position": {
+                    "x": 433.302306918248,
+                    "y": 184.85432275797345
+                }
+            },
+            {
+                "data": {
+                    "info": "Wife of the Prophet ﷺ who was divorced from Zayn ibn al-Ḥārithah",
+                    "name": 57,
+                    "searchname": "Zaynab bint Jahsh",
+                    "gender": "female",
+                    "arabicname": "زينب بنت جحش",
+                    "fullname": "Umm al-Muʿminīn Zaynab bint Jaḥsh",
+                    "label": "Zaynab bint Jaḥsh",
+                    "id": "57"
+                },
+                "position": {
+                    "x": 189.90692075474348,
+                    "y": 327.8904756580541
+                }
+            },
+            {
+                "data": {
+                    "info": "Brother of Ramlah Umm Ḥabībah bint Abi Sufyān, who was a wife of the Prophet ﷺ",
+                    "name": 27,
+                    "searchname": "Muawiyah ibn Abi Sufyan",
+                    "gender": "male",
+                    "arabicname": "معاوية بن أبي سفيان",
+                    "fullname": "Muʾāwiyah ibn Abi Sufyān",
+                    "label": "Muʾāwiyah ibn Abi Sufyān",
+                    "id": "27"
+                },
+                "position": {
+                    "x": 471.8751619846585,
+                    "y": 243.4972536687526
+                }
+            },
+            {
+                "data": {
+                    "info": "Servant of Asmāʾ bint Yazīd",
+                    "name": 11044,
+                    "searchname": "Shahr ibn Hawshab al-Ashari",
+                    "gender": "male",
+                    "arabicname": "شهر بن حوشب",
+                    "fullname": "Shahr ibn Ḥawshab al-Ashʿari",
+                    "label": "Shahr ibn Ḥawshab",
+                    "id": "11044"
+                },
+                "position": {
+                    "x": 344.54329336132383,
+                    "y": 153.55421290472347
+                }
+            },
+            {
+                "data": {
+                    "info": "A successor, respected jurist, and prolific hadith narrator who narrated hadith from several companions ",
+                    "name": 11013,
+                    "searchname": "Muhammad ibn Muslim ibn Ubaydullah ibn Abdullah ibn Shihab al-Zuhri",
+                    "gender": "male",
+                    "arabicname": "ابن شهاب الزهري",
+                    "fullname": "Muḥammad ibn Muslim ibn ʿUbaydullāh ibn ʿAbdullāh ibn Shihāb al-Zuhri",
+                    "label": "Ibn Shihāb az-Zuhri",
+                    "id": "11013"
+                },
+                "position": {
+                    "x": 786.5158629396448,
+                    "y": 469.7502581877273
+                }
+            }
+        ],
+        "edges": [
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/bukhari:3346",
+                    "narratedfrom": "Prophet Muḥammad",
+                    "target": "57",
+                    "narratedto": "Zaynab bint Jaḥsh",
+                    "source": "1",
+                    "is_directed": false,
+                    "name": "1-57",
+                    "id": "b0f2f10a-319c-438e-905c-62ee71f6d8d3"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/abudawud:279",
+                    "narratedfrom": "Prophet Muḥammad",
+                    "target": "59",
+                    "narratedto": "Ramlah bint Abi Sufyān",
+                    "source": "1",
+                    "is_directed": false,
+                    "name": "1-59",
+                    "id": "579f26d2-8273-4f73-878f-c9a68b5f55c0"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/tirmidhi:415",
+                    "narratedfrom": "al-Musayyib ibn Rāfiʿ",
+                    "target": "20012",
+                    "narratedto": "Sufyān al-Thawri",
+                    "source": "11394",
+                    "is_directed": false,
+                    "name": "11394-20012",
+                    "id": "89bb8f56-d356-4595-a11a-4f8511e5bd71"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/abudawud:2554",
+                    "narratedfrom": "Ramlah bint Abi Sufyān",
+                    "target": "11011",
+                    "narratedto": "Sālim ibn ʿAbdullāh ibn ʿUmar",
+                    "source": "59",
+                    "is_directed": false,
+                    "name": "59-11011",
+                    "id": "1b219a2a-f329-4351-b088-dbf874005ced"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/nasai:1800",
+                    "narratedfrom": "Ramlah bint Abi Sufyān",
+                    "target": "11044",
+                    "narratedto": "Shahr ibn Ḥawshab",
+                    "source": "59",
+                    "is_directed": false,
+                    "name": "59-11044",
+                    "id": "3f509d0c-6003-4d7e-a085-60cf870ee1f1"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/tirmidhi:415",
+                    "narratedfrom": "Ramlah bint Abi Sufyān",
+                    "target": "846",
+                    "narratedto": "ʿUnbasah ibn Abi Sufyān",
+                    "source": "59",
+                    "is_directed": false,
+                    "name": "59-846",
+                    "id": "25ee2da7-9656-4fdb-a428-71d45bf3e6b2"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/bukhari:3346",
+                    "narratedfrom": "Ramlah bint Abi Sufyān",
+                    "target": "244",
+                    "narratedto": "Zaynab bint Abi Salamah",
+                    "source": "59",
+                    "is_directed": false,
+                    "name": "59-244",
+                    "id": "3d0035ec-26cb-4184-aff1-2bc987238ea4"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/abudawud:279",
+                    "narratedfrom": "Ramlah bint Abi Sufyān",
+                    "target": "53",
+                    "narratedto": "ʿAʾishah bint Abi Bakr",
+                    "source": "59",
+                    "is_directed": false,
+                    "name": "59-53",
+                    "id": "af2cf8e3-ab2e-4e5a-ab3f-845c41475046"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/ibnmajah:638",
+                    "narratedfrom": "Ramlah bint Abi Sufyān",
+                    "target": "27",
+                    "narratedto": "Muʾāwiyah ibn Abi Sufyān",
+                    "source": "59",
+                    "is_directed": false,
+                    "name": "59-27",
+                    "id": "2ee71c62-b61a-4734-9e55-dd916e079fbc"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/tirmidhi:415",
+                    "narratedfrom": "ʿUnbasah ibn Abi Sufyān",
+                    "target": "11394",
+                    "narratedto": "al-Musayyib ibn Rāfiʿ",
+                    "source": "846",
+                    "is_directed": false,
+                    "name": "846-11394",
+                    "id": "46db5bcc-727a-4d81-8ff3-e2f023390fd6"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/ibnmajah:638",
+                    "narratedfrom": "Suwayd ibn Qays",
+                    "target": "11411",
+                    "narratedto": "Yazīd ibn Abi Ḥabīb",
+                    "source": "16165",
+                    "is_directed": false,
+                    "name": "16165-11411",
+                    "id": "13e341c3-c5a6-4698-8872-4bb569661dd2"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/ibnmajah:638",
+                    "narratedfrom": "Muʾāwiyah ibn Ḥadīj",
+                    "target": "16165",
+                    "narratedto": "Suwayd ibn Qays",
+                    "source": "398",
+                    "is_directed": false,
+                    "name": "398-16165",
+                    "id": "cf08b862-0d89-4858-b26b-76654fc2b82e"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/bukhari:427",
+                    "narratedfrom": "ʿUrwah ibn al-Zubayr",
+                    "target": "11065",
+                    "narratedto": "Hishām ibn ʿUrwah",
+                    "source": "10511",
+                    "is_directed": false,
+                    "name": "10511-11065",
+                    "id": "452bebd4-28ae-4e3d-85fd-a81282bd78f0"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/bukhari:3346",
+                    "narratedfrom": "ʿUrwah ibn al-Zubayr",
+                    "target": "11013",
+                    "narratedto": "Ibn Shihāb az-Zuhri",
+                    "source": "10511",
+                    "is_directed": false,
+                    "name": "10511-11013",
+                    "id": "bb40d748-5f33-4340-91a3-ba27dcfa887f"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/ibnmajah:638",
+                    "narratedfrom": "Yazīd ibn Abi Ḥabīb",
+                    "target": "11107",
+                    "narratedto": "Ibn Isḥāq",
+                    "source": "11411",
+                    "is_directed": false,
+                    "name": "11411-11107",
+                    "id": "c4e93fcf-0207-48bc-a8e1-ea087caa1b5e"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/bukhari:3346",
+                    "narratedfrom": "Zaynab bint Abi Salamah",
+                    "target": "10511",
+                    "narratedto": "ʿUrwah ibn al-Zubayr",
+                    "source": "244",
+                    "is_directed": false,
+                    "name": "244-10511",
+                    "id": "bebe06b6-f7da-4e04-99e6-e151b08b2138"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/abudawud:279",
+                    "narratedfrom": "ʿAʾishah bint Abi Bakr",
+                    "target": "10511",
+                    "narratedto": "ʿUrwah ibn al-Zubayr",
+                    "source": "53",
+                    "is_directed": false,
+                    "name": "53-10511",
+                    "id": "877e5c57-8383-4b6a-9763-9dee1a732aef"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/abudawud:2554",
+                    "narratedfrom": "Sālim ibn ʿAbdullāh ibn ʿUmar",
+                    "target": "11014",
+                    "narratedto": "Nāfiʿ Mawlā Ibn ʿUmar",
+                    "source": "11011",
+                    "is_directed": false,
+                    "name": "11011-11014",
+                    "id": "889ac03a-a5b9-4782-a48f-0e5670ae9f27"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/bukhari:3346",
+                    "narratedfrom": "Zaynab bint Jaḥsh",
+                    "target": "59",
+                    "narratedto": "Ramlah bint Abi Sufyān",
+                    "source": "57",
+                    "is_directed": false,
+                    "name": "57-59",
+                    "id": "9da8adfa-956d-4527-8541-c4e45735170c"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/ibnmajah:638",
+                    "narratedfrom": "Muʾāwiyah ibn Abi Sufyān",
+                    "target": "398",
+                    "narratedto": "Muʾāwiyah ibn Ḥadīj",
+                    "source": "27",
+                    "is_directed": false,
+                    "name": "27-398",
+                    "id": "9708e406-8f17-4bdf-a823-70fd07327d6a"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            }
+        ]
+    },
+    "data": {
+        "directed": true,
+        "description": "This is a graph of hadith narrators - work in progress",
+        "name": "Graph 09:16AM on March 29, 2023",
+        "tags": []
+    }
+}
