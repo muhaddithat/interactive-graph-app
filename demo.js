@@ -382,7 +382,7 @@ $(function () {
       asma69 = asma69graph['responseJSON'];
     }
     if (asma70 == null) {
-      asma70 = asma70['responseJSON'];
+      asma70 = asma70graph['responseJSON'];
     }
     if (asma84 == null) {
       asma84 = asma84graph['responseJSON'];
