@@ -5,6 +5,8 @@ var ramlah59 = null;
 var umsalamah56 = null;
 var safiyyah2802 = null;
 var amrah11455 = null;
+var fatimah10526 = null;
+var hafsah11039 = null;
 var recenter = null;
 
 var allNodes = null; //12/5/22
@@ -66,6 +68,18 @@ $(function () {
 
   amrah11455graph = $.ajax({ //ayah testing
     url: 'data/amrah_11455.json',
+    type: 'GET',
+    dataType: 'json'
+  });
+
+  fatimah10526graph = $.ajax({ //ayah testing
+    url: 'data/fatimah_10526.json',
+    type: 'GET',
+    dataType: 'json'
+  });
+
+  hafsah11039graph = $.ajax({ //ayah testing
+    url: 'data/hafsah_11039.json',
     type: 'GET',
     dataType: 'json'
   });
@@ -307,6 +321,12 @@ $(function () {
     }
     if (amrah11455 == null) {
       amrah11455 = amrah11455graph['responseJSON'];
+    }
+    if (fatimah10526 == null) {
+      fatimah10526 = fatimah10526graph['responseJSON'];
+    }
+    if (hafsah11039 == null) {
+      hafsah11039 = hafsah11039graph['responseJSON'];
     }
 
     var expJson = then[0];
@@ -715,6 +735,22 @@ function elementsetup(el) {
   } else if (selectednarrator == "amrah11455") {
     elementsetup(amrah11455.elements);
     cy.json({ elements: amrah11455.elements });
+    allNodes = cy.nodes(); 
+    allEdges = cy.edges(); 
+    allEles = cy.elements();
+    recenter();
+    
+  } else if (selectednarrator == "fatimah10526") {
+    elementsetup(fatimah10526.elements);
+    cy.json({ elements: fatimah10526.elements });
+    allNodes = cy.nodes(); 
+    allEdges = cy.edges(); 
+    allEles = cy.elements();
+    recenter();
+    
+  } else if (selectednarrator == "hafsah11039") {
+    elementsetup(hafsah11039.elements);
+    cy.json({ elements: hafsah11039.elements });
     allNodes = cy.nodes(); 
     allEdges = cy.edges(); 
     allEles = cy.elements();
