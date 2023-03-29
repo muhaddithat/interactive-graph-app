@@ -1,0 +1,509 @@
+{
+    "format_version": "1.0",
+    "generated_by": "graphspace-2.0.0",
+    "target_cytoscapejs_version": "~2.7",
+    "elements": {
+        "nodes": [
+            {
+                "data": {
+                    "info": "Successor and narrator of various hadiths",
+                    "name": 11104,
+                    "searchname": "Abdullah ibn Abi Bakr ibn Hazm al-Ansari",
+                    "gender": "male",
+                    "arabicname": "عبد الله بن أبي بكر بن محمد بن عمرو",
+                    "fullname": "ʿAbdullah ibn Abi Bakr ibn Ḥazm al-Anṣāri",
+                    "label": "ʿAbdullah ibn Abi Bakr ibn Ḥazm",
+                    "id": "11104"
+                },
+                "position": {
+                    "x": 880.2474273137717,
+                    "y": 396.88897808756803
+                }
+            },
+            {
+                "data": {
+                    "info": "The final messenger of Allah",
+                    "name": 1,
+                    "searchname": "Prophet Muhammad",
+                    "gender": "male",
+                    "arabicname": "محمد رسول الله صلى الله عليه وسلم",
+                    "fullname": "Prophet Muḥammad, peace and blessings be upon him",
+                    "label": "Prophet Muḥammad",
+                    "id": "1"
+                },
+                "position": {
+                    "x": 183.36037601799762,
+                    "y": 359.25081577695227
+                }
+            },
+            {
+                "data": {
+                    "info": "Caliph of the Muslims in the seventh and eighth centuries, considered to be one of the Righteous Caliphs (al-Khulafāʾ al-Rāshidīn) - the only non-companion to achieve that status",
+                    "name": 11010,
+                    "searchname": "Umar ibn Abd al-Azīz ibn Marwan",
+                    "gender": "male",
+                    "arabicname": "عمر بن عبد العزيز بن مروان",
+                    "fullname": "ʿUmar ibn ʿAbd al-ʿAzīz ibn Marwān",
+                    "label": "ʿUmar ibn ʿAbd al-ʿAzīz",
+                    "id": "11010"
+                },
+                "position": {
+                    "x": 666.5977064746525,
+                    "y": 509.72578816875347
+                }
+            },
+            {
+                "data": {
+                    "info": "Granddaughter of Asmāʾ bint ʿUmays and Jaʿfar ibn Abi Ṭālib",
+                    "name": 19555,
+                    "searchname": "Umm Awn bint Muhammad ibn Jafar ibn Abi Talib",
+                    "gender": "female",
+                    "arabicname": "أم عون بنت محمد بن جعفر بن أبي طالب",
+                    "fullname": "Umm ʿAwn bint Muḥammad ibn Jaʿfar ibn Abi Ṭālib",
+                    "label": "Umm ʿAwn",
+                    "id": "19555"
+                },
+                "position": {
+                    "x": 593.5060107757902,
+                    "y": 395.8078178022289
+                }
+            },
+            {
+                "data": {
+                    "info": "A successor",
+                    "name": 19556,
+                    "searchname": "Umm Isa al-Jazzar or Umm Isa al-Khuzaiyyah",
+                    "gender": "female",
+                    "arabicname": "أم عيسى الخزاعية",
+                    "fullname": "Umm ʿĪsā al-Jazzār or Umm Īsā al-Khuzāʿiyyah",
+                    "label": "Umm ʿĪsā",
+                    "id": "19556"
+                },
+                "position": {
+                    "x": 738.1578159934213,
+                    "y": 397.5009462315584
+                }
+            },
+            {
+                "data": {
+                    "info": "Companion of the Prophet ﷺ and famous for having married 3 prominent male companions at 3 different times: Jaʿfar ibn Abi Ṭālib, then when he died, Abu Bakr as-Siddīq, and when he died, ʿAli ibn Abi Ṭālib.",
+                    "name": 69,
+                    "searchname": "Asma bint Umays ibn Mad",
+                    "gender": "female",
+                    "arabicname": "أسماء بنت عميس",
+                    "fullname": "Asmāʾ bint ʿUmays ibn Maʿd",
+                    "label": "Asmāʾ bint ʿUmays",
+                    "id": "69"
+                },
+                "position": {
+                    "x": 383.9069072173736,
+                    "y": 359.00108770260306
+                }
+            },
+            {
+                "data": {
+                    "info": "Son of the caliph ʿUmar ibn ʿAbdulazīz",
+                    "name": 20166,
+                    "searchname": "Abdulaziz ibn Umar ibn Abdulaziz",
+                    "gender": "male",
+                    "arabicname": "عبد العزيز بن عمر بن عبد العزيز بن مروان بن الحكم الأموي القرشي",
+                    "fullname": "ʿAbdulazīz ibn ʿUmar ibn ʿAbdulazīz",
+                    "label": "ʿAbdulazīz ibn ʿUmar ibn ʿAbdulazīz",
+                    "id": "20166"
+                },
+                "position": {
+                    "x": 1044.0728991933217,
+                    "y": 546.8968407441313
+                }
+            },
+            {
+                "data": {
+                    "info": "Nephew of ʿAʾishah bint Abi Bakr and grandson of Asmāʾ bint ʿUmays and Abi Bakr",
+                    "name": 10535,
+                    "searchname": "al-Qasim ibn Muhammad ibn Abi Bakr",
+                    "gender": "male",
+                    "arabicname": "القاسم بن محمد بن أبي بكر الصديق",
+                    "fullname": "al-Qāsim ibn Muḥammad ibn Abi Bakr",
+                    "label": "al-Qāsim ibn Muḥammad",
+                    "id": "10535"
+                },
+                "position": {
+                    "x": 591.2232608276411,
+                    "y": 314.32542735240384
+                }
+            },
+            {
+                "data": {
+                    "info": "Son of Asmā bint ʿUmays and Jaʿfar ibn Abi Ṭālib",
+                    "name": 108,
+                    "searchname": "Abdullah ibn Jafar ibn Abi Talib",
+                    "gender": "male",
+                    "arabicname": "عبد الله بن جعفر بن أبي طالب",
+                    "fullname": "ʿAbdullāh ibn Jaʿfar ibn Abi Ṭālib",
+                    "label": "ʿAbdullāh ibn Jaʿfar",
+                    "id": "108"
+                },
+                "position": {
+                    "x": 546.174562449127,
+                    "y": 459.0393377494858
+                }
+            },
+            {
+                "data": {
+                    "info": "Son of al-Qāsim ibn Muḥammad ibn Abi Bakr, making him the grandson of Asmāʾ bint ʿUmays and Abi Bakr as well as the great-nephew of ʿAʾishah bint Abi Bakr",
+                    "name": 10530,
+                    "searchname": "Abdur-Rahman ibn al-Qasim ibn Muhammad ibn Abi Bakr",
+                    "gender": "male",
+                    "arabicname": "عبد الرحمن بن القاسم بن محمد بن أبي بكر الصديق",
+                    "fullname": "ʿAbdur-Raḥmān ibn al-Qāsim ibn Muḥammad ibn Abi Bakr",
+                    "label": "ʿAbdur-Raḥmān ibn al-Qāsim ",
+                    "id": "10530"
+                },
+                "position": {
+                    "x": 732.3334700899542,
+                    "y": 289.8988644798233
+                }
+            },
+            {
+                "data": {
+                    "info": "Son of Asmāʾ bint Abi Bakr and therefore nephew of ʿĀʾishah bint Abi Bakr",
+                    "name": 10511,
+                    "searchname": "Urwah ibn al-Zubayr ibn al-Awwam",
+                    "gender": "male",
+                    "arabicname": "عروة بن الزبير",
+                    "fullname": "ʿUrwah ibn al-Zubayr ibn al-ʿAwwām",
+                    "label": "ʿUrwah ibn al-Zubayr",
+                    "id": "10511"
+                },
+                "position": {
+                    "x": 536.4776979019756,
+                    "y": 222.38319817357828
+                }
+            },
+            {
+                "data": {
+                    "info": "8th century author of the famous Sīrat Rasūlullah, a biography of the Prophet Muḥammad ﷺ ",
+                    "name": 11107,
+                    "searchname": "Muhammad ibn Ishaq ibn Yassar",
+                    "gender": "male",
+                    "arabicname": "محمد بن إسحاق بن يسار",
+                    "fullname": "Muḥammad ibn Isḥāq ibn Yassār",
+                    "label": "Ibn Isḥāq",
+                    "id": "11107"
+                },
+                "position": {
+                    "x": 1083.6100433245972,
+                    "y": 396.052574331442
+                }
+            },
+            {
+                "data": {
+                    "info": "A successor, respected jurist, and prolific hadith narrator who narrated hadith from several companions ",
+                    "name": 11013,
+                    "searchname": "Muhammad ibn Muslim ibn Ubaydullah ibn Abdullah ibn Shihab al-Zuhri",
+                    "gender": "male",
+                    "arabicname": "ابن شهاب الزهري",
+                    "fullname": "Muḥammad ibn Muslim ibn ʿUbaydullāh ibn ʿAbdullāh ibn Shihāb al-Zuhri",
+                    "label": "Ibn Shihāb az-Zuhri",
+                    "id": "11013"
+                },
+                "position": {
+                    "x": 704.4303114977354,
+                    "y": 176.97073925868833
+                }
+            },
+            {
+                "data": {
+                    "info": "Founder of one of the four legal schools of thought in Sunni Islam",
+                    "name": 20001,
+                    "searchname": "Malik ibn Anas",
+                    "gender": "male",
+                    "arabicname": "مالك بن أنس",
+                    "fullname": "Mālik ibn Anas",
+                    "label": "Imām Mālik",
+                    "id": "20001"
+                },
+                "position": {
+                    "x": 887.9382569549248,
+                    "y": 264.90482678366436
+                }
+            },
+            {
+                "data": {
+                    "info": "Servant of the caliph ʿUmar ibn ʿAbdulazīz",
+                    "name": 22693,
+                    "searchname": "Hilal mawla Umar ibn Abdulaziz",
+                    "gender": "male",
+                    "arabicname": "هلال مولى عمر بن عبد العزيز",
+                    "fullname": "Hilāl mawlā ʿUmar ibn ʿAbdulazīz",
+                    "label": "Hilāl mawlā ʿUmar ibn ʿAbdulazīz",
+                    "id": "22693"
+                },
+                "position": {
+                    "x": 818.4064259812928,
+                    "y": 544.5719490169611
+                }
+            }
+        ],
+        "edges": [
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/ibnmajah:1611",
+                    "narratedfrom": "ʿAbdullah ibn Abi Bakr ibn Ḥazm",
+                    "target": "11107",
+                    "narratedto": "Ibn Isḥāq",
+                    "source": "11104",
+                    "is_directed": false,
+                    "name": "11104-11107",
+                    "id": "1e90b787-c37f-4b7b-b807-ccd99535cae0"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/ibnmajah:3882",
+                    "narratedfrom": "Prophet Muḥammad",
+                    "target": "69",
+                    "narratedto": "Asmāʾ bint ʿUmays",
+                    "source": "1",
+                    "is_directed": false,
+                    "name": "1-69",
+                    "id": "0948bd63-6e8b-4607-bbf4-e4c109d2febf"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/ibnmajah:3882",
+                    "narratedfrom": "ʿUmar ibn ʿAbd al-ʿAzīz",
+                    "target": "22693",
+                    "narratedto": "Hilāl mawlā ʿUmar ibn ʿAbdulazīz",
+                    "source": "11010",
+                    "is_directed": false,
+                    "name": "11010-22693",
+                    "id": "5008df37-6761-4736-a302-2ef3d6bd43b3"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/ibnmajah:1611",
+                    "narratedfrom": "Umm ʿAwn",
+                    "target": "19556",
+                    "narratedto": "Umm ʿĪsā",
+                    "source": "19555",
+                    "is_directed": false,
+                    "name": "19555-19556",
+                    "id": "dfe3b74a-4f73-4845-863b-236eae2c87fb"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/ibnmajah:1611",
+                    "narratedfrom": "Umm ʿĪsā",
+                    "target": "11104",
+                    "narratedto": "ʿAbdullah ibn Abi Bakr ibn Ḥazm",
+                    "source": "19556",
+                    "is_directed": false,
+                    "name": "19556-11104",
+                    "id": "c55628c4-7fc5-4755-a0c5-d31b339943d0"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/ibnmajah:1611",
+                    "narratedfrom": "Asmāʾ bint ʿUmays",
+                    "target": "19555",
+                    "narratedto": "Umm ʿAwn",
+                    "source": "69",
+                    "is_directed": false,
+                    "name": "69-19555",
+                    "id": "7caeac34-99f7-4cf6-b9a6-113ea58e7b74"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/nasai:2663",
+                    "narratedfrom": "Asmāʾ bint ʿUmays",
+                    "target": "10535",
+                    "narratedto": "al-Qāsim ibn Muḥammad",
+                    "source": "69",
+                    "is_directed": false,
+                    "name": "69-10535",
+                    "id": "e4a2f7ac-cb69-4de6-84fd-0ac7da4087d6"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/ibnmajah:3882",
+                    "narratedfrom": "Asmāʾ bint ʿUmays",
+                    "target": "108",
+                    "narratedto": "ʿAbdullāh ibn Jaʿfar",
+                    "source": "69",
+                    "is_directed": false,
+                    "name": "69-108",
+                    "id": "ba3a1b43-b9f7-4f60-9fc5-0633102c48c1"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/abudawud:296",
+                    "narratedfrom": "Asmāʾ bint ʿUmays",
+                    "target": "10511",
+                    "narratedto": "ʿUrwah ibn al-Zubayr",
+                    "source": "69",
+                    "is_directed": false,
+                    "name": "69-10511",
+                    "id": "6d911f79-1376-4f9f-ab8e-2d0920219dd2"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/nasai:2663",
+                    "narratedfrom": "al-Qāsim ibn Muḥammad",
+                    "target": "10530",
+                    "narratedto": "ʿAbdur-Raḥmān ibn al-Qāsim ",
+                    "source": "10535",
+                    "is_directed": false,
+                    "name": "10535-10530",
+                    "id": "66f84e65-70f5-4128-9083-b34387b40214"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/ibnmajah:3882",
+                    "narratedfrom": "ʿAbdullāh ibn Jaʿfar",
+                    "target": "11010",
+                    "narratedto": "ʿUmar ibn ʿAbd al-ʿAzīz",
+                    "source": "108",
+                    "is_directed": false,
+                    "name": "108-11010",
+                    "id": "d64e8c6b-7afd-41b9-bffc-1bb6ba67400b"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/nasai:2663",
+                    "narratedfrom": "ʿAbdur-Raḥmān ibn al-Qāsim ",
+                    "target": "20001",
+                    "narratedto": "Imām Mālik",
+                    "source": "10530",
+                    "is_directed": false,
+                    "name": "10530-20001",
+                    "id": "a7d8d52d-d05c-418e-8c36-8645b4b1c936"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/abudawud:296",
+                    "narratedfrom": "ʿUrwah ibn al-Zubayr",
+                    "target": "11013",
+                    "narratedto": "Ibn Shihāb az-Zuhri",
+                    "source": "10511",
+                    "is_directed": false,
+                    "name": "10511-11013",
+                    "id": "7865a901-39a4-4598-9ad4-6b3a808f390c"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            },
+            {
+                "data": {
+                    "hadithurl": "https://sunnah.com/ibnmajah:3882",
+                    "narratedfrom": "Hilāl mawlā ʿUmar ibn ʿAbdulazīz",
+                    "target": "20166",
+                    "narratedto": "ʿAbdulazīz ibn ʿUmar ibn ʿAbdulazīz",
+                    "source": "22693",
+                    "is_directed": false,
+                    "name": "22693-20166",
+                    "id": "fb8cba85-7c35-4cd6-ba96-8e9bd985732b"
+                },
+                "style": {
+                    "width": "3px",
+                    "curve-style": "bezier",
+                    "line-style": "solid",
+                    "line-color": "black"
+                }
+            }
+        ]
+    },
+    "data": {
+        "directed": true,
+        "description": "This is a graph of hadith narrators - work in progress",
+        "name": "Graph 12:25PM on March 29, 2023",
+        "tags": []
+    }
+}
