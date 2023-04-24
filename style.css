@@ -149,7 +149,8 @@ body.calc #loading {
 #reset,
 #filter,
 #about,
-#graph-dropdown {
+#graph-dropdown,
+#legend {
   width: 3em;
   margin: 0.5em;
   position: absolute;
@@ -170,6 +171,17 @@ body.calc #loading {
   top: 0;
   right: 8em;
 }
+
+#legend {
+  top: 0;
+  right: 12em;
+}
+.legend { list-style: none; }
+.legend li { float: left; margin-right: 10px; }
+.legend span { border: 1px solid #ccc; float: left; width: 12px; height: 12px; margin: 2px; }
+.legend .male { background-color: #E2CDAB; border: 0}
+.legend .female { background-color: #9CBD8B; border: 0}
+.legend .pointer { border: 0}
 
 #about {
   bottom: 0;
