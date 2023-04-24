@@ -149,8 +149,7 @@ body.calc #loading {
 #reset,
 #filter,
 #about,
-#graph-dropdown,
-#legend {
+#graph-dropdown {
   width: 3em;
   margin: 0.5em;
   position: absolute;
